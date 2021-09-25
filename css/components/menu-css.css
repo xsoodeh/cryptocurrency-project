@@ -1,0 +1,161 @@
+.menu{
+    height: 11vh;
+    width: 100%;
+    background-color: var(--main-color);
+    opacity: 90% ;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-areas: "logo buttons";
+    border-bottom:solid #3c4e89 1px ;
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 1;
+}
+.logo{
+    grid-area: logo;
+    height: 7vh;
+    align-self: center;
+    padding-left: 2vw;
+    cursor:pointer;
+
+}
+.menu--items{
+    grid-area: buttons;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-content: center;
+
+}
+.menu--items-button{
+    color:var(--third-color) ;
+    background-color: var(--main-color);
+}
+.menu--items-button:hover{
+    background-color: #1b245b;
+    color: #FFFFFF;
+    cursor:pointer;
+
+}
+#menu-berger{
+    display: none;
+}
+#menu-mob{
+    display: none;
+}
+
+@media screen and (max-width: 700px) {
+    .menu--items{
+        display: none;
+    }
+    #menu-mob{
+    height: 100vh;
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--main-color);
+        flex-wrap: initial;
+        float: right;
+        position: fixed;
+        top:0;
+        right: 0;
+        font-size: 0.6rem;
+        z-index: 2;
+    }
+#menu-berger{
+    display:flex;
+    flex-direction: row-reverse;
+    padding: 4vw;
+    font-size: 3rem;
+    color: #FFFFFF;
+
+}
+    .menu--items-button{
+        width: 100%;
+        text-align:left;
+        padding-left: 5vw;
+       border-bottom:  1px solid rgba(255,255,255,.03);
+        line-height: 7vh;
+    }
+
+    #menu-mob-close{
+        font-size: 3rem;
+        color: var(--third-color);
+        float: right;
+        padding: 4vw;
+    }
+    .menu-mob-icons{
+        display: flex;
+        flex-direction: row;
+        padding: 3vw;
+        font-size: 14px;
+        color: var(--third-color);
+        justify-content: center;
+    }
+    .menu-mob-icons ion-icon{
+        padding: 8px;
+    }
+    .menu-mob-icons ion-icon:hover{
+        color: #FFFFFF;
+    }
+    .menu-mob-show{
+        transform: translate(0);
+        transition-duration: 0.5s;
+        transition-timing-function: linear;
+        transition-delay: 0.1s;
+    }
+    .menu-mob-close{
+        transform: translate(100vw);
+        transition-duration: 0.5s;
+        transition-timing-function: linear;
+        transition-delay: 0.1s;
+    }
+    }
+#header{
+    background-image: url("../../img/crypto-home-slider-bg.png");
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 140vh;
+    background-attachment: scroll;
+    padding: 16vh 6vw;
+    box-sizing:border-box;
+}
+.header-text{
+    padding-left: 5vw;
+    align-content: flex-end;
+    margin-top: 8vw;
+}
+#header h1{
+    font-size: 5.5vw;
+    letter-spacing: -1px;
+    font-weight: 700;
+    color: #FFFFFF;
+    line-height: 8rem;
+}
+#header p{
+    text-transform: uppercase;
+    font-size: 1.5vw;
+    font-weight: 300;
+    color:var(--third-color);
+    letter-spacing: 3px;
+}
+#header button{
+    font-weight: bold;
+    margin-top: 2vw;
+}
+#header button:hover{
+    background-color: white;
+}
+#header img {
+    width: 45vw;
+    float: right;
+}
+.animate__animated {
+    animation-delay: 1s;
+    --animate-duration: 2s;
+    transition-timing-function: cubic-bezier(.22,.12,.83,.67);
+}
+#beindex{
+    height: 7vh;
+}
+
