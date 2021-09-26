@@ -3,5 +3,7 @@
 @import "variables.css";
 @import "../components/menu-css.css";
 @import "../components/buttons.css";
+@import "../components/a-link.css";
+@import "../home/header.css";
 
 
