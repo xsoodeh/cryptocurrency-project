@@ -1,7 +1,7 @@
 .menu{
     height: 12vh;
     width: 100%;
-    background-color: var(--main-color);
+    background-color:var(--main-color);
     opacity: 90% ;
     display: grid;
     grid-template-columns: 30% 70%;
@@ -110,7 +110,4 @@
     }
     }
 
-#beindex{
-    height: 7vh;
-}
 

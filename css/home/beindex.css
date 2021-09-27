@@ -1,0 +1,23 @@
+
+#beindex-div{
+    background-color:var(--main-color);
+    /*height: 10vh;*/
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: white;
+    font-size: 2rem;
+}
+.beindex-parameters span{
+    padding: 0.4vw;
+}
+.beindex-parameters b{
+    padding-left: 0.5vw;
+}
+.beindex-parameters span:last-child{
+    color: #79e66e ;
+}
+#negative-para{
+    color:#fb7878
+}

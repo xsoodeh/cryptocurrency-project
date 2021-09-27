@@ -2,9 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d8b2a6f5-4405-459c-9b86-b17cc56c5038" name="Changes" comment="commit header home and menu">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/home/app.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/home/beindex.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/home/benefits.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/home/home.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/home/statics.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/base/fonts.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/base/fonts.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/base/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/base/global.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/base/variables.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/base/variables.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/components/a-link.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/components/a-link.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/components/buttons.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/components/buttons.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/components/menu-css.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/components/menu-css.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/home/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/home/header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/home.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,12 +27,10 @@
       <list>
         <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="Sass File" />
         <option value="CSS File" />
       </list>
     </option>
-  </component>
-  <component name="Git.Merge.Settings">
-    <option name="BRANCH" value="origin/home" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -58,8 +67,7 @@
       <workItem from="1632352431014" duration="1628000" />
       <workItem from="1632383715423" duration="1149000" />
       <workItem from="1632418115653" duration="37048000" />
-      <workItem from="1632572290786" duration="5590000" />
-      <workItem from="1632614273202" duration="4513000" />
+      <workItem from="1632572290786" duration="5217000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1632384673029</created>

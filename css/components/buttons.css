@@ -1,9 +1,10 @@
 button{
-    text-transform: capitalize;
     text-align: center;
-    padding: 1.2vw 2.5vw;
+    padding: 0.9vw 2.1vw;
     border: 0;
     font-size: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+
 }
 .select-btn{
     color:var(--text-color);
@@ -15,6 +16,8 @@ button{
 }
 .buy-btn{
 color: #07074d;
+    text-transform: capitalize;
+
 }
 @media screen and (max-width: 750px ){
     button{
@@ -26,4 +29,3 @@ color: #07074d;
         margin: 4vw;
     }
 }
-
