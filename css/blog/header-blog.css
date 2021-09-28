@@ -1,0 +1,36 @@
+/* START BLOG HEADER */
+
+.blog-header {
+    background: url(/img/crypto-blog-headbg.jpg);
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    background-attachment: scroll;
+    width: 100vw;
+    height: 58vh;
+    background-size: cover;
+    padding: 16vh 6vw;
+    /* background-color: rgba(20, 26, 81, 1); */
+
+}
+/* END BLOG HEADER*/
+
+/* START H1 BLOG */
+
+.h1-blog {
+    color: #fff;
+    font-size: 80px;
+    line-height: 90px;
+    font-weight: 600;
+    letter-spacing: 0px;
+    /* position: relative; */
+
+}
+
+/* END H1 BLOG */
+
+
+
+/* .blog-position {
+    position: absolute;
+
+} */
