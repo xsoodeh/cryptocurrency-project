@@ -1,0 +1,11 @@
+#static{
+    margin-top: 3vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+#static p{
+    width:50%;
+text-align: center;
+}
