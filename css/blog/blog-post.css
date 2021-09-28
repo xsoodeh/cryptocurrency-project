@@ -1,0 +1,91 @@
+
+.blog-section {
+    width: fit-content;
+    /* background-color: black; */
+
+    /* background-repeat: no-repeat;
+    margin: auto; 
+    background-image: url(/img/crypto-home-tech-bg.png); 
+    */
+
+}
+
+/* START BLOG CONTAINER  */
+
+.blog-container {
+
+    /* margin-top: 55px; */
+    /* background-color: white; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 10px;
+    margin-right: auto;
+}
+
+/* END BLOG CONTAINER  */
+
+
+/* START IMAGE STYLE */
+
+.blog-post-img {
+
+    width: auto;
+    height: 256.45px;
+    object-fit: cover;
+    vertical-align: bottom;
+    /* border: 2px solid red; */
+
+}
+
+/* END IMAGE STYLE*/
+
+/* START BLOG-POST-CONTENT */
+.blog-post-content {
+    width: 320px;
+    margin-left: 20px;
+}
+
+/* END BLOG-POST-CONTENT */
+
+
+/* START DATE CONTENT*/
+
+.author-color {
+    color: #a8a8a8;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+}
+
+.author-link {
+    border-bottom: 1px dotted #a8a8a8;
+}
+
+/* END DATE CONTENT */
+
+
+
+
+/* START HEADER BLOG POST */
+
+.post-title {
+    color: #0d1a85;
+    font-size: 3.5rem;
+    line-height: 4.3rem;
+    font-weight: 500;
+
+}
+
+/* END HEADER BLOG POST */
+
+/* START PARAGRAPH BLOG POST */
+.p-blog {
+    font-family: "p-regular";
+    /* box-sizing: border-box; */
+    color: #0d1a85;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    font-weight: 400;
+}
+
+/* END PARAGRAPH BLOG POST */
