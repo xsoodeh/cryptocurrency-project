@@ -13,7 +13,15 @@ function closeFunction() {
     element.classList.add("menu-mob-close");
     mainElement.classList.remove("move-menu");
     mainElement.classList.add("move-back-menu");
-
-
-
 }
+function closeMenuFunction() {
+    let element = document.getElementById("menu-mob");
+    let mainElement = document.getElementById("main-elements");
+    if (element.classList.contains("menu-mob-show")){
+        element.classList.remove("menu-mob-show");
+        element.classList.add("menu-mob-close");
+        mainElement.classList.remove("move-menu");
+        mainElement.classList.add("move-back-menu");
+    }
+}
+
