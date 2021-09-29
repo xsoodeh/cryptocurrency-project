@@ -11,4 +11,11 @@
 @import "../home/home.css";
 @import "../home/statics.css";
 @import "../home/app.css";
+@import "../blog/blog.css";
+@import "../blog/blog-post.css";
+@import "../blog/filter-blog-post.css";
+@import "../blog/header-blog.css";
+@import "../blog/icons.css";
+
+
 
