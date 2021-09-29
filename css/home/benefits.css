@@ -1,17 +1,14 @@
-.benefits{
-    display: grid;
+
+.benefits {
+    display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-items: center;
-    padding-left: 11vw;
-    padding-right: 3vw;
+    justify-content: center;
     margin-top: 30vh;
 }
 
-.benefits img{
-}
 .benefits-text{
-    justify-self: start;
-
+    width: 30%;
 }
 .benefits-text p{
     line-height:3.2rem;
@@ -19,42 +16,42 @@
 .benefits-text button{
     margin-top: 2.5vw;
 }
-
-
-
 .benefits-money-text{
-    grid-area:benefitsText ;
     margin-left: 3vw;
-    width: 70%;
-
-}
-.benefits-money{
-    grid-template-areas: "benefitsPic benefitsText";
 }
 .benefits-money img{
-    grid-area: benefitsPic;
-    width: 37vw;
-    padding-left:5vw;
-
-}
-.benefits-money-text{
-    grid-area:benefitsText ;
+    width:37vw;
 }
 
 
-
-
-.miner{
-    grid-template-areas: " minerText minerPic ";
-}
 .miner-text {
-    grid-area:minerText ;
-    width: 80%;
-
+    margin-right: 7vw;
 }
 .miner img{
-    grid-area: minerPic;
-    padding-right: 12vw;
+    width: 35vw;
+}
+
+@media screen and (max-width: 750px) {
+    .benefits {
+        flex-direction: column;
+    }
+
+    .benefits-text {
+        width: 85%;
+    }
+
+    .benefits-money img, .miner img {
+        width: 80vw;
+        padding-top: 10vw;
+    }
+    .benefits-text p{
+        line-height:normal;
+    }
+
+    .miner-text {
+        margin-right: 1vw;
+    }
+
 }
 
 

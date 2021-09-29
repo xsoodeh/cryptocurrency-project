@@ -7,7 +7,7 @@
     grid-template-columns: 30% 70%;
     grid-template-areas: "logo buttons";
     border-bottom:solid #3c4e89 1px ;
-    box-sizing: border-box;
+    box-sizing:initial;
     position: fixed;
     z-index: 1;
 }
@@ -17,6 +17,7 @@
     align-self: center;
     padding-left: 2vw;
     cursor:pointer;
+    display: inline-block;
 
 }
 .menu--items{
@@ -42,13 +43,20 @@
     display: none;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 750px) {
+    .menu{
+        height: 8vh;
+    }
     .menu--items{
         display: none;
     }
+    .logo{
+        height:3vh;
+    }
+
     #menu-mob{
     height: 100vh;
-    width: 76vw;
+    width:70vw;
     display: flex;
     flex-direction: column;
     background-color: var(--main-color);
@@ -61,6 +69,7 @@
         z-index: 2;
     }
 #menu-berger{
+    width:auto;
     display:flex;
     flex-direction: row-reverse;
     padding: 4vw;
@@ -95,6 +104,19 @@
     }
     .menu-mob-icons ion-icon:hover{
         color: #FFFFFF;
+    }
+    .move-menu{
+        transform: translate(-50vw);
+        transition-duration: 0.3s;
+        transition-timing-function: linear;
+        transition-delay: 0.3s;
+        filter: grayscale(40%);
+    }
+    .move-back-menu{
+        transform: translate(0);
+        transition-duration: 0.3s;
+        transition-timing-function: linear;
+        transition-delay: 0.1s;
     }
     .menu-mob-show{
         transform: translate(0);

@@ -18,6 +18,16 @@
 .beindex-parameters span:last-child{
     color: #79e66e ;
 }
-#negative-para{
-    color:#fb7878
+#negative-para {
+    color: #fb7878;
+}
+
+@media screen and (max-width: 750px) {
+    #beindex-div {
+        display: flex;
+        flex-direction: column;
+        align-items:center ;
+        font-size: 1.5rem;
+line-height: 0.8rem;
+    }
 }
