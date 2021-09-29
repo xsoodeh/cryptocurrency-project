@@ -19,13 +19,18 @@ color: #07074d;
     text-transform: capitalize;
 
 }
-@media screen and (max-width: 750px ){
-    button{
+@media screen and (max-width: 750px ) {
+    button {
         font-size: 1.3rem;
     }
-    .buy-btn{
-        width:85%;
+
+    .buy-btn {
+        width: 85%;
         height: 8vh;
         margin: 4vw;
+    }
+
+    .select-btn {
+        padding: 3vw;
     }
 }
