@@ -1,5 +1,5 @@
 .menu{
-    height: 12vh;
+    min-height: 10vh;
     width: 100%;
     background-color:var(--main-color);
     opacity: 90% ;
@@ -8,8 +8,12 @@
     grid-template-areas: "logo buttons";
     border-bottom:solid #3c4e89 1px ;
     box-sizing:initial;
-    position: fixed;
     z-index: 1;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+
 }
 .logo{
     grid-area: logo;
@@ -43,20 +47,22 @@
     display: none;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 1030px) {
     .menu{
-        height: 8vh;
+        height:auto;
+        grid-template-columns: 30% 70%;
+
     }
     .menu--items{
         display: none;
     }
     .logo{
-        height:3vh;
+        height:35%;
     }
 
     #menu-mob{
     height: 100vh;
-    width:70vw;
+    width:250px;
     display: flex;
     flex-direction: column;
     background-color: var(--main-color);
@@ -68,14 +74,14 @@
         font-size: 0.6rem;
         z-index: 2;
     }
-#menu-berger{
+    #menu-berger{
     width:auto;
     display:flex;
     flex-direction: row-reverse;
-    padding: 4vw;
+    padding-right: 4vw;
     font-size: 3rem;
     color: #FFFFFF;
-
+        align-items: center;
 }
     .menu--items-button{
         width: 100%;
@@ -92,25 +98,18 @@
         padding:4vw;
     }
     .menu-mob-icons{
-        display: flex;
-        flex-direction: row;
-        padding: 3vw;
-        font-size: 14px;
         color: var(--third-color);
-        justify-content: center;
-    }
-    .menu-mob-icons ion-icon{
-        padding: 8px;
+        padding: 3vw;
     }
     .menu-mob-icons ion-icon:hover{
         color: #FFFFFF;
     }
     .move-menu{
-        transform: translate(-50vw);
+        transform: translate(-30vw);
         transition-duration: 0.3s;
         transition-timing-function: linear;
         transition-delay: 0.3s;
-        filter: grayscale(40%);
+        filter: grayscale(50%);
     }
     .move-back-menu{
         transform: translate(0);
@@ -131,5 +130,3 @@
         transition-delay: 0.1s;
     }
     }
-
-

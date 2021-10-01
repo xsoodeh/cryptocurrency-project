@@ -1,0 +1,100 @@
+footer{
+    background-image: url("../../img/crypto-home-slider-bg.png");
+    background-repeat: repeat;
+    background-size: cover;
+    min-height: 70vh;
+    width: 100%;
+    color:#a7a8b6;
+
+}
+footer .select-btn{
+    color: black;
+    margin-top: 3vw;
+}
+
+.footer-columns{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-items: center;
+    align-content: space-evenly;
+    justify-content: center;
+    column-gap: 2.5vw;
+    padding-top:6vw;
+    padding-bottom:6vw;
+    border:1px solid rgba(255,255,255,.1);
+}
+.footer-columns p,.footer-columns h3{
+    width: 19vw;
+}
+.footer-columns h3,h4{
+    color: white;
+}
+footer li{
+    line-height: 3.6rem;
+}
+footer li a:hover, #footer-info:hover,.copy-right a:hover{
+    color: var(--second-color);
+    text-decoration:underline var(--second-color);
+}
+.footer-columns li:before{
+    content:">";
+    color: var(--second-color);
+    padding-right: 1vw;
+}
+#footer-info{
+    color: var(--second-color);
+    padding-top: 2vw;
+}
+footer ion-icon:hover{
+    color: var(--second-color);
+}
+.copy-right{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    min-height: 10vh;
+    align-items: center;
+}
+.up-icon-mob {
+    display: none;
+}
+    .up{
+        color: white;
+        font-size: 2.5rem;
+        padding: 0 2vw;
+    }
+
+
+@media screen and (max-width: 750px){
+    .footer-columns{
+        flex-direction: column;
+        row-gap: 10vh;
+        align-items: start;
+        padding-left: 10vw;
+    }
+    .footer-columns p,.footer-columns h3{
+        width:80vw;
+    }
+    footer ul{
+        margin: 0;
+        padding: 0;
+    }
+    .copy-right{
+        flex-direction: column;
+    }
+
+    .copy-right p{
+        width: 80%;
+        text-align: center;
+    }
+    .up-icon-mob{
+        display: inline-block;
+    }
+    .up-icon-desk{
+        display: none;
+    }
+    .up{
+        padding-top:5vh;
+    }
+    }

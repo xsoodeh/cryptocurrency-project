@@ -45,7 +45,7 @@
 @media screen and (max-width: 750px){
     #header{
         width: 100%;
-        padding:9vh 0 3vh 0;
+        padding:16vh 0 3vh 0;
     }
     .header-text{
         padding-left:1vw;
