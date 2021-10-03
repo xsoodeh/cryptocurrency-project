@@ -45,6 +45,7 @@ footer li a:hover, #footer-info:hover,.copy-right a:hover{
 #footer-info{
     color: var(--second-color);
     padding-top: 2vw;
+    cursor: pointer;
 }
 footer ion-icon:hover{
     color: var(--second-color);

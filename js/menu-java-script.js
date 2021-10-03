@@ -33,9 +33,9 @@ function closeMenuBody() {
 
 window.onscroll= function(){scrollNav()};
 function scrollNav(){
-    let navbar = document.getElementsByClassName("menu");
-    let sticky = navbar.scrollY;
-    if (window.scrollY > 30) {
+    let navbar = document.getElementById("menu");
+    // let sticky = navbar.scrollY;
+    if (document.body.scrollTop > 75|| document.documentElement.scrollTop > 75) {
         navbar.classList.add("sticky");
     }
     else {
