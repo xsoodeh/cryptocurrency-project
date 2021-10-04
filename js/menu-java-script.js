@@ -3,7 +3,7 @@
 
 function openMenu() {
     let menoBox = document.getElementById("menu-mob");
-    let bodyBox = document.getElementById("main-elements");
+    let bodyBox = document.getElementsByClassName(".main-elements");
     menoBox.classList.add("menu-mob-show");
     menoBox.classList.remove("menu-mob-close");
     bodyBox.classList.add("move-menu");
@@ -11,7 +11,7 @@ function openMenu() {
 }
 function closeMenu() {
     let menoBox = document.getElementById("menu-mob");
-    let bodyBox = document.getElementById("main-elements");
+    let bodyBox = document.getElementsByClassName(".main-elements");
     menoBox.classList.remove("menu-mob-show");
     menoBox.classList.add("menu-mob-close");
     bodyBox.classList.remove("move-menu");
@@ -19,7 +19,7 @@ function closeMenu() {
 }
 function closeMenuBody() {
     let menoBox = document.getElementById("menu-mob");
-    let bodyBox = document.getElementById("main-elements");
+    let bodyBox = document.getElementsByClassName(".main-elements");
     if (menoBox.classList.contains("menu-mob-show")){
         menoBox.classList.remove("menu-mob-show");
         menoBox.classList.add("menu-mob-close");
