@@ -18,7 +18,7 @@
     
     width: 45vw;
     height: 70vh;
-    margin-left: 15vw;
+    margin-left: 12.5vw;
     margin-top: 15vh;
 }
 .card2{
@@ -31,18 +31,20 @@
     font-weight: 600;
     color: #0d1a85;
     width: 75vh;
+    letter-spacing: 0px;
+
 }
 .cardPostText h3{
     font-size: 27px; 
     line-height: 32px;
      font-weight: 700;
-      letter-spacing: 0px;
+    letter-spacing: 0px;
 } 
 .cardPostText p{
-    font-size: 15px; 
+    font-size: 13.5px; 
     line-height: 25px;
      font-weight: 200;
-      letter-spacing: 1px;
+     letter-spacing: 0.5px;
     
 }
 
@@ -52,10 +54,10 @@
     width: 75vh;
 }
 .cardPostText2 p{
-    font-size: 15px; 
+    font-size: 13.5px; 
     line-height: 25px;
      font-weight: 200;
-      letter-spacing: 1px;
+      letter-spacing: 0.5px;
     
 }
 .cardPostText2 h3{
