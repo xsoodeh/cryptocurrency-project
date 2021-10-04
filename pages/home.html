@@ -14,9 +14,9 @@
     <link rel="stylesheet" href="../css/base/global.css">
     <script src="../js/menu-java-script.js"></script>
 </head>
-<div class="menu">
+<div class="menu sticky">
     <img class="logo" src="../img/crypto-logo-retina.png"/>
-    <div id="menu-berger" onclick="openFunction()">
+    <div id="menu-berger" onclick="openMenu()">
         <ion-icon name="menu-outline"></ion-icon>
     </div>
     <div class="menu--items">
@@ -34,7 +34,7 @@
 
 <div id="menu-mob" class="menu-mob-close">
     <div>
-        <ion-icon name="close-outline" id="menu-mob-close" onclick="closeFunction()"></ion-icon>
+        <ion-icon name="close-outline" id="menu-mob-close" onclick="closeMenu()"></ion-icon>
     </div>
     <button class="select-btn buy-btn">
         <a
@@ -47,14 +47,14 @@
     <button class="menu--items-button">Blog</button>
     <button class="menu--items-button">FAQ</button>
     <button class="menu--items-button">About & Contact</button>
-    <div class="menu-mob-icons">
+    <div class="menu-mob-icons icons">
         <ion-icon name="logo-twitter"></ion-icon>
         <ion-icon name="logo-vimeo"></ion-icon>
         <ion-icon name="play"></ion-icon>
         <ion-icon name="logo-pinterest"></ion-icon>
     </div>
 </div>
-<div id="main-elements" onclick="closeMenuFunction()">
+<div id="main-elements" onclick="closeMenuBody()">
 <div id="header">
     <img src="../img/crypto-home-coin.png"/>
     <div class="header-text">
@@ -116,6 +116,54 @@
     </div>
     </div>
 </div>
+    <footer>
+        <div class="footer-columns">
+        <div >
+            <h3>Pellentesque gravida nec leo nec scelerisque</h3>
+            <button class="select-btn"><a href="features.html">View more details</a></button>
+        </div>
+        <div>
+            <ul>
+                <h4>Useful links</h4>
+                <li><a href="#">Lorem ipsum</a> </li>
+                <li><a href="#">  Consectetur adipisicing</a></li>
+                <li><a href="#">Elitsed do eiusmund</a></li>
+                <li><a href="#">Tempor incididunt</a></li>
+                <li><a href="#">Altabore</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <h4>More links</h4>
+                <li><a href="#">Lorem ipsum</a> </li>
+                <li><a href="#">  Consectetur adipisicing</a></li>
+                <li><a href="#">Elitsed do eiusmund</a></li>
+                <li><a href="#">Tempor incididunt</a></li>
+                <li><a href="#">Altabore</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Our mission</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam.</p>
+            <p id="footer-info">Read more</p>
+        </div>
+        </div>
+        <div class="copy-right">
+            <a href="#"> <ion-icon name="chevron-up-outline" class="up-icon-mob up"></ion-icon></a>
+
+            <p>© 2021 Betheme by <a href="#">Muffin group</a> | All Rights Reserved | Powered by <a href="#">WordPress</a></p>
+            <div class="icons">
+                <a href="#"> <ion-icon name="logo-twitter"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-vimeo"></ion-icon></a>
+                    <a href="#"> <ion-icon name="play"></ion-icon></a>
+                        <a href="#"> <ion-icon name="logo-pinterest"></ion-icon></a>
+                            <a href="#"> <ion-icon name="chevron-up-outline" class="up-icon-desk up"></ion-icon></a>
+            </div>
+        </div>
+
+    </footer>
 </div>
 </body>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
