@@ -64,10 +64,7 @@ a.authors:after {
     content: '\e866';
     font-family: "mfn-icons";
     padding: 2px;
-
-
 }
-
 a.reset::before {
     content: '\e963';
     font-family: "mfn-icons";
