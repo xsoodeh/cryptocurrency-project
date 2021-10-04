@@ -1,0 +1,142 @@
+#labtop{
+ width: 35vw;
+ height: 40vh;
+ 
+}
+#chart{
+    width: 35vw;
+  height: 40vh;
+}
+.cardPost{
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+    column-gap: 2.5vw;
+    height: 115vh;
+   
+}
+.card1{
+    
+    width: 45vw;
+    height: 70vh;
+    margin-left: 15vw;
+    margin-top: 15vh;
+}
+.card2{
+    width: 45vw;
+    height: 70vh;
+  
+    margin-top: 15vh;
+}
+.cardPostText{
+    font-weight: 600;
+    color: #0d1a85;
+    width: 75vh;
+}
+.cardPostText h3{
+    font-size: 27px; 
+    line-height: 32px;
+     font-weight: 700;
+      letter-spacing: 0px;
+} 
+.cardPostText p{
+    font-size: 15px; 
+    line-height: 25px;
+     font-weight: 200;
+      letter-spacing: 1px;
+    
+}
+
+.cardPostText2{
+    font-weight: 600;
+    color: #0d1a85;
+    width: 75vh;
+}
+.cardPostText2 p{
+    font-size: 15px; 
+    line-height: 25px;
+     font-weight: 200;
+      letter-spacing: 1px;
+    
+}
+.cardPostText2 h3{
+    font-size: 27px; 
+    line-height: 32px;
+     font-weight: 700;
+      letter-spacing: 0px;
+    
+}
+@media only screen and (max-width:768px) {
+    .cardPost{
+        display:flex;
+        flex-direction: column;
+        
+       
+    }
+    #labtop{
+        width: 80vw;
+        height: 40vh;
+        
+       }
+         #chart{
+        width: 80vw;
+      height: 40vh;
+    }
+    
+    .card1{
+        display: flex;
+        flex-direction: column;
+        width: 45vw;
+        height: 70vh;
+        margin-left: 10vw;
+        margin-top: 15vh;
+    }
+    
+     
+    .cardPostText{
+        font-weight: 600;
+        color: #0d1a85;
+        width: 80vw;
+    }
+
+    .cardPostText h3{
+    font-size: 20px; 
+    line-height: 28px;
+     font-weight: 700;
+      letter-spacing: 0px;
+     }
+     .cardPostText p{
+        font-size: 13px; 
+        line-height: 25px;
+         font-weight: 200;
+          letter-spacing: 1px;
+        
+    }
+    .card2{
+        width: 45vw;
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        margin-top: 15vh;
+        margin-left: 10vw;
+
+    }
+    .cardPostText2{
+        font-weight: 600;
+        color: #0d1a85;
+        width: 80vw;
+    }
+    .cardPostText2 p{
+        font-size: 13px; 
+        line-height: 25px;
+         font-weight: 200;
+          letter-spacing: 1px;
+        
+    }
+    .cardPostText2 h3{
+        font-size: 20px; 
+        line-height: 32px;
+         font-weight: 700;
+          letter-spacing: 0px;
+        
+    }
+}

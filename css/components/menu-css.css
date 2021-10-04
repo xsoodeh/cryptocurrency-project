@@ -1,8 +1,7 @@
 .menu{
-    min-height: 10vh;
+    min-height: 12vh;
     width: 100%;
     background-color:var(--main-color);
-    opacity: 90% ;
     display: grid;
     grid-template-columns: 30% 70%;
     grid-template-areas: "logo buttons";
@@ -13,6 +12,11 @@
 .sticky {
     position: fixed;
     top: 0;
+    opacity: 90% ;
+    transition-timing-function: linear;
+    min-height: 10vh;
+
+
 
 }
 .logo{
@@ -47,12 +51,7 @@
     display: none;
 }
 
-@media screen and (max-width: 1030px) {
-    .menu{
-        height:auto;
-        grid-template-columns: 30% 70%;
-
-    }
+@media screen and (max-width: 750px) {
     .menu--items{
         display: none;
     }

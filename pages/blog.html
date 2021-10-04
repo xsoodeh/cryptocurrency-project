@@ -5,34 +5,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/base/global.css">
+    <link rel="stylesheet" href="../css/blog/blog.css">
 
-    <link rel="stylesheet" href="/css/base/global.css">
-    <link rel="stylesheet" href="/css/blog/blog.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
     <title>Blog</title>
 </head>
 
 <body>
-    <!-- start menu -->
-    <div class="menu">
-        <img class="logo" src="../img/crypto-logo-retina.png" />
-        <div id="menu-berger" onclick="openFunction()">
-            <ion-icon name="menu-outline"></ion-icon>
-        </div>
-        <div class="menu--items">
-            <button class="menu--items-button">home</button>
-            <button class="menu--items-button">features</button>
-            <button class="menu--items-button">blog</button>
-            <button class="menu--items-button">FAQ</button>
-            <button class="menu--items-button">about & contact</button>
-            <button class="select-btn buy-btn">
-                <a
-                    href="https://themeforest.net/item/betheme-responsive-multipurpose-wordpress-theme/7758048?ref=muffingroup&irgwc=1&clickid=T4Ky5GxzaxyIUlVxIw0gnRHAUkBVijU35UmwVs0&iradid=275988&irpid=1289117&iradtype=ONLINE_TRACKING_LINK&irmptype=mediapartner&mp_value1=&utm_campaign=af_impact_radius_1289117&utm_medium=affiliate&utm_source=impact_radius">
-                    buy now
-                </a>
-            </button>
-        </div>
+<div class="menu" id="menu">
+    <img class="logo" src="../img/crypto-logo-retina.png"/>
+    <div id="menu-berger" onclick="openMenu()">
+        <ion-icon name="menu-outline"></ion-icon>
     </div>
-    <!-- end menu -->
+    <div class="menu--items">
+        <button class="menu--items-button">Home</button>
+        <button class="menu--items-button">Features</button>
+        <button class="menu--items-button">Blog</button>
+        <button class="menu--items-button">FAQ</button>
+        <button class="menu--items-button">About & Contact</button>
+        <button class="select-btn buy-btn"><a
+                href="https://themeforest.net/item/betheme-responsive-multipurpose-wordpress-theme/7758048?ref=muffingroup&irgwc=1&clickid=T4Ky5GxzaxyIUlVxIw0gnRHAUkBVijU35UmwVs0&iradid=275988&irpid=1289117&iradtype=ONLINE_TRACKING_LINK&irmptype=mediapartner&mp_value1=&utm_campaign=af_impact_radius_1289117&utm_medium=affiliate&utm_source=impact_radius">
+            buy now
+        </a></button>
+    </div>
+</div>
+
+<div id="menu-mob" class="menu-mob-close">
+    <div>
+        <ion-icon name="close-outline" id="menu-mob-close" onclick="closeMenu()"></ion-icon>
+    </div>
+    <button class="select-btn buy-btn">
+        <a
+                href="https://themeforest.net/item/betheme-responsive-multipurpose-wordpress-theme/7758048?ref=muffingroup&irgwc=1&clickid=T4Ky5GxzaxyIUlVxIw0gnRHAUkBVijU35UmwVs0&iradid=275988&irpid=1289117&iradtype=ONLINE_TRACKING_LINK&irmptype=mediapartner&mp_value1=&utm_campaign=af_impact_radius_1289117&utm_medium=affiliate&utm_source=impact_radius">
+            buy now
+        </a>
+    </button>
+    <button class="menu--items-button">Home</button>
+    <button class="menu--items-button">Features</button>
+    <button class="menu--items-button">Blog</button>
+    <button class="menu--items-button">FAQ</button>
+    <button class="menu--items-button">About & Contact</button>
+    <div class="menu-mob-icons icons">
+        <ion-icon name="logo-twitter"></ion-icon>
+        <ion-icon name="logo-vimeo"></ion-icon>
+        <ion-icon name="play"></ion-icon>
+        <ion-icon name="logo-pinterest"></ion-icon>
+    </div>
+</div>
+<div class="main-elements" onclick="closeMenuBody()">
     <!-- header blog -->
     <section>
         <div class="blog-header">
@@ -45,132 +67,29 @@
     </section>
 
     <!-- Start filter blog -->
-
-    <section id="filter">
-
+<div id="main-elements" onclick="closeMenuFunction()">
         <div class="filter-container ">
-            <div class="dropdown flex filter-content">
+            <div class="filter-content">
 
                 <span class="label">Filter by</span>
                 <!-- <button onclick="myFunction()" class="dropbtn">Dropdown</button> -->
 
-                <a onclick="myFunction()" class="open dropbtn cat" href="#">
+                <a class="cat" href="#">
                     Categories
                 </a>
-                <a onclick="myFunction()" class="open dropbtn tags" href="#">
+                <a class="tags" href="#">
                     Tags
                 </a>
-                <a onclick="myFunction()" class="open dropbtn authors" href="#">
+                <a  class="authors" href="#">
                     Authors
                 </a>
-
-
-                <a class="close reset" data-rel="*" href="https://themes.muffingroup.com/be/cryptocurrency/blog/">
-                    Show all
-                </a>
-
-
-                <div id="myDropdown" class="dropdown-content">
-                    <div class="open">
-                        <a data-rel=".category-uncategorized"
-                            href="https://themes.muffingroup.com/be/cryptocurrency/category/uncategorized/">
-                            Uncategorized
-                        </a>
-                    </div>
-                </div>
-
-
             </div>
-
-            <!-- <div class="filter-content">
-                <ul class="filters_buttons">
-                    <li class="label">Filter by</li>
-                    <li class="categories dropdown">
-                        <a onclick="myFunction()" 
-                        class="open dropbtn" href="#">
-                            <i class="icon-docs"></i>
-                            Categories
-                            <i class="icon-down-dir"></i>
-                        </a>
-                    </li>
-                    <li class="tags">
-                        <a class="open" href="#">
-                            <i class="icon-tag"></i>
-                            Tags
-                            <i class="icon-down-dir"></i>
-                        </a>
-                    </li>
-                    <li class="authors">
-                        <a class="open" href="#">
-                            <i class="icon-user"></i>
-                            Authors
-                            <i class="icon-down-dir"></i>
-                        </a>
-                    </li>
-                    <li class="reset">
-                        <a class="close" data-rel="*" href="https://themes.muffingroup.com/be/cryptocurrency/blog/">
-                            <i class="icon-cancel">
-                            </i>Show all
-                        </a>
-                    </li>
-                </ul>
-                <div class="filters_wrapper">
-                    <ul class="categories">
-                        <li class="reset-inner current-cat">
-                            <a data-rel="*" href="https://themes.muffingroup.com/be/cryptocurrency/blog/">All</a>
-                        </li>
-                        <li class="">
-                            <a data-rel=".category-uncategorized"
-                                href="https://themes.muffingroup.com/be/cryptocurrency/category/uncategorized/">
-                                Uncategorized
-                            </a>
-                        </li>
-                        <li class="close">
-                            <a href="#">
-                                <i class="icon-cancel"></i>
-                            </a>
-                        </li>
-                    </ul>
-                     <ul class="tags">
-                        <li class="reset-inner"><a data-rel="*"
-                                href="https://themes.muffingroup.com/be/cryptocurrency/blog/">
-                                All
-                            </a>
-                        </li>
-                        <li class="close"><a href="#"><i class="icon-cancel"></i></a></li>
-                    </ul>
-                    <ul class="authors">
-                        <li class="reset-inner">
-                            <a data-rel="*" href="https://themes.muffingroup.com/be/cryptocurrency/blog/">
-                                All
-                            </a>
-                        </li>
-                        <li class="">
-                            <a data-rel=".author-admin" href="https://themes.muffingroup.com/be/cryptocurrency/author/admin/">
-                                admin
-                            </a>
-                        </li>
-                        <li class="">
-                            <a data-rel=".author-wojtek" href="https://themes.muffingroup.com/be/cryptocurrency/author/wojtek/">
-                                Muffin Group
-                            </a>
-                        </li>
-                        <li class="close"><a href="#"><i class="icon-cancel"></i></a></li>
-                    </ul> -->
-            <!-- </div> -->
-            <!-- </div>  -->
+            <a class="reset" data-rel="*" href="https://themes.muffingroup.com/be/cryptocurrency/blog/">
+                Show all
+            </a>
         </div>
 
-    </section>
-
-    <!-- end filter blog -->
-
-
-
-    <!-- START BLOG POST -->
-    <section class="blog-section">
-
-        <!-- START BLOG CONTAINER -->
+        <!-- START BLOG post-->
         <div class="blog-container">
 
             <!-- START ITEM -->
@@ -179,11 +98,11 @@
                 <!-- START BLOG-POST-CONTENT -->
                 <div class="blog-post-content ">
                     <!-- START DATE CONTENT  -->
-                    <div>
-                        <img class="blog-post-img" src="../img/blog-post-1.jpg" alt="blog-post-1">
+                    <div class="blog-post-img">
+                        <img  src="../img/blog-post-1.jpg" alt="blog-post-1">
                     </div>
-                    <div>
-                        <span class="author-color ">
+                    <div class="post-info">
+                        <span class="author-color">
                             <i class="icon-user"> </i>
                             <span class="author-link">
                                 <a href="#">
@@ -232,10 +151,10 @@
                 <!-- START BLOG-POST-CONTENT -->
                 <div class="blog-post-content ">
                     <!-- START DATE CONTENT  -->
-                    <div>
-                        <img class="blog-post-img" src="../img/blog-post-2.jpg" alt="blog-post-1">
+                    <div class="blog-post-img">
+                        <img  src="../img/blog-post-2.jpg" alt="blog-post-1">
                     </div>
-                    <div>
+                    <div class="post-info">
                         <span class="author-color ">
                             <i class="icon-user"> </i>
                             <span class="author-link">
@@ -285,10 +204,10 @@
                 <!-- START BLOG-POST-CONTENT -->
                 <div class="blog-post-content ">
                     <!-- START DATE CONTENT  -->
-                    <div>
-                        <img class="blog-post-img" src="../img/blog-post-3.jpg" alt="blog-post-1">
+                    <div class="blog-post-img">
+                        <img  src="../img/blog-post-3.jpg" alt="blog-post-1">
                     </div>
-                    <div>
+                    <div class="post-info">
                         <span class="author-color ">
                             <i class="icon-user"> </i>
                             <span class="author-link">
@@ -338,10 +257,10 @@
                 <!-- START BLOG-POST-CONTENT -->
                 <div class="blog-post-content ">
                     <!-- START DATE CONTENT  -->
-                    <div>
-                        <img class="blog-post-img" src="../img/blog-post-4.jpg" alt="blog-post-1">
+                    <div class="blog-post-img">
+                        <img  src="../img/blog-post-4.jpg" alt="blog-post-1">
                     </div>
-                    <div>
+                    <div class="post-info">
                         <span class="author-color ">
                             <i class="icon-user"> </i>
                             <span class="author-link">
@@ -391,10 +310,10 @@
                 <!-- START BLOG-POST-CONTENT -->
                 <div class="blog-post-content ">
                     <!-- START DATE CONTENT  -->
-                    <div>
-                        <img class="blog-post-img" src="../img/blog-post-5.jpg" alt="blog-post-1">
+                    <div class="blog-post-img">
+                        <img  src="../img/blog-post-5.jpg" alt="blog-post-1">
                     </div>
-                    <div>
+                    <div class="post-info">
                         <span class="author-color ">
                             <i class="icon-user"> </i>
                             <span class="author-link">
@@ -443,10 +362,10 @@
                 <!-- START BLOG-POST-CONTENT -->
                 <div class="blog-post-content ">
                     <!-- START DATE CONTENT  -->
-                    <div>
-                        <img class="blog-post-img" src="../img/blog-post-6.jpg" alt="blog-post-1">
+                    <div class="blog-post-img">
+                        <img  src="../img/blog-post-6.jpg" alt="blog-post-1">
                     </div>
-                    <div>
+                    <div class="post-info">
                         <span class="author-color ">
                             <i class="icon-user"> </i>
                             <span class="author-link">
@@ -495,10 +414,10 @@
                 <!-- START BLOG-POST-CONTENT -->
                 <div class="blog-post-content ">
                     <!-- START DATE CONTENT  -->
-                    <div>
-                        <img class="blog-post-img" src="../img/blog-post-7.jpg" alt="blog-post-1">
+                    <div class="blog-post-img">
+                        <img  src="../img/blog-post-7.jpg" alt="blog-post-1">
                     </div>
-                    <div>
+                    <div class="post-info">
                         <span class="author-color ">
                             <i class="icon-user"> </i>
                             <span class="author-link">
@@ -549,10 +468,10 @@
                 <!-- START BLOG-POST-CONTENT -->
                 <div class="blog-post-content ">
                     <!-- START DATE CONTENT  -->
-                    <div>
-                        <img class="blog-post-img" src="../img/blog-post-8.jpg" alt="blog-post-1">
+                    <div class="blog-post-img">
+                        <img  src="../img/blog-post-8.jpg" alt="blog-post-1">
                     </div>
-                    <div>
+                    <div class="post-info">
                         <span class="author-color ">
                             <i class="icon-user"> </i>
                             <span class="author-link">
@@ -587,7 +506,7 @@
                     <!-- END PARAGRAPH BLOG POST -->
 
                     <div class="post-footer">
-                        <div class="post-links"><i class="icon-doc-text"></i> <a
+                        <div class="post-links"><i class="icon-doc-text"></i><a
                                 href="https://themes.muffingroup.com/be/cryptocurrency/orci-varius-natoque-penatibus/"
                                 class="post-more">Read more</a></div>
                     </div>
@@ -596,33 +515,57 @@
             </div>
             <!-- END ITEM -->
         </div>
-        <!-- START BLOG CONTAINER -->
-    </section>
-    <!-- END BLOG POST -->
+</div>
+<footer>
+    <div class="footer-columns">
+        <div >
+            <h3>Pellentesque gravida nec leo nec scelerisque</h3>
+            <button class="select-btn"><a href="features.html">View more details</a></button>
+        </div>
+        <div>
+            <ul>
+                <h4>Useful links</h4>
+                <li><a href="#">Lorem ipsum</a> </li>
+                <li><a href="#">  Consectetur adipisicing</a></li>
+                <li><a href="#">Elitsed do eiusmund</a></li>
+                <li><a href="#">Tempor incididunt</a></li>
+                <li><a href="#">Altabore</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <h4>More links</h4>
+                <li><a href="#">Lorem ipsum</a> </li>
+                <li><a href="#">  Consectetur adipisicing</a></li>
+                <li><a href="#">Elitsed do eiusmund</a></li>
+                <li><a href="#">Tempor incididunt</a></li>
+                <li><a href="#">Altabore</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Our mission</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam.</p>
+            <p id="footer-info">Read more</p>
+        </div>
+    </div>
+    <div class="copy-right">
+        <a href="#"> <ion-icon name="chevron-up-outline" class="up-icon-mob up"></ion-icon></a>
 
-
-
-    <script>
-        /* When the user clicks on the button, 
-        toggle between hiding and showing the dropdown content */
-        function myFunction() {
-            document.getElementById("myDropdown").classList.toggle("show");
-        }
-
-        // Close the dropdown if the user clicks outside of it
-        window.onclick = function (event) {
-            if (!event.target.matches('.dropbtn')) {
-                var dropdowns = document.getElementsByClassName("dropdown-content");
-                var i;
-                for (i = 0; i < dropdowns.length; i++) {
-                    var openDropdown = dropdowns[i];
-                    if (openDropdown.classList.contains('show')) {
-                        openDropdown.classList.remove('show');
-                    }
-                }
-            }
-        }
-    </script>
+        <p>© 2021 Betheme by <a href="#">Muffin group</a> | All Rights Reserved | Powered by <a href="#">WordPress</a></p>
+        <div class="icons">
+            <a href="#"> <ion-icon name="logo-twitter"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-vimeo"></ion-icon></a>
+            <a href="#"> <ion-icon name="play"></ion-icon></a>
+            <a href="#"> <ion-icon name="logo-pinterest"></ion-icon></a>
+            <a href="#"> <ion-icon name="chevron-up-outline" class="up-icon-desk up"></ion-icon></a>
+        </div>
+    </div>
+</footer>
+</div>
 </body>
-
+<script src="../js/menu-java-script.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </html>
