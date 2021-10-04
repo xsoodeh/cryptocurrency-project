@@ -1,46 +1,47 @@
 
-.post-info{
+.post-info {
     padding-top: 1vw;
 }
+
 .blog-container {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-     padding-left: 10vw;
-    column-gap:2vw;
+    padding-left: 12.5vw;
+    padding-bottom: 2vw;
+    column-gap: 1vw;
+    row-gap: 1vw;
     width: 78vw;
 }
 
-div.item {
+.item {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     width: 30%;
 }
-
+.blog-post-content{
+    width: 90%;
+    margin-left: 0.8vw;
+}
 .blog-post-img img {
-    width: 325px;
-    height: 244px;
+    width: 23vw;
+    height: 17vw;
 }
 
-.blog-post-img img:hover{
+.blog-post-img img:hover {
     transform: scale(1.1);
-
+    transition: all .3s ease-in-out;
 }
+
 .blog-post-img {
-    width: 325px;
-    height: 244px;
+    width: 23vw;
+    height: 17vw;
     overflow: hidden;
-}
-.blog-post-content {
-
-    margin: 20px 0 20px 20px;
-    align-items: center;
-    justify-content: space-between;
 }
 
 .author-color {
     color: #a8a8a8;
-    font-size: 1.5rem;
+    /*font-size: 1.5rem;*/
     line-height: 2.5rem;
 }
 
@@ -49,17 +50,8 @@ div.item {
 }
 
 .post-title {
-    color: #0d1a85;
-    font-size: 3.5rem;
-    line-height: 4.3rem;
     font-weight: 500;
-
-}
-
-.p-blog {
-    color: #0d1a85;
-    line-height: 2.5rem;
-    font-weight: 400;
+    line-height: 4rem;
 }
 
 .post-footer {
@@ -68,11 +60,41 @@ div.item {
     line-height: 4.5rem;
     background-color: #fafafa;
 }
+
 .post-footer a {
     margin-right: 1vw;
 }
+
 .post-links i {
     color: #a8a8a8;
     border-left: 1px solid rgba(0, 0, 0, .08);
     padding-left: 1vw;
+}
+@media screen and (max-width:750px){
+    .blog-container {
+        flex-direction:column;
+        width: 90vw;
+        padding-left:7vw;
+        row-gap: 4vw;
+
+    }
+    .item {
+        width: 100%;
+    }
+    .blog-post-img ,.blog-post-img img{
+        width: 85vw;
+        height:45vh;
+    }
+    .blog-post-content{
+        width: 80%;
+        margin-left: 6vw;
+
+    }
+    .post-info {
+        padding-top: 4vw;
+    }
+    .post-info i, .post-info span {
+        font-size: 1.2rem;
+    }
+
 }
