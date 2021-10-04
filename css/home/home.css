@@ -8,6 +8,8 @@ h2{
     font-size:3.8rem;
     font-weight: 700;
     line-height:4.5rem;
+}
+.benefits h2, #static h2 {
     margin-bottom: 15px;
 
 }
