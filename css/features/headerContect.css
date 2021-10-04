@@ -1,0 +1,28 @@
+
+.headerContent h6{
+   padding-top: 20vh;
+    margin-left: 15vw;
+    color: #80a3d3;
+    display: inline-block;
+    
+    font-size: 20px; line-height: 25px; font-weight: 300; letter-spacing: 5px;
+}
+
+.headerContent h1{
+    
+    font-size: 60px;
+    line-height: 59px;
+    letter-spacing: 0px;
+    display: inline-block;
+    font-weight: 900;
+    color: whitesmoke;
+    margin-left: 15vw;
+    width: 50vw;
+    margin-top:0;
+      
+    
+}
+.headerContent{
+    display: inline-block;
+   width: 60vw;
+}

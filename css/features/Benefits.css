@@ -1,0 +1,168 @@
+.benefit{
+    color: #0d1a85;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.5;
+    padding-top: 5vh;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 25vw  50vw 25vw;
+    gap: 0.5vw;
+    
+}
+.benefitLeft{
+    font-size: 15px;
+    line-height: 22.5px;
+    letter-spacing: 0px;
+    width: 12.5vw;
+    font-weight: 700;
+    margin-left: 10vw;
+    margin-top: 20vh;
+}
+.benefitCenter{
+    align-items: center;
+    margin-left: 5vw;
+}
+.benefitCenter h1{
+    width: 25vw;
+    font-size: 35px;
+    line-height: 40px;
+    letter-spacing: 0px;
+}
+.benefitCenter p{
+    font-size: 15px; 
+    line-height: 25px;
+     font-weight: 200;
+      letter-spacing: 1px;
+}
+.benefitCenter section {
+    font-size: 15px; 
+    line-height: 25px;
+     font-weight: 200;
+      letter-spacing: 1px;
+     margin-top: 5vh;
+     
+}
+
+
+.circle-container{
+    width: 150px;
+    height: 150px;
+    background: #E1E1E1;
+    border-radius: 50%;
+    margin-left: 5vw;
+    margin-top: 20vh;
+  }
+  
+  .circle-container .circle .item,
+  .circle-container .circle .fill{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    border-radius: 50%;
+  }
+  
+  .circle-container .circle .item{
+    clip: rect(0px, 150px, 150px, 64px);
+  }
+  
+  .circle-container .circle .item .fill{
+    clip: rect(0px, 64px, 150px, 0px);
+    background-color: rgb(255, 208, 0)
+  }
+  
+  .circle-container .circle .item.layer-1,
+  .circle-container .circle .fill{
+    transform: rotate(50deg);
+    animation: fill ease-out 2s;
+  }
+  
+  @keyframes fill {
+    0%{
+      transform: rotate(0deg);
+    }
+    100%{
+      transform: rotate(50deg);
+    }
+  }
+  
+  .inside-content{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background: #f9fafa;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 10px;
+    position: absolute;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    font-size: 32px;
+    line-height: 130px;
+    color: rgb(66, 61, 61);
+  }
+  .circle-container p{
+      margin-top: 35vh;
+      width: 12.5vw;
+  }
+
+@media only screen and  (max-width:768px) {
+  .benefit{
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.5;
+    padding-top: 5vh;
+    height: 80vh;
+  }
+  .benefitLeft{
+    font-size: 15px;
+    line-height: 22.5px;
+    letter-spacing: 0px;
+    width: 90vw;
+    font-weight: 700;
+    margin-left: 10vw;
+   margin-bottom: 10vh;
+}
+.benefitCenter{
+    align-items: center;
+    margin-left: 10vw;
+    margin-top: -35vh;
+}
+.benefitCenter h1{
+    width: 80vw;
+    font-size: 25px;
+    line-height: 40px;
+    letter-spacing: 0px;
+}
+.benefitCenter p{
+  margin-top: 10vh;
+    font-size: 12.5px; 
+    line-height: 25px;
+     font-weight: 200;
+      letter-spacing: 1px;
+}
+.benefitCenter section {
+    font-size: 12.5px; 
+    line-height: 25px;
+     font-weight: 200;
+      letter-spacing: 1px;
+     margin-top: 5vh;
+     
+}
+.circle-container{
+  width: 150px;
+  height: 150px;
+  background: #E1E1E1;
+  border-radius: 50%;
+  margin-left: 35vw;
+  margin-top: 5vh;
+}
+.circle-container p{
+  margin-top: 28vh;
+  width: 85vw;
+  margin-left: -20vw;
+  font-size: 13px;
+}
+}

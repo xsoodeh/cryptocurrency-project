@@ -1,0 +1,8 @@
+.header{
+   background: url( crypto-home.png);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: top left;
+   height: 95vh;
+   width: 100vw;
+}
