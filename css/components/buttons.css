@@ -4,6 +4,7 @@ button{
     border: 0;
     font-size: 1.6rem;
     font-family: 'Poppins', sans-serif;
+    cursor: pointer;
 
 }
 .select-btn{
