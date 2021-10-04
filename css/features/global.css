@@ -1,14 +1,14 @@
 @import url(header.css);
 @import url(headerContect.css);
-@import url(fonts-colors.css);
+@import url(fonts.css);
 @import url(cardPost.css);
-@import url(menu.css);
 @import url(button-style.css);
 @import url(iconPart.css);
 @import url(Benefits.css);
 @import url(diagram.css);
 @import url(last\ pragraph.css);
 @import url(ideaBox.css);
+
 body{
     font-size:var(--text-size);
     font-weight: 400;
