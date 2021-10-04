@@ -1,52 +1,78 @@
-
+/* start section blog */
 .blog-section {
-    width: fit-content;
-    /* background-color: black; */
 
-    /* background-repeat: no-repeat;
-    margin: auto; 
-    background-image: url(/img/crypto-home-tech-bg.png); 
-    */
+    width: 1354px;
+    height: 1787px;
+    margin-left: 100px;
+    margin-left: 175px;
 
 }
 
-/* START BLOG CONTAINER  */
+/* end section blog */
 
+/* START BLOG CONTAINER  */
 .blog-container {
 
-    /* margin-top: 55px; */
-    /* background-color: white; */
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    column-gap: 10px;
-    margin-right: auto;
+    justify-content: flex-start;
+    column-gap: 22px;
+
 }
 
 /* END BLOG CONTAINER  */
 
+/* start item */
+
+div.item {
+    display: flex;
+    flex-direction: column;
+    width: 325px;
+    height: 582px;
+
+}
+
+/* end  item */
+
 
 /* START IMAGE STYLE */
 
-.blog-post-img {
+.blog-post-content img {
 
-    width: auto;
-    height: 256.45px;
+    width: 325px;
+    height: 244px;
     object-fit: cover;
-    vertical-align: bottom;
+    /* vertical-align: bottom; */
     /* border: 2px solid red; */
+    overflow: hidden;
 
 }
 
 /* END IMAGE STYLE*/
 
+/* start blog img animation  */
+
+/* .blog-post-content img:hover {
+    scale: all .3s ease-in;
+} */
+
+/* start blog img animation  */
+
+
 /* START BLOG-POST-CONTENT */
 .blog-post-content {
-    width: 320px;
-    margin-left: 20px;
+    width: 285px;
+    height: 298px;
+    margin: 20px 0 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex-basis: content;
 }
 
 /* END BLOG-POST-CONTENT */
+
 
 
 /* START DATE CONTENT*/
@@ -64,8 +90,6 @@
 /* END DATE CONTENT */
 
 
-
-
 /* START HEADER BLOG POST */
 
 .post-title {
@@ -79,6 +103,7 @@
 /* END HEADER BLOG POST */
 
 /* START PARAGRAPH BLOG POST */
+
 .p-blog {
     font-family: "p-regular";
     /* box-sizing: border-box; */
@@ -89,3 +114,23 @@
 }
 
 /* END PARAGRAPH BLOG POST */
+
+/* start footer blog */
+.post-footer {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.5rem;
+    line-height: 3rem;
+    font-family: 'p-regular';
+    background-color: #fafafa;
+    width: 295px;
+    height: 30px;
+}
+
+.post-links i {
+    color: #a8a8a8;
+    padding: 0 1px 0 15px;
+    border-left: 1px solid rgba(0, 0, 0, .08);
+}
+
+/* end footer blog */
