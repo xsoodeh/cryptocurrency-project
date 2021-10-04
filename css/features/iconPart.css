@@ -516,4 +516,9 @@
     letter-spacing :0;
     color: #0d1a85;
 }
+.line{
+    width: 100vw;
+    margin-top: 11vh;
+    
+}
 }
