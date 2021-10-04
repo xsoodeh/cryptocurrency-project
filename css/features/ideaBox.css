@@ -1,0 +1,53 @@
+.ideaBox{
+    margin-left: 30vw;
+   padding-top: 15vh;
+   padding-bottom: 10vh;
+   color: #0d1a85;
+   font-size: 15px; 
+    line-height: 25px;
+     font-weight: 500;
+      letter-spacing: 1px;
+
+}
+.lamp{
+    width: 35vw;
+    height: 0.5vh; 
+   
+}
+
+.lampDes{
+    border-right: 1px solid  gainsboro ;
+    line-height: 5vh;
+    
+}
+#lampSvg{
+    margin-right: 1vw;
+    margin-bottom: -1vh;
+   
+}
+
+table.lamp td{
+    border-right: none;
+    text-align: left;
+    
+}
+@media only screen  and (max-width:768px){
+
+   .ideaBox{
+    margin-left: 15vw;
+   padding-top: 5vh;
+   margin-top: -30vh;
+   color: #0d1a85;
+   font-size: 12px; 
+    line-height: 25px;
+     font-weight: 500;
+      letter-spacing: 1px;
+
+} 
+.lamp{
+    width: 70vw;
+    height: 0.5vh; 
+   
+}
+}
+

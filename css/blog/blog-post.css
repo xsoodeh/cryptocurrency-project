@@ -1,55 +1,42 @@
 
-.blog-section {
-    width: fit-content;
-    /* background-color: black; */
-
-    /* background-repeat: no-repeat;
-    margin: auto; 
-    background-image: url(/img/crypto-home-tech-bg.png); 
-    */
-
+.post-info{
+    padding-top: 1vw;
 }
-
-/* START BLOG CONTAINER  */
-
 .blog-container {
-
-    /* margin-top: 55px; */
-    /* background-color: white; */
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    column-gap: 10px;
-    margin-right: auto;
+    flex-direction: row;
+     padding-left: 10vw;
+    column-gap:2vw;
+    width: 78vw;
 }
 
-/* END BLOG CONTAINER  */
+div.item {
+    display: flex;
+    flex-direction:column;
+    width: 30%;
+}
 
+.blog-post-img img {
+    width: 325px;
+    height: 244px;
+}
 
-/* START IMAGE STYLE */
+.blog-post-img img:hover{
+    transform: scale(1.1);
 
+}
 .blog-post-img {
-
-    width: auto;
-    height: 256.45px;
-    object-fit: cover;
-    vertical-align: bottom;
-    /* border: 2px solid red; */
-
+    width: 325px;
+    height: 244px;
+    overflow: hidden;
 }
-
-/* END IMAGE STYLE*/
-
-/* START BLOG-POST-CONTENT */
 .blog-post-content {
-    width: 320px;
-    margin-left: 20px;
+
+    margin: 20px 0 20px 20px;
+    align-items: center;
+    justify-content: space-between;
 }
-
-/* END BLOG-POST-CONTENT */
-
-
-/* START DATE CONTENT*/
 
 .author-color {
     color: #a8a8a8;
@@ -61,13 +48,6 @@
     border-bottom: 1px dotted #a8a8a8;
 }
 
-/* END DATE CONTENT */
-
-
-
-
-/* START HEADER BLOG POST */
-
 .post-title {
     color: #0d1a85;
     font-size: 3.5rem;
@@ -76,16 +56,23 @@
 
 }
 
-/* END HEADER BLOG POST */
-
-/* START PARAGRAPH BLOG POST */
 .p-blog {
-    font-family: "p-regular";
-    /* box-sizing: border-box; */
     color: #0d1a85;
-    font-size: 1.5rem;
     line-height: 2.5rem;
     font-weight: 400;
 }
 
-/* END PARAGRAPH BLOG POST */
+.post-footer {
+    display: flex;
+    justify-content: flex-end;
+    line-height: 4.5rem;
+    background-color: #fafafa;
+}
+.post-footer a {
+    margin-right: 1vw;
+}
+.post-links i {
+    color: #a8a8a8;
+    border-left: 1px solid rgba(0, 0, 0, .08);
+    padding-left: 1vw;
+}
