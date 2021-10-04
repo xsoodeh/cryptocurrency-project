@@ -1,0 +1,236 @@
+html
+body {
+    background: #141a51;
+    font-family: 'Poppins', sans-serif
+}
+.mainContainer{
+    background-color: #141a51;
+}
+.Heading {
+
+    margin-left: 240px;
+    margin-bottom: 150px;
+    margin-top: 200px;
+}
+.mainTitle {
+    color: white;
+    font-size: 65px;
+    font-weight: 700;
+}
+.mob-title{
+    display: none;
+}
+
+@media screen and (max-width: 750px){
+    .Heading {
+
+        margin-left: 130px;
+        margin-bottom: 150px;
+        margin-top: 200px;
+    }
+    .mob-title{
+        display: flex;
+        color: white;
+        font-size: 55px;
+        font-weight: 700;
+    }
+    .mainTitle{
+        display: none;
+    }
+
+}
+.smallTitle {
+    color: #7fa4da;
+    font-weight: 200;
+    margin-bottom: 20px;
+    font-size: 20px;
+    letter-spacing: 3px;
+
+}
+@media screen and (max-width: 750px){
+    .smallTitle{
+        font-size: 15px;
+    }
+
+}
+
+.accordion {
+    margin-top: 60px; /* Add space above accordion */
+    margin-left: 0px;
+
+}
+.mob-subtitle {
+    display: none;
+
+}
+
+.accordion .card {
+    border-width: 1px 0 1px 0;
+    color: white;
+    border: none;
+    background-color: #141a51;
+    border-left: solid 2px #ffffff1a;
+}
+
+.accordion .card .card-header {
+    background: #141a51;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-radius: 0;
+    margin-bottom: -2px;
+    font-family: "Roboto", sans-serif;
+}
+.number{
+    font-weight: 700;
+    margin-right: 25px;
+    font-size: 13px;
+}
+.accordion .card-header h2 span {
+    float: left;
+    margin-top: 10px;
+    border-left: solid 2px #ffc327;
+
+}
+
+.accordion .card-header .btn {
+    font-size: 1rem;
+    letter-spacing: 0.3px;
+    font-weight: 500;
+    width: 100%;
+    text-align: left;
+    position: relative;
+    top: -2px;
+
+}
+
+.accordion .card-header i {
+    float: right;
+    font-size: 1.2rem;
+    position: relative;
+    top: 5px;
+    color: #4f537d;
+}
+
+.accordion .card-body {
+    background: #141a51;
+    border-left: solid 2px #ffc327;
+    color: white;
+    padding-left: 70px;
+    padding-right: 40px;
+    font-size: 15px;
+    font-weight: 400;
+}
+@media screen and (max-width: 750px){
+    .accordion .card-body{
+        font-size: 12px;
+    }
+}
+
+.accordion .highlight {
+
+    background: #141a51;
+    border-left: solid 2px #ffc327;
+    color: #ffc327;
+}
+
+.firsstRow {
+    display: flex;
+    flex-direction: row;
+}
+
+.seCondRow {
+    display: flex;
+    flex-direction: row;
+}
+
+.normalDisplay {
+    color: white;
+    margin-bottom: 50px;
+    font-size: 27px;
+    font-weight: bold;
+
+}
+
+.bottomText {
+    color: white;
+    margin-left: 250px;
+    margin-top: 150px;
+    font-size: 15px;
+    padding-right: 240px;
+    font-weight: 400;
+}
+
+
+#accordionExample {
+    margin-left: 250px;
+    width: 500px;
+}
+
+#accordion_Example {
+    margin-left: 50px;
+    width: 500px;
+}
+
+#accordion-Example {
+    margin-left: 250px;
+    width: 500px;
+}
+
+#accordion__Example {
+    margin-left: 50px;
+    width: 500px;
+}
+@media screen and (max-width: 750px) {
+
+    .firsstRow {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .seCondRow {
+        display: flex;
+        flex-direction: column;
+    }
+    .accordion .card-header .btn {
+        font-size: 0.8rem;
+        letter-spacing: 0.3px;
+
+
+    }
+}
+@media screen and (max-width: 750px){
+
+    .firstBox{
+        margin-left:-125px;
+    }
+    .secondBox{
+        margin-left: 75px;
+    }
+    .thirdBox{
+        margin-left: -125px;
+    }
+    .fourthBox{
+        margin-left: 75px;
+    }
+    .bottomText{
+        margin-left: 125px;
+        padding-right: 150px;
+        font-size: 13px;
+        font-weight: 400;
+    }
+}
+
+
+@media screen and (max-width: 750px) {
+    .mob-subtitle {
+        display: flex;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 40px;
+    }
+
+    .normalDisplay {
+        display: none;
+    }
+}
