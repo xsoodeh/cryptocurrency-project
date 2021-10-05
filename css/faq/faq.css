@@ -128,7 +128,7 @@ body {
 }
 @media screen and (max-width: 750px){
     .accordion .card-body{
-        font-size: 12px;
+        font-size: 13px;
     }
 }
 
@@ -198,7 +198,7 @@ body {
         flex-direction: column;
     }
     .accordion .card-header .btn {
-        font-size: 0.8rem;
+        font-size: 1.3rem;
         letter-spacing: 0.3px;
 
 
@@ -223,7 +223,6 @@ body {
         padding-right: 150px;
         font-size: 13px;
         font-weight: 400;
-        margin-bottom: 50px;
     }
 }
 
