@@ -10,148 +10,149 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <title>Blog</title>
+    <title>Blog – BeCryptoCurrency – BeTheme</title>
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
-<div class="menu" id="menu">
-    <img class="logo" src="../img/crypto-logo-retina.png"/>
-    <div id="menu-berger" onclick="openMenu()">
-        <ion-icon name="menu-outline"></ion-icon>
+    <div class="menu" id="menu">
+        <img class="logo" src="../img/crypto-logo-retina.png" />
+        <div id="menu-berger" onclick="openMenu()">
+            <ion-icon name="menu-outline"></ion-icon>
+        </div>
+        <div class="menu--items">
+            <button class="menu--items-button"><a href="home.html">Home</a></button>
+            <button class="menu--items-button"><a href="features.html">Features</a></button>
+            <button class="menu--items-button"><a href="blog.html">Blog</a></button>
+            <button class="menu--items-button"><a href="faq.html">FAQ</a></button>
+            <button class="menu--items-button">About & Contact</button>
+            <button class="select-btn buy-btn"><a
+                    href="https://themeforest.net/item/betheme-responsive-multipurpose-wordpress-theme/7758048?ref=muffingroup&irgwc=1&clickid=T4Ky5GxzaxyIUlVxIw0gnRHAUkBVijU35UmwVs0&iradid=275988&irpid=1289117&iradtype=ONLINE_TRACKING_LINK&irmptype=mediapartner&mp_value1=&utm_campaign=af_impact_radius_1289117&utm_medium=affiliate&utm_source=impact_radius">
+                    buy now
+                </a></button>
+        </div>
     </div>
-    <div class="menu--items">
-        <button class="menu--items-button"><a href="home.html">Home</a></button>
+
+    <div id="menu-mob" class="menu-mob-close">
+        <div>
+            <ion-icon name="close-outline" id="menu-mob-close" onclick="closeMenu()"></ion-icon>
+        </div>
+        <button class="select-btn buy-btn">
+            <a
+                href="https://themeforest.net/item/betheme-responsive-multipurpose-wordpress-theme/7758048?ref=muffingroup&irgwc=1&clickid=T4Ky5GxzaxyIUlVxIw0gnRHAUkBVijU35UmwVs0&iradid=275988&irpid=1289117&iradtype=ONLINE_TRACKING_LINK&irmptype=mediapartner&mp_value1=&utm_campaign=af_impact_radius_1289117&utm_medium=affiliate&utm_source=impact_radius">
+                buy now
+            </a>
+        </button>
+        <button class="menu--items-button"> <a href="home.html">Home</a></button>
         <button class="menu--items-button"><a href="features.html">Features</a></button>
         <button class="menu--items-button"><a href="blog.html">Blog</a></button>
         <button class="menu--items-button"><a href="faq.html">FAQ</a></button>
         <button class="menu--items-button">About & Contact</button>
-        <button class="select-btn buy-btn"><a
-                href="https://themeforest.net/item/betheme-responsive-multipurpose-wordpress-theme/7758048?ref=muffingroup&irgwc=1&clickid=T4Ky5GxzaxyIUlVxIw0gnRHAUkBVijU35UmwVs0&iradid=275988&irpid=1289117&iradtype=ONLINE_TRACKING_LINK&irmptype=mediapartner&mp_value1=&utm_campaign=af_impact_radius_1289117&utm_medium=affiliate&utm_source=impact_radius">
-            buy now
-        </a></button>
-    </div>
-</div>
-
-<div id="menu-mob" class="menu-mob-close">
-    <div>
-        <ion-icon name="close-outline" id="menu-mob-close" onclick="closeMenu()"></ion-icon>
-    </div>
-    <button class="select-btn buy-btn">
-        <a
-                href="https://themeforest.net/item/betheme-responsive-multipurpose-wordpress-theme/7758048?ref=muffingroup&irgwc=1&clickid=T4Ky5GxzaxyIUlVxIw0gnRHAUkBVijU35UmwVs0&iradid=275988&irpid=1289117&iradtype=ONLINE_TRACKING_LINK&irmptype=mediapartner&mp_value1=&utm_campaign=af_impact_radius_1289117&utm_medium=affiliate&utm_source=impact_radius">
-            buy now
-        </a>
-    </button>
-    <button class="menu--items-button"> <a href="home.html">Home</a></button>
-    <button class="menu--items-button"><a href="features.html">Features</a></button>
-    <button class="menu--items-button"><a href="blog.html">Blog</a></button>
-    <button class="menu--items-button"><a href="faq.html">FAQ</a></button>
-    <button class="menu--items-button">About & Contact</button>
-    <div class="menu-mob-icons icons">
-        <ion-icon name="logo-twitter"></ion-icon>
-        <ion-icon name="logo-vimeo"></ion-icon>
-        <ion-icon name="play"></ion-icon>
-        <ion-icon name="logo-pinterest"></ion-icon>
-    </div>
-</div>
-<div class="main-elements" onclick="closeMenuBody()">
-    <!-- header blog -->
-    <section>
-        <div class="blog-header">
-            <div class="blog-position">
-                <h1 class="h1-blog">
-                    Blog
-                </h1>
-            </div>
+        <div class="menu-mob-icons icons">
+            <ion-icon name="logo-twitter"></ion-icon>
+            <ion-icon name="logo-vimeo"></ion-icon>
+            <ion-icon name="play"></ion-icon>
+            <ion-icon name="logo-pinterest"></ion-icon>
         </div>
-    </section>
-
-    <!-- Start filter blog -->
-    <div id="main-elements" onclick="closeMenuFunction()">
-        <div class="filter-container ">
-            <div class="filter-content">
-
-                <span class="label">Filter by</span>
-                <!-- <button onclick="myFunction()" class="dropbtn">Dropdown</button> -->
-                <a class="cat" href="#">
-                    Categories
-                </a>
-                <a class="tags" href="#">
-                    Tags
-                </a>
-                <a class="authors" href="#">
-                    Authors
-                </a>
-            </div>
-            <a class="reset" data-rel="*" href="https://themes.muffingroup.com/be/cryptocurrency/blog/">
-                Show all
-            </a>
-        </div>
-
-        <!-- START BLOG post-->
-        <div class="blog-container">
-            <!--post 1-->
-            <div class="item">
-                <div class="blog-post-img">
-                    <img src="../img/blog-post-1.jpg" alt="blog-post-1">
+    </div>
+    <div class="main-elements" onclick="closeMenuBody()">
+        <!-- header blog -->
+        <section>
+            <div class="blog-header">
+                <div class="blog-position">
+                    <h1 class="h1-blog">
+                        Blog
+                    </h1>
                 </div>
-                <div class="blog-post-content">
-                    <div class="post-info">
-                        <span class="author-color">
-                            <i class="icon-user"> </i>
-                            <span class="author-link">
-                                <a href="#">
-                                    Muffin Group</a>
+            </div>
+        </section>
+
+        <!-- Start filter blog -->
+        <div id="main-elements" onclick="closeMenuFunction()">
+            <div class="filter-container ">
+                <div class="filter-content">
+
+                    <span class="label">Filter by</span>
+                    <!-- <button onclick="myFunction()" class="dropbtn">Dropdown</button> -->
+                    <a class="cat" href="#">
+                        Categories
+                    </a>
+                    <a class="tags" href="#">
+                        Tags
+                    </a>
+                    <a class="authors" href="#">
+                        Authors
+                    </a>
+                </div>
+                <a class="reset" data-rel="*" href="https://themes.muffingroup.com/be/cryptocurrency/blog/">
+                    Show all
+                </a>
+            </div>
+
+            <!-- START BLOG post-->
+            <div class="blog-container">
+                <!--post 1-->
+                <div class="item">
+                    <div class="blog-post-img">
+                        <img src="../img/blog-post-1.jpg" alt="blog-post-1">
+                    </div>
+                    <div class="blog-post-content">
+                        <div class="post-info">
+                            <span class="author-color">
+                                <i class="icon-user"> </i>
+                                <span class="author-link">
+                                    <a href="#">
+                                        Muffin Group</a>
+                                </span>
+                                <span> at </span>
+                                <i class="icon-clock"> </i>
+                                <span> June 27, 2018 </span>
                             </span>
-                            <span> at </span>
-                            <i class="icon-clock"> </i>
-                            <span> June 27, 2018 </span>
-                        </span>
-                    </div>
-                    <div>
-                        <h2 class="post-title">
-                            <a href="#">
-                                Orci varius natoque</a>
-                        </h2>
-                    </div>
-                    <div>
-                        <p class="p-blog">
-                            Praesent nec magnulla, egestas
-                            quam eu tortor orci, id eros. Mauris
-                            neque. Pellentesque dolor. Mauris in
-                            est. Vivamus lacus sed justo.
+                        </div>
+                        <div>
+                            <h2 class="post-title">
+                                <a href="#">
+                                    Orci varius natoque</a>
+                            </h2>
+                        </div>
+                        <div>
+                            <p class="p-blog">
+                                Praesent nec magnulla, egestas
+                                quam eu tortor orci, id eros. Mauris
+                                neque. Pellentesque dolor. Mauris in
+                                est. Vivamus lacus sed justo.
 
-                        </p>
-                    </div>
+                            </p>
+                        </div>
 
-                    <div class="post-footer">
-                        <div class="post-links"><i class="icon-doc-text"></i> <a
-                                href="https://themes.muffingroup.com/be/cryptocurrency/orci-varius-natoque-penatibus/"
-                                class="post-more">Read more</a></div>
+                        <div class="post-footer">
+                            <div class="post-links"><i class="icon-doc-text"></i> <a
+                                    href="https://themes.muffingroup.com/be/cryptocurrency/orci-varius-natoque-penatibus/"
+                                    class="post-more">Read more</a></div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- END post 1 -->
+                <!-- END post 1 -->
 
-            <!-- post 2 -->
-            <div class="item">
+                <!-- post 2 -->
+                <div class="item">
                     <!-- START DATE CONTENT  -->
                     <div class="blog-post-img">
                         <img src="../img/blog-post-2.jpg" alt="blog-post-1">
                     </div>
-                <div class="blog-post-content">
-                    <div class="post-info">
-                        <span class="author-color ">
-                            <i class="icon-user"> </i>
-                            <span class="author-link">
-                                <a href="#">
-                                    Muffin Group</a>
+                    <div class="blog-post-content">
+                        <div class="post-info">
+                            <span class="author-color ">
+                                <i class="icon-user"> </i>
+                                <span class="author-link">
+                                    <a href="#">
+                                        Muffin Group</a>
+                                </span>
+                                <span> at </span>
+                                <i class="icon-clock"> </i>
+                                <span> June 27, 2018 </span>
                             </span>
-                            <span> at </span>
-                            <i class="icon-clock"> </i>
-                            <span> June 27, 2018 </span>
-                        </span>
-                    </div>
+                        </div>
                         <h2 class="post-title">
                             <a href="#">
                                 Curabitur sed iaculis dolor</a>
@@ -163,74 +164,37 @@
                             est. Vivamus lacus sed justo.
 
                         </p>
-                    <div class="post-footer">
-                        <div class="post-links"><i class="icon-doc-text"></i> <a
-                                href="https://themes.muffingroup.com/be/cryptocurrency/orci-varius-natoque-penatibus/"
-                                class="post-more">Read more</a></div>
+                        <div class="post-footer">
+                            <div class="post-links"><i class="icon-doc-text"></i> <a
+                                    href="https://themes.muffingroup.com/be/cryptocurrency/orci-varius-natoque-penatibus/"
+                                    class="post-more">Read more</a></div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- END post 2-->
+                <!-- END post 2-->
 
-            <!-- STARt post 3 -->
-            <div class="item">
+                <!-- STARt post 3 -->
+                <div class="item">
 
                     <div class="blog-post-img">
                         <img src="../img/blog-post-3.jpg" alt="blog-post-1">
                     </div>
-                <div class="blog-post-content">
-                    <div class="post-info">
-                        <span class="author-color ">
-                            <i class="icon-user"> </i>
-                            <span class="author-link">
-                                <a href="#">
-                                    Muffin Group</a>
+                    <div class="blog-post-content">
+                        <div class="post-info">
+                            <span class="author-color ">
+                                <i class="icon-user"> </i>
+                                <span class="author-link">
+                                    <a href="#">
+                                        Muffin Group</a>
+                                </span>
+                                <span> at </span>
+                                <i class="icon-clock"> </i>
+                                <span> June 27, 2018 </span>
                             </span>
-                            <span> at </span>
-                            <i class="icon-clock"> </i>
-                            <span> June 27, 2018 </span>
-                        </span>
-                    </div>
-                    <h2 class="post-title">
-                        <a href="#">
-                            Duis aute irure dolor in</a>
-                    </h2>
-                        <p class="p-blog">
-                            Praesent nec magnulla, egestas
-                            quam eu tortor orci, id eros. Mauris
-                            neque. Pellentesque dolor. Mauris in
-                            est. Vivamus lacus sed justo.
-
-                        </p>
-                    <div class="post-footer">
-                        <div class="post-links"><i class="icon-doc-text"></i> <a
-                                href="https://themes.muffingroup.com/be/cryptocurrency/orci-varius-natoque-penatibus/"
-                                class="post-more">Read more</a></div>
-                    </div>
-                </div>
-            </div>
-            <!-- END post 3 -->
-
-            <!-- START post 4 -->
-            <div class="item">
-                    <div class="blog-post-img">
-                        <img src="../img/blog-post-4.jpg" alt="blog-post-1">
-                    </div>
-                <div class="blog-post-content">
-                    <div class="post-info">
-                        <span class="author-color ">
-                            <i class="icon-user"> </i>
-                            <span class="author-link">
-                                <a href="#">
-                                    Muffin Group</a>
-                            </span>
-                            <span> at </span>
-                            <i class="icon-clock"> </i>
-                            <span> June 27, 2018 </span>
-                        </span>
+                        </div>
                         <h2 class="post-title">
                             <a href="#">
-                                Ut enim ad minim veniam</a>
+                                Duis aute irure dolor in</a>
                         </h2>
                         <p class="p-blog">
                             Praesent nec magnulla, egestas
@@ -239,34 +203,71 @@
                             est. Vivamus lacus sed justo.
 
                         </p>
-                    <div class="post-footer">
-                        <div class="post-links"><i class="icon-doc-text"></i> <a
-                                href="https://themes.muffingroup.com/be/cryptocurrency/orci-varius-natoque-penatibus/"
-                                class="post-more">Read more</a></div>
+                        <div class="post-footer">
+                            <div class="post-links"><i class="icon-doc-text"></i> <a
+                                    href="https://themes.muffingroup.com/be/cryptocurrency/orci-varius-natoque-penatibus/"
+                                    class="post-more">Read more</a></div>
+                        </div>
                     </div>
                 </div>
-                </div>
-            </div>
-            <!-- END post 4 -->
+                <!-- END post 3 -->
 
-            <!-- START post 5 -->
-            <div class="item">
+                <!-- START post 4 -->
+                <div class="item">
+                    <div class="blog-post-img">
+                        <img src="../img/blog-post-4.jpg" alt="blog-post-1">
+                    </div>
+                    <div class="blog-post-content">
+                        <div class="post-info">
+                            <span class="author-color ">
+                                <i class="icon-user"> </i>
+                                <span class="author-link">
+                                    <a href="#">
+                                        Muffin Group</a>
+                                </span>
+                                <span> at </span>
+                                <i class="icon-clock"> </i>
+                                <span> June 27, 2018 </span>
+                            </span>
+                            <h2 class="post-title">
+                                <a href="#">
+                                    Ut enim ad minim veniam</a>
+                            </h2>
+                            <p class="p-blog">
+                                Praesent nec magnulla, egestas
+                                quam eu tortor orci, id eros. Mauris
+                                neque. Pellentesque dolor. Mauris in
+                                est. Vivamus lacus sed justo.
+
+                            </p>
+                            <div class="post-footer">
+                                <div class="post-links"><i class="icon-doc-text"></i> <a
+                                        href="https://themes.muffingroup.com/be/cryptocurrency/orci-varius-natoque-penatibus/"
+                                        class="post-more">Read more</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END post 4 -->
+
+                <!-- START post 5 -->
+                <div class="item">
                     <div class="blog-post-img">
                         <img src="../img/blog-post-5.jpg" alt="blog-post-1">
                     </div>
-                <div class="blog-post-content">
-                    <div class="post-info">
-                        <span class="author-color ">
-                            <i class="icon-user"> </i>
-                            <span class="author-link">
-                                <a href="#">
-                                    Muffin Group</a>
+                    <div class="blog-post-content">
+                        <div class="post-info">
+                            <span class="author-color ">
+                                <i class="icon-user"> </i>
+                                <span class="author-link">
+                                    <a href="#">
+                                        Muffin Group</a>
+                                </span>
+                                <span> at </span>
+                                <i class="icon-clock"> </i>
+                                <span> June 27, 2018 </span>
                             </span>
-                            <span> at </span>
-                            <i class="icon-clock"> </i>
-                            <span> June 27, 2018 </span>
-                        </span>
-                    </div>
+                        </div>
 
                         <h2 class="post-title">
                             <a href="#">
@@ -280,33 +281,33 @@
                             est. Vivamus lacus sed justo.
                         </p>
 
-                    <div class="post-footer">
-                        <div class="post-links"><i class="icon-doc-text"></i> <a
-                                href="https://themes.muffingroup.com/be/cryptocurrency/orci-varius-natoque-penatibus/"
-                                class="post-more">Read more</a></div>
+                        <div class="post-footer">
+                            <div class="post-links"><i class="icon-doc-text"></i> <a
+                                    href="https://themes.muffingroup.com/be/cryptocurrency/orci-varius-natoque-penatibus/"
+                                    class="post-more">Read more</a></div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- END post 5 -->
+                <!-- END post 5 -->
 
-            <!-- START post 6 -->
-            <div class="item">
+                <!-- START post 6 -->
+                <div class="item">
                     <div class="blog-post-img">
                         <img src="../img/blog-post-6.jpg" alt="blog-post-1">
                     </div>
-                <div class="blog-post-content">
-                    <div class="post-info">
-                        <span class="author-color ">
-                            <i class="icon-user"> </i>
-                            <span class="author-link">
-                                <a href="#">
-                                    Muffin Group</a>
+                    <div class="blog-post-content">
+                        <div class="post-info">
+                            <span class="author-color ">
+                                <i class="icon-user"> </i>
+                                <span class="author-link">
+                                    <a href="#">
+                                        Muffin Group</a>
+                                </span>
+                                <span> at </span>
+                                <i class="icon-clock"> </i>
+                                <span> June 27, 2018 </span>
                             </span>
-                            <span> at </span>
-                            <i class="icon-clock"> </i>
-                            <span> June 27, 2018 </span>
-                        </span>
-                    </div>
+                        </div>
                         <h2 class="post-title">
                             <a href="#">
                                 Stanniz a per remi tum</a>
@@ -319,33 +320,33 @@
                             est. Vivamus lacus sed justo.
                         </p>
 
-                    <div class="post-footer">
-                        <div class="post-links"><i class="icon-doc-text"></i> <a
-                                href="https://themes.muffingroup.com/be/cryptocurrency/orci-varius-natoque-penatibus/"
-                                class="post-more">Read more</a></div>
+                        <div class="post-footer">
+                            <div class="post-links"><i class="icon-doc-text"></i> <a
+                                    href="https://themes.muffingroup.com/be/cryptocurrency/orci-varius-natoque-penatibus/"
+                                    class="post-more">Read more</a></div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- END post 6 -->
+                <!-- END post 6 -->
 
-            <!-- START post 7 -->
-            <div class="item">
+                <!-- START post 7 -->
+                <div class="item">
                     <div class="blog-post-img">
                         <img src="../img/blog-post-7.jpg" alt="blog-post-1">
                     </div>
-                <div class="blog-post-content">
-                    <div class="post-info">
-                        <span class="author-color ">
-                            <i class="icon-user"> </i>
-                            <span class="author-link">
-                                <a href="#">
-                                    Muffin Group</a>
+                    <div class="blog-post-content">
+                        <div class="post-info">
+                            <span class="author-color ">
+                                <i class="icon-user"> </i>
+                                <span class="author-link">
+                                    <a href="#">
+                                        Muffin Group</a>
+                                </span>
+                                <span> at </span>
+                                <i class="icon-clock"> </i>
+                                <span> June 27, 2018 </span>
                             </span>
-                            <span> at </span>
-                            <i class="icon-clock"> </i>
-                            <span> June 27, 2018 </span>
-                        </span>
-                    </div>
+                        </div>
                         <h2 class="post-title">
                             <a href="#">
                                 Quantum es omnia es</a>
@@ -358,35 +359,35 @@
                             est. Vivamus lacus sed justo.
                         </p>
 
-                    <div class="post-footer">
-                        <div class="post-links"><i class="icon-doc-text"></i> <a
-                                href="https://themes.muffingroup.com/be/cryptocurrency/orci-varius-natoque-penatibus/"
-                                class="post-more">Read more</a></div>
+                        <div class="post-footer">
+                            <div class="post-links"><i class="icon-doc-text"></i> <a
+                                    href="https://themes.muffingroup.com/be/cryptocurrency/orci-varius-natoque-penatibus/"
+                                    class="post-more">Read more</a></div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- END post 7 -->
+                <!-- END post 7 -->
 
 
-            <!-- START post 8 -->
-            <div class="item">
+                <!-- START post 8 -->
+                <div class="item">
 
                     <div class="blog-post-img">
                         <img src="../img/blog-post-8.jpg" alt="blog-post-1">
                     </div>
-                <div class="blog-post-content">
-                    <div class="post-info">
-                        <span class="author-color ">
-                            <i class="icon-user"> </i>
-                            <span class="author-link">
-                                <a href="#">
-                                    Muffin Group</a>
+                    <div class="blog-post-content">
+                        <div class="post-info">
+                            <span class="author-color ">
+                                <i class="icon-user"> </i>
+                                <span class="author-link">
+                                    <a href="#">
+                                        Muffin Group</a>
+                                </span>
+                                <span> at </span>
+                                <i class="icon-clock"> </i>
+                                <span> June 27, 2018 </span>
                             </span>
-                            <span> at </span>
-                            <i class="icon-clock"> </i>
-                            <span> June 27, 2018 </span>
-                        </span>
-                    </div>
+                        </div>
 
                         <h2 class="post-title">
                             <a href="#">
@@ -400,80 +401,81 @@
                             est. Vivamus lacus sed justo.
                         </p>
 
-                    <div class="post-footer">
-                        <div class="post-links"><i class="icon-doc-text"></i><a
-                                href="https://themes.muffingroup.com/be/cryptocurrency/orci-varius-natoque-penatibus/"
-                                class="post-more">Read more</a></div>
+                        <div class="post-footer">
+                            <div class="post-links"><i class="icon-doc-text"></i><a
+                                    href="https://themes.muffingroup.com/be/cryptocurrency/orci-varius-natoque-penatibus/"
+                                    class="post-more">Read more</a></div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- END post 8 -->
-        </div>
-    </div>
-<!--    end posts of blog-->
-    <footer>
-        <div class="footer-columns">
-            <div>
-                <h3>Pellentesque gravida nec leo nec scelerisque</h3>
-                <button class="select-btn"><a href="features.html">View more details</a></button>
-            </div>
-            <div>
-                <ul>
-                    <h4>Useful links</h4>
-                    <li><a href="#">Lorem ipsum</a></li>
-                    <li><a href="#"> Consectetur adipisicing</a></li>
-                    <li><a href="#">Elitsed do eiusmund</a></li>
-                    <li><a href="#">Tempor incididunt</a></li>
-                    <li><a href="#">Altabore</a></li>
-                </ul>
-            </div>
-            <div>
-                <ul>
-                    <h4>More links</h4>
-                    <li><a href="#">Lorem ipsum</a></li>
-                    <li><a href="#"> Consectetur adipisicing</a></li>
-                    <li><a href="#">Elitsed do eiusmund</a></li>
-                    <li><a href="#">Tempor incididunt</a></li>
-                    <li><a href="#">Altabore</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4>Our mission</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Ut enim ad minim veniam.</p>
-                <p id="footer-info">Read more</p>
+                <!-- END post 8 -->
             </div>
         </div>
-        <div class="copy-right">
-            <a href="#">
-                <ion-icon name="chevron-up-outline" class="up-icon-mob up"></ion-icon>
-            </a>
+        <!--    end posts of blog-->
+        <footer>
+            <div class="footer-columns">
+                <div>
+                    <h3>Pellentesque gravida nec leo nec scelerisque</h3>
+                    <button class="select-btn"><a href="features.html">View more details</a></button>
+                </div>
+                <div>
+                    <ul>
+                        <h4>Useful links</h4>
+                        <li><a href="#">Lorem ipsum</a></li>
+                        <li><a href="#"> Consectetur adipisicing</a></li>
+                        <li><a href="#">Elitsed do eiusmund</a></li>
+                        <li><a href="#">Tempor incididunt</a></li>
+                        <li><a href="#">Altabore</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <h4>More links</h4>
+                        <li><a href="#">Lorem ipsum</a></li>
+                        <li><a href="#"> Consectetur adipisicing</a></li>
+                        <li><a href="#">Elitsed do eiusmund</a></li>
+                        <li><a href="#">Tempor incididunt</a></li>
+                        <li><a href="#">Altabore</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Our mission</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam.</p>
+                    <p id="footer-info">Read more</p>
+                </div>
+            </div>
+            <div class="copy-right">
+                <a href="#">
+                    <ion-icon name="chevron-up-outline" class="up-icon-mob up"></ion-icon>
+                </a>
 
-            <p>© 2021 Betheme by <a href="#">Muffin group</a> | All Rights Reserved | Powered by <a
-                    href="#">WordPress</a></p>
-            <div class="icons">
-                <a href="#">
-                    <ion-icon name="logo-twitter"></ion-icon>
-                </a>
-                <a href="#">
-                    <ion-icon name="logo-vimeo"></ion-icon>
-                </a>
-                <a href="#">
-                    <ion-icon name="play"></ion-icon>
-                </a>
-                <a href="#">
-                    <ion-icon name="logo-pinterest"></ion-icon>
-                </a>
-                <a href="#">
-                    <ion-icon name="chevron-up-outline" class="up-icon-desk up"></ion-icon>
-                </a>
+                <p>© 2021 Betheme by <a href="#">Muffin group</a> | All Rights Reserved | Powered by <a
+                        href="#">WordPress</a></p>
+                <div class="icons">
+                    <a href="#">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </a>
+                    <a href="#">
+                        <ion-icon name="logo-vimeo"></ion-icon>
+                    </a>
+                    <a href="#">
+                        <ion-icon name="play"></ion-icon>
+                    </a>
+                    <a href="#">
+                        <ion-icon name="logo-pinterest"></ion-icon>
+                    </a>
+                    <a href="#">
+                        <ion-icon name="chevron-up-outline" class="up-icon-desk up"></ion-icon>
+                    </a>
+                </div>
             </div>
-        </div>
-    </footer>
-</div>
+        </footer>
+    </div>
 </body>
 <script src="../js/menu-java-script.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </html>
