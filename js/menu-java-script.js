@@ -1,6 +1,5 @@
-// let menoBox = document.getElementById("menu-mob");
-// let bodyBox = document.getElementById("main-elements");
-
+// const menoBox = document.getElementById("menu-mob");
+// const bodyBox = document.getElementById("main-elements");
 function openMenu() {
     let menoBox = document.getElementById("menu-mob");
     let bodyBox = document.getElementById("main-elements");
