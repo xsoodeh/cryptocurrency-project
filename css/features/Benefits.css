@@ -48,7 +48,7 @@
 .circle-container{
     width: 150px;
     height: 150px;
-    background: #E1E1E1;
+    background: #f9fafa;
     border-radius: 50%;
     margin-left: 5vw;
     margin-top: 20vh;
@@ -67,13 +67,13 @@
   }
   
   .circle-container .circle .item .fill{
-    clip: rect(0px, 64px, 150px, 0px);
+    clip: rect(0px, 100px, 62px, 0);
     background-color: rgb(255, 208, 0)
   }
   
   .circle-container .circle .item.layer-1,
   .circle-container .circle .fill{
-    transform: rotate(50deg);
+    transform: rotate(74deg);
     animation: fill ease-out 2s;
   }
   
@@ -82,7 +82,7 @@
       transform: rotate(0deg);
     }
     100%{
-      transform: rotate(50deg);
+      /*transform: rotate(50deg);*/
     }
   }
   

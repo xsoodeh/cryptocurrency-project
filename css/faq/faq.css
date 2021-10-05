@@ -159,11 +159,13 @@ body {
 
 .bottomText {
     color: var(--menu-text-color);
-    margin-left: 250px;
-    margin-top: 150px;
-    font-size: 15px;
-    padding-right: 240px;
-    font-weight: 400;
+    padding:10vw;
+    /*margin-left: 250px;*/
+    /*margin-top: 150px;*/
+    /*font-size: 15px;*/
+    /*padding-right: 240px;*/
+    /*font-weight: 400;*/
+    /*padding-bottom: 30vh;*/
 }
 
 
