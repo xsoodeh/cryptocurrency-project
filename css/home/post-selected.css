@@ -1,7 +1,11 @@
 #post-selected {
     background-image: url("../../img/crypto-home-tech-bg.png");
     background-repeat: no-repeat;
-    background-size: cover;
     width: 100%;
-    height: 80vh;
+    padding-top: 8vw;
 }
+@media screen and (max-width: 750px) {
+    #post-selected {
+        padding-top:20vh;
+    }
+    }
