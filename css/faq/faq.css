@@ -6,6 +6,7 @@ body {
 .mainContainer{
     background-color: var(--main-color);
 }
+/*----------------------------------heading setting------------------------------*/
 .Heading {
 
     margin-left: 240px;
@@ -14,32 +15,22 @@ body {
 }
 .mainTitle {
     color: var(--menu-text-color);
-    font-size: 70px;
+    font-size: 7rem;
     font-weight: 700;
-}
-.mob-title{
-    display: none;
 }
 
 @media screen and (max-width: 750px){
     .Heading {
-
-        margin-left: 120px;
-        margin-bottom: 150px;
-        margin-top: 150px;
-
+        margin:30vw 5vw 40vw 10vw;
     }
-    .mob-title{
-        display: flex;
-        color: var(--menu-text-color);
-        font-size: 53px;
+
+    .mainTitle {
+        font-size:4.2rem;
+        line-height: 4.7rem;
         font-weight: 700;
     }
-    .mainTitle{
-        display: none;
-    }
-
 }
+
 .smallTitle {
     color: #7fa4da;
     font-weight: 400;
@@ -50,20 +41,27 @@ body {
 }
 @media screen and (max-width: 750px){
     .smallTitle{
-        font-size: 13px;
+        font-size: 1.3rem;
+        letter-spacing: 3px;
+        margin-bottom: 7vw;
     }
 
+}
+/*----------------------faq setting-----------------------------*/
+
+.firstRow {
+    display: flex;
+    flex-direction: row;
+}
+.mob-subtitle{
+    color: white;
 }
 
 .accordion {
     margin-top: 60px; /* Add space above accordion */
     margin-left: 0;
-
 }
-.mob-subtitle {
-    display: none;
 
-}
 .secondBox{
     margin-left:-20px;
 
@@ -144,10 +142,6 @@ body {
     color: var(--second-color);
 }
 
-.firsstRow {
-    display: flex;
-    flex-direction: row;
-}
 
 .seCondRow {
     display: flex;
@@ -173,23 +167,11 @@ body {
     /*padding-bottom: 30vh;*/
 }
 
-
-#firstAccordion {
-    margin-left: 250px;
+.leftAccordions{
+    margin-left: 180px;
     width: 500px;
 }
-
-#secondAccordion {
-    margin-left: 50px;
-    width: 500px;
-}
-
-#thirdAccordion {
-    margin-left: 250px;
-    width: 500px;
-}
-
-#fourthAccordion {
+.rightAccordions{
     margin-left: 50px;
     width: 500px;
 }
@@ -198,7 +180,7 @@ body {
     body {
 
     }
-    .firsstRow {
+    .firstRow {
         display: flex;
         flex-direction: column;
         width: 60vw;
@@ -215,13 +197,9 @@ body {
     }
 }
 @media screen and (max-width: 750px){
-
-
     .firstBox{
         margin-left:-120px;
         width: 60vw;
-
-
     }
     .secondBox{
         margin-left: 85px;
@@ -251,23 +229,23 @@ body {
     }
     #firstAccordion {
         width:60vw;
-        margin-left:240px;
+        /*margin-left:240px;*/
 
     }
 
     #secondAccordion {
         width:60vw;
-        margin-left:35px;
+        /*margin-left:35px;*/
     }
 
     #thirdAccordion {
         width:60vw;
-        margin-left:240px;
+        /*margin-left:240px;*/
     }
 
     #fourthAccordion {
         width:60vw;
-        margin-left:35px;
+        /*margin-left:35px;*/
     }
     .accordion .card-body{
         line-height: 18px;
