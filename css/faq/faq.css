@@ -174,22 +174,22 @@ body {
 }
 
 
-#accordionExample {
+#firstAccordion {
     margin-left: 250px;
     width: 500px;
 }
 
-#accordion_Example {
+#secondAccordion {
     margin-left: 50px;
     width: 500px;
 }
 
-#accordion-Example {
+#thirdAccordion {
     margin-left: 250px;
     width: 500px;
 }
 
-#accordion__Example {
+#fourthAccordion {
     margin-left: 50px;
     width: 500px;
 }
@@ -249,23 +249,23 @@ body {
         padding-bottom: 150px;
         margin-top: 60px;
     }
-    #accordionExample {
+    #firstAccordion {
         width:60vw;
         margin-left:240px;
 
     }
 
-    #accordion_Example {
+    #secondAccordion {
         width:60vw;
         margin-left:35px;
     }
 
-    #accordion-Example {
+    #thirdAccordion {
         width:60vw;
         margin-left:240px;
     }
 
-    #accordion__Example {
+    #fourthAccordion {
         width:60vw;
         margin-left:35px;
     }
