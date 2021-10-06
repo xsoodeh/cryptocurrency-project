@@ -160,7 +160,7 @@ body {
 .bottomText {
     color: var(--menu-text-color);
     padding:10vw;
-    /*margin-left: 250px;*/
+    margin-left: 80px;
     /*margin-top: 150px;*/
     /*font-size: 15px;*/
     /*padding-right: 240px;*/
