@@ -24,14 +24,15 @@ body {
 @media screen and (max-width: 750px){
     .Heading {
 
-        margin-left: 130px;
+        margin-left: 20px;
         margin-bottom: 150px;
-        margin-top: 200px;
+        margin-top: 150px;
+
     }
     .mob-title{
         display: flex;
         color: var(--menu-text-color);
-        font-size: 55px;
+        font-size: 42px;
         font-weight: 700;
     }
     .mainTitle{
@@ -49,7 +50,7 @@ body {
 }
 @media screen and (max-width: 750px){
     .smallTitle{
-        font-size: 15px;
+        font-size: 13px;
     }
 
 }
@@ -202,30 +203,55 @@ body {
     .accordion .card-header .btn {
         font-size: 1.3rem;
         letter-spacing: 0.3px;
-
-
     }
 }
 @media screen and (max-width: 750px){
 
     .firstBox{
-        margin-left:-125px;
+        margin-left:-225px;
+
     }
     .secondBox{
-        margin-left: 75px;
+        margin-left: -25px;
+
+
     }
     .thirdBox{
-        margin-left: -125px;
+        margin-left: -225px;
+
     }
     .fourthBox{
-        margin-left: 75px;
+        margin-left: -25px;
+
     }
     .bottomText{
-        margin-left: 125px;
-        padding-right: 150px;
+        margin-left: 0;
+        padding-right: 40px;
         font-size: 13px;
+        line-height: 18px;
         font-weight: 400;
+        padding-bottom: 150px;
+        margin-top: 80px;
     }
+    #accordionExample {
+        width:90vw
+    }
+
+    #accordion_Example {
+        width:90vw
+    }
+
+    #accordion-Example {
+        width:90vw
+    }
+
+    #accordion__Example {
+        width:90vw
+    }
+    .accordion .card-body{
+        line-height: 18px;
+    }
+
 }
 
 
@@ -233,9 +259,10 @@ body {
     .mob-subtitle {
         display: flex;
         color: var(--menu-text-color);
-        font-size: 20px;
+        font-size: 16px;
         font-weight: bold;
         margin-bottom: 40px;
+        width: 90vw;
     }
 
     .normalDisplay {
