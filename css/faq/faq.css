@@ -148,7 +148,7 @@ body {
     }
 
 
-    .seCondRow {
+    .secondRow {
         display: flex;
         flex-direction: row;
     }
@@ -182,11 +182,11 @@ body {
             width: 60vw;
         }
 
-        .seCondRow {
-            display: flex;
-            flex-direction: column;
-            width: 60vw;
-        }
+        /*.secondRow {*/
+        /*    display: flex;*/
+        /*    flex-direction: column;*/
+        /*    width: 60vw;*/
+        /*}*/
 
         .accordion .question .btn {
             font-size: 1.3rem;
