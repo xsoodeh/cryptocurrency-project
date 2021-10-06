@@ -6,6 +6,7 @@ body {
 .mainContainer{
     background-color: var(--main-color);
 }
+/*----------------------------------heading setting------------------------------*/
 .Heading {
 
     margin-left: 240px;
@@ -14,31 +15,22 @@ body {
 }
 .mainTitle {
     color: var(--menu-text-color);
-    font-size: 70px;
+    font-size: 7rem;
     font-weight: 700;
-}
-.mob-title{
-    display: none;
 }
 
 @media screen and (max-width: 750px){
     .Heading {
-
-        margin-left: 130px;
-        margin-bottom: 150px;
-        margin-top: 200px;
+        margin:30vw 5vw 40vw 10vw;
     }
-    .mob-title{
-        display: flex;
-        color: var(--menu-text-color);
-        font-size: 55px;
+
+    .mainTitle {
+        font-size:4.2rem;
+        line-height: 4.7rem;
         font-weight: 700;
     }
-    .mainTitle{
-        display: none;
-    }
-
 }
+
 .smallTitle {
     color: #7fa4da;
     font-weight: 400;
@@ -49,20 +41,27 @@ body {
 }
 @media screen and (max-width: 750px){
     .smallTitle{
-        font-size: 15px;
+        font-size: 1.3rem;
+        letter-spacing: 3px;
+        margin-bottom: 7vw;
     }
 
+}
+/*----------------------faq setting-----------------------------*/
+
+.firstRow {
+    display: flex;
+    flex-direction: row;
+}
+.mob-subtitle{
+    color: white;
 }
 
 .accordion {
     margin-top: 60px; /* Add space above accordion */
     margin-left: 0;
-
 }
-.mob-subtitle {
-    display: none;
 
-}
 .secondBox{
     margin-left:-20px;
 
@@ -130,6 +129,10 @@ body {
     .accordion .card-body{
         font-size: 13px;
     }
+    .accordion .card-body{
+        padding-top: 0;
+
+    }
 }
 
 .accordion .highlight {
@@ -139,10 +142,6 @@ body {
     color: var(--second-color);
 }
 
-.firsstRow {
-    display: flex;
-    flex-direction: row;
-}
 
 .seCondRow {
     display: flex;
@@ -159,71 +158,99 @@ body {
 
 .bottomText {
     color: var(--menu-text-color);
-    margin-left: 250px;
-    margin-top: 150px;
-    font-size: 15px;
-    padding-right: 240px;
-    font-weight: 400;
+    padding:10vw;
+    margin-left: 80px;
+    /*margin-top: 150px;*/
+    /*font-size: 15px;*/
+    /*padding-right: 240px;*/
+    /*font-weight: 400;*/
+    /*padding-bottom: 30vh;*/
 }
 
-
-#accordionExample {
-    margin-left: 250px;
+.leftAccordions{
+    margin-left: 180px;
     width: 500px;
 }
-
-#accordion_Example {
-    margin-left: 50px;
-    width: 500px;
-}
-
-#accordion-Example {
-    margin-left: 250px;
-    width: 500px;
-}
-
-#accordion__Example {
+.rightAccordions{
     margin-left: 50px;
     width: 500px;
 }
 @media screen and (max-width: 750px) {
 
-    .firsstRow {
+    body {
+
+    }
+    .firstRow {
         display: flex;
         flex-direction: column;
+        width: 60vw;
     }
 
     .seCondRow {
         display: flex;
         flex-direction: column;
+        width: 60vw;
     }
     .accordion .card-header .btn {
         font-size: 1.3rem;
         letter-spacing: 0.3px;
-
-
     }
 }
 @media screen and (max-width: 750px){
-
     .firstBox{
-        margin-left:-125px;
+        margin-left:-120px;
+        width: 60vw;
     }
     .secondBox{
-        margin-left: 75px;
+        margin-left: 85px;
+        width: 60vw;
+
+
     }
     .thirdBox{
-        margin-left: -125px;
+        margin-left: -115px;
+        width: 60vw;
+
     }
     .fourthBox{
-        margin-left: 75px;
+        margin-left: 85px;
+        width: 60vw;
+
     }
     .bottomText{
-        margin-left: 125px;
-        padding-right: 150px;
+        margin-left: 40px;
+        margin-right: 50px;
+        padding-right: 133px;
         font-size: 13px;
+        line-height: 18px;
         font-weight: 400;
+        padding-bottom: 150px;
+        margin-top: 60px;
     }
+    #firstAccordion {
+        width:60vw;
+        /*margin-left:240px;*/
+
+    }
+
+    #secondAccordion {
+        width:60vw;
+        /*margin-left:35px;*/
+    }
+
+    #thirdAccordion {
+        width:60vw;
+        /*margin-left:240px;*/
+    }
+
+    #fourthAccordion {
+        width:60vw;
+        /*margin-left:35px;*/
+    }
+    .accordion .card-body{
+        line-height: 18px;
+    }
+
 }
 
 
@@ -231,9 +258,10 @@ body {
     .mob-subtitle {
         display: flex;
         color: var(--menu-text-color);
-        font-size: 20px;
+        font-size: 16px;
         font-weight: bold;
         margin-bottom: 40px;
+        width: 90vw;
     }
 
     .normalDisplay {

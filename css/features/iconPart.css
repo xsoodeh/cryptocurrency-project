@@ -8,6 +8,7 @@
   grid-template-rows: repeat(1,10fr);
    background-color:rgb(244, 250, 244);
    margin-top: 75vh;
+    border-top: 1px solid rgba(202, 221, 248, 0.8);
     
 }
 .box{
@@ -170,7 +171,7 @@
     color: #0d1a85;
 
 }
-.walletImg :hover> img{
+.wallet:hover> img{
     margin-top: 10vh;
     transition: ease-out 0.5s;
     
