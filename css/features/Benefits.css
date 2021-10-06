@@ -1,16 +1,16 @@
-.benefit{
+.Benefit{
     color: #0d1a85;
     font-size: 15px;
     font-weight: 700;
     line-height: 1.5;
     padding-top: 5vh;
-    height: 80vh;
+   /* height: 80vh;*/
     display: grid;
     grid-template-columns: 25vw  50vw 25vw;
     gap: 0.5vw;
     
 }
-.benefitLeft{
+.BenefitLeft{
     font-size: 15px;
     line-height: 22.5px;
     letter-spacing: 0px;
@@ -19,23 +19,23 @@
     margin-left: 10vw;
     margin-top: 20vh;
 }
-.benefitCenter{
+.BenefitCenter{
     align-items: center;
     margin-left: 5vw;
 }
-.benefitCenter h1{
+.BenefitCenter h1{
     width: 25vw;
     font-size: 35px;
     line-height: 40px;
     letter-spacing: 0px;
 }
-.benefitCenter p{
+.BenefitCenter p{
     font-size: 15px; 
     line-height: 25px;
      font-weight: 200;
       letter-spacing: 0px;
 }
-.benefitCenter section {
+.BenefitCenter section {
     font-size: 15px; 
     line-height: 25px;
      font-weight: 200;
@@ -63,17 +63,17 @@
   }
   
   .circle-container .circle .item{
-    clip: rect(0px, 150px, 150px, 64px);
+    clip: rect(0px, 120px, 120px, 65px);
   }
   
   .circle-container .circle .item .fill{
-    clip: rect(0px, 64px, 150px, 0px);
+    clip: rect(0px, 65px, 120px, 0px);
     background-color: rgb(255, 208, 0)
   }
   
   .circle-container .circle .item.layer-1,
   .circle-container .circle .fill{
-    transform: rotate(50deg);
+    transform: rotate(90deg);
     animation: fill ease-out 2s;
   }
   
@@ -82,7 +82,7 @@
       transform: rotate(0deg);
     }
     100%{
-      transform: rotate(50deg);
+      transform: rotate(90deg);
     }
   }
   
@@ -114,21 +114,21 @@
     font-weight: 700;
     line-height: 1.5;
     padding-top: 5vh;
-    height: 80vh;
+   /* height: 80vh;*/
   }
   .benefitLeft{
     font-size: 15px;
     line-height: 22.5px;
     letter-spacing: 0px;
-    width: 90vw;
+    width: 20vw;
     font-weight: 700;
-    margin-left: 10vw;
-   margin-bottom: 10vh;
+  /*  margin-left: 10vw;
+   margin-bottom: 10vh;*/
 }
 .benefitCenter{
     align-items: center;
     margin-left: 10vw;
-    margin-top: -35vh;
+   /* margin-top: -35vh;*/
 }
 .benefitCenter h1{
     width: 80vw;
@@ -137,7 +137,7 @@
     letter-spacing: 0px;
 }
 .benefitCenter p{
-  margin-top: 10vh;
+ /* margin-top: 10vh;*/
     font-size: 12.5px; 
     line-height: 25px;
      font-weight: 200;
@@ -156,13 +156,13 @@
   height: 150px;
   background: #E1E1E1;
   border-radius: 50%;
-  margin-left: 35vw;
+ /* margin-left: 35vw;*/
   margin-top: 5vh;
 }
 .circle-container p{
   margin-top: 28vh;
   width: 85vw;
-  margin-left: -20vw;
+ /* margin-left: -20vw;*/
   font-size: 13px;
 }
 }
