@@ -258,7 +258,7 @@
     
 }
 .keyImg:hover::before{
-    width: 100px;
+    width: 90px;
     background-color: #ffc327;
     transition:  all .3s ease-in-out;
     content: "";

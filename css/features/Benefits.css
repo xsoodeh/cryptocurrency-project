@@ -121,7 +121,8 @@
     font-weight: 700;
     line-height: 1.5;
     padding-top: 5vh;
-   /* height: 80vh;*/
+   align-items: center;
+   
   }
   .BenefitLeft{
     display: none;
@@ -164,7 +165,7 @@
 .circle-container p{
   
   width: 90vw;
-  margin-left: 15%;
+  margin-left: 5vw;
   font-size: 13px;
 }
 }
