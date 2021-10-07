@@ -1,70 +1,72 @@
-.diagram 
-{
-    display: grid;
-    grid-template-columns: repeat(2,50fr);
-    margin-top: 20vh;
-    gap: 0.5vw;
-    height: 80vh;
-}
-#circleDiagram {
-    margin-left: 10vw;
-}
-
-   
-   
-        .Thead{
-          font-size: 15px;
-          font-weight: 800;
-          color: rgba(54, 50, 50, 0.685);
-      }
-      tbody ,td ,tr{
-          border-right: 1px solid #ddd;
-          border-top: 1px solid #ddd;
-          padding: 2vh 2vw;
-          /*font-weight: 700;*/
-         
-      }
-      .TTbody{
-          color: #0d1a85;
-          border-right: 0px transparent;
-          font-size: 15px;
-      }
-      
-    
-
-       .lamp{
-          border: 1px solid #ddd;
-      }
-    table{
-         border-collapse: collapse;
-    }
-    @media only screen and (max-width:768px){
-        .diagram 
-{
+.diagram {
     display: flex;
-    flex-direction: column;
-    margin-top: 20vh;
-    gap: 0.5vw;
-    height: 80vh;
+    flex-direction: row;
+    padding-top:8vw;
+    align-items: center;
+    justify-content: center;
+    /*margin-top: 20vh;*/
+    gap: 5vw;
+    /*height: 80vh;*/
 }
-#circleDiagram {
-  margin-top: 5vh;
-    width: 85vw;
-    
+.diagram:first-child{
+    width: 445px;
+    height: 289px;
+
 }
 
-   .wrapperTable{
-       margin-left: 15vw;
-       margin-top: 2vh;
-   } 
-   .Thead{
-    font-size: 13px;
+
+.Thead {
+    font-size: 15px;
     font-weight: 800;
     color: rgba(54, 50, 50, 0.685);
-}    
-.TTbody{
-    color: #0d1a85;
-    border-right: 0px transparent;
-    font-size: 13px;
 }
-    }    
+
+tbody, td, tr {
+    border-right: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    padding: 2vh 2vw;
+    /*font-weight: 700;*/
+
+}
+
+.TTbody {
+    /*color: #0d1a85;*/
+    border-right: 0 transparent;
+    font-size: 15px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+@media only screen and (max-width: 768px) {
+    .diagram {
+        flex-direction: column;
+        margin-top: 20vh;
+        height: 80vh;
+        justify-content: center;
+    }
+
+    #circleDiagram {
+        margin-left: 10vw;
+        width: 85vw;
+        margin-top: 30vh;
+    }
+
+    .wrapperTable {
+        margin-left: 15vw;
+        margin-top: 2vh;
+    }
+
+    .Thead {
+        font-size: 13px;
+        font-weight: 800;
+        color: rgba(54, 50, 50, 0.685);
+    }
+
+    .TTbody {
+        color: #0d1a85;
+        border-right: 0px transparent;
+        font-size: 13px;
+    }
+}
