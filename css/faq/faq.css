@@ -1,39 +1,38 @@
-html
-body {
-    background: var(--main-color);
-    font-family: 'Poppins', sans-serif
-}
 
 .mainContainer {
     background-color: var(--main-color);
+    color: var(--menu-text-color);
+
+
 }
 
 /*----------------------------------heading setting------------------------------*/
 .Heading {
+    padding: 12vw 8vw;
+    /*margin-left: 240px;*/
+    /*margin-bottom: 150px;*/
+    /*margin-top: 120px;*/
 
-    margin-left: 240px;
-    margin-bottom: 150px;
-    margin-top: 120px;
+
 }
 
 .mainTitle {
-    color: var(--menu-text-color);
     font-size: 7rem;
     font-weight: 700;
-    /*width: 50vw;*/
+    width:70%;
 
 }
 
 @media screen and (max-width: 750px) {
     .Heading {
-        margin: 30vw 5vw 40vw 10vw;
+        padding: 30vw 5vw 40vw 10vw;
     }
 
     .mainTitle {
         font-size: 4.2rem;
         line-height: 4.7rem;
         font-weight: 700;
-        /*width: 60%;*/
+        width: 80%;
     }
 }
 
@@ -58,35 +57,35 @@ body {
 /*----------------------faq setting-----------------------------*/
 
 .accordionTitle {
-    color: var(--menu-text-color);
+padding-bottom: 4vw;
 }
 
 .firstRow {
     display: flex;
     flex-direction: row;
+    row-gap: 10vw;
+    column-gap: 10vw;
+    flex-wrap: wrap;
+    margin-left:10vw;
 }
 
 .accordion {
-    margin-top: 60px; /* Add space above accordion */
-    margin-left: 0;
+    width:500px;
 }
-
-
-.accordion .card {
-    border-width: 1px 0 1px 0;
-    color: var(--menu-text-color);
+ .card {
+    /*border-width: 1px 0 1px 0;*/
+    /*color: var(--menu-text-color);*/
     border: none;
     background-color: var(--main-color);
     border-left: solid 2px #ffffff1a;
+     padding-bottom: 2vw;
 }
-
-.accordion .card .question {
+ .question {
     background: var(--main-color);
     padding-top: 7px;
     padding-bottom: 7px;
     border-radius: 0;
     margin-bottom: -2px;
-    font-family: "Roboto", sans-serif;
 }
 
 .number {
@@ -95,14 +94,15 @@ body {
     font-size: 13px;
 }
 
-.accordion .question h2 span {
+ .question h2 span {
     float: left;
     margin-top: 10px;
     border-left: solid 2px;
+     width:80%
 
-}
+ }
 
-.accordion .question .btn {
+  .btn {
     font-size: 1.5rem;
     letter-spacing: 0.3px;
     font-weight: 500;
@@ -114,49 +114,36 @@ body {
 
 }
 
-.accordion .question i {
+ .question i {
     float: right;
     font-size: 1.6rem;
     font-weight: bold;
     position: relative;
     top: 5px;
     color: #4f537d;
-}
+ }
 
-.accordion .answer {
+ .answer {
     background: var(--main-color);
     border-left: solid 2px var(--second-color);
-    color: var(--menu-text-color);
+    /*color: var(--menu-text-color);*/
     padding-left: 70px;
     padding-right: 40px;
     font-size: 15px;
     font-weight: 400;
 }
 
-@media screen and (max-width: 750px) {
-    .accordion .answer {
-        font-size: 13px;
-        padding-top: 0;
-
-    }
-
-    .accordion .highlight {
+    .highlight {
 
         background: var(--main-color);
         border-left: solid 2px var(--second-color);
         color: var(--second-color);
     }
 
-
-    .secondRow {
-        display: flex;
-        flex-direction: row;
-    }
-
     .bottomText {
         color: var(--menu-text-color);
         padding: 10vw;
-        margin-left: 80px;
+        /*margin-left: 80px;*/
         /*margin-top: 150px;*/
         /*font-size: 15px;*/
         /*padding-right: 240px;*/
@@ -164,72 +151,49 @@ body {
         /*padding-bottom: 30vh;*/
     }
 
-    .leftAccordions {
-        margin-left: 180px;
-        width: 500px;
-    }
+    /*.leftAccordions {*/
+    /*    margin-left: 180px;*/
+    /*    width: 500px;*/
+    /*}*/
 
-    .rightAccordions {
-        margin-left: 50px;
-        width: 500px;
-    }
+    /*.rightAccordions {*/
+    /*    margin-left: 50px;*/
+    /*    width: 500px;*/
+    /*}*/
 
     @media screen and (max-width: 750px) {
 
         .firstRow {
             display: flex;
             flex-direction: column;
-            width: 60vw;
+            width:90vw;
+            column-gap: 0;
+            row-gap: 10vw;
+        }
+        .accordion{
+            width:80vw;
         }
 
-        /*.secondRow {*/
-        /*    display: flex;*/
-        /*    flex-direction: column;*/
-        /*    width: 60vw;*/
-        /*}*/
-
-        .accordion .question .btn {
+         .btn {
             font-size: 1.3rem;
-            letter-spacing: 0.3px;
+            /*letter-spacing: 0.3px;*/
         }
-    }
-    @media screen and (max-width: 750px) {
-
         .bottomText {
-            margin-left: 40px;
-            margin-right: 50px;
-            padding-right: 133px;
+            /*margin-left: 40px;*/
+            /*margin-right: 50px;*/
+            /*padding-right: 133px;*/
+            /*font-size: 13px;*/
+            line-height: 18px;
+            /*font-weight: 400;*/
+            /*padding-bottom: 150px;*/
+            /*margin-top: 60px;*/
+            /*margin-left: 80px;*/
+        }
+
+        .answer {
+            line-height: 18px;
             font-size: 13px;
-            line-height: 18px;
-            font-weight: 400;
-            padding-bottom: 150px;
-            margin-top: 60px;
-        }
-
-        #firstAccordion {
-            width: 60vw;
-            /*margin-left:240px;*/
-
-        }
-
-        #secondAccordion {
-            width: 60vw;
-            /*margin-left:35px;*/
-        }
-
-        #thirdAccordion {
-            width: 60vw;
-            /*margin-left:240px;*/
-        }
-
-        #fourthAccordion {
-            width: 60vw;
-            /*margin-left:35px;*/
-        }
-
-        .accordion .answer {
-            line-height: 18px;
-        }
+            padding-top: 0;
     }
 }
 
