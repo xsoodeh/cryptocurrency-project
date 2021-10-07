@@ -138,18 +138,7 @@ width:104px;
     /*margin-left: 18vw;*/
     
 }
-.iconWallet{
-    background-color: palegreen;
-    /*padding-top: 15vh;*/
-   
-}
-/*.walletImg{
-    width: 40vw;*/
-  /*  background-color: orchid;*/
-  /*   height: 40vh;*/
-  /*   margin: auto;
-     
-}*/
+
 .walletImg:hover::before{
     width: 100px;
     background-color: #ffc327;
