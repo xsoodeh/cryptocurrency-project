@@ -11,7 +11,7 @@ body {
 /*----------------------------------heading setting------------------------------*/
 .Heading {
 
-    margin-left: 240px;
+    margin-left: 225px;
     margin-bottom: 150px;
     margin-top: 120px;
 }
@@ -74,17 +74,20 @@ body {
 }
 .accordionTitle {
     color: var(--menu-text-color);
+    width: 25vw;
+    margin-bottom: 40px;
 }
 
 .accordion {
     margin-top: 60px; /* Add space above accordion */
+    
 }
 #firstAccordion{
     width: 500px;
 }
 #secondAccordion{
     width: 500px;
-    margin-left: 30px;
+    /*margin-left: 30px;*/
 }
 #thirdAccordion{
     width: 500px;
@@ -94,7 +97,10 @@ body {
 }
 .leftAccordions {
     margin-left: 230px;
-    margin-right: 30px;
+    /*margin-right: 30px;*/
+}
+.rightAccordions{
+    margin-left: 60px;
 }
 @media screen and (max-width: 750px){
     #firstAccordion {
@@ -141,13 +147,13 @@ body {
 .number {
     font-weight: 700;
     margin-right: 25px;
-    font-size: 13px;
+    margin-left: 15px;
+    font-size: 15px;
 }
 
 
 .accordion .question .btn {
     font-size: 1.5rem;
-    letter-spacing: 0.3px;
     font-weight: 500;
     width: 100%;
     text-align: left;
@@ -159,7 +165,6 @@ body {
 
     .accordion .question .btn {
         font-size: 1.3rem;
-        letter-spacing: 0.3px;
     }
 }
 /*----------------------question setting when click-----------------------------*/
@@ -205,16 +210,8 @@ body {
 
 
     /*----------------------bottomText setting-----------------------------*/
-
-    .bottomText {
-        color: var(--menu-text-color);
-        padding: 10vw;
-        margin-left: 80px;
-        /*margin-top: 150px;*/
-        /*font-size: 15px;*/
-        /*padding-right: 240px;*/
-        /*font-weight: 400;*/
-        /*padding-bottom: 30vh;*/
+    .bottomText{
+        color: white;
     }
 
     @media screen and (max-width: 750px) {
