@@ -4,7 +4,7 @@
 }
 .iconPart{
     display: grid;
-    grid-template-columns:40vw;
+    /*grid-template-columns:40vw;*/
     /*grid-template-rows: repeat(2,30fr);*/
     grid-template-areas: 'box wallet'
                           'glob key';
@@ -46,7 +46,7 @@ width:104px;
  .iconPart--box :hover h3::before{
     width: 100px;
     border-top: #ffc327 solid 1px;
-    transition:  all .3s ease-in-out;
+    transition:  all 1s ease-in-out;
     content: "";
     display: block;
     /*margin: 0 auto;*/
@@ -58,7 +58,7 @@ width:104px;
 .boxIMG::before{
     width: 0px;
     background-color: #ffc327;
-    transition:  all .3s ease-in-out;
+    transition:  all 1s ease-in-out;
     content: "";
     display: block;
     margin: 0 auto; 
@@ -333,6 +333,7 @@ width:104px;
 .iconPart {
    display: flex;
    flex-direction: column;
+    width: 100%;
    /*margin-top: 171vh;*/
 }
     .iconPart--box p{
