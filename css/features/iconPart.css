@@ -7,7 +7,7 @@
     grid-template-columns: 45vw 45vw;
   grid-template-rows: repeat(1,10fr);
    background-color:rgb(244, 250, 244);
-   margin-top: 75vh;
+  
     border-top: 1px solid rgba(202, 221, 248, 0.8);
     
 }
@@ -307,7 +307,7 @@
 
 .line{
     width: 100vw;
-    margin-top: 15vh;
+   /* margin-top: 15vh;*/
     
 }
 @media only screen and (max-width:768px){
@@ -315,17 +315,14 @@
 .iconPart {
    display: flex;
    flex-direction: column;
-   /*margin-top: 215vh;*/
 }
 .line{
-    width: 100vw;
-   
-    
+    width: 100vw;  
 }
 .box{
     
     width: 100vw;
-    /*height: 30vh;*/
+   height: 30vh;
   /*background-color: chocolate;*/
     margin: auto;
     padding: 0;
@@ -374,13 +371,14 @@
   /*background-color: chocolate;*/
     margin: auto;
     padding: 0;
+    
    
 }
 .walletImg {
 
     width: 85vw;
   /* background-color: orchid;*/
-    height: 40vh;
+   /* height: 40vh;*/
     margin: auto;
     
 }
@@ -434,9 +432,9 @@
  .globeCon {
     /* background-color: blue;*/
      width: 55vw;
-     margin-top: 8vh;
-    
      margin-left: 28vw;
+    
+     
      
  }
 
@@ -457,6 +455,7 @@
     line-height: 20px;
     letter-spacing :0;
     color: #0d1a85;
+    
 }
 .key{
     
@@ -490,8 +489,7 @@
    /* background-color: cadetblue;*/
     width: 15vw;
     margin: 0px;
-    margin-left: 4vw;
-   height: 30vh;
+    height: 30vh;
     
 }
 .iconDiv img{
@@ -520,7 +518,5 @@
 }
 .line{
     width: 100vw;
-    margin-top: 11vh;
-    
 }
 }

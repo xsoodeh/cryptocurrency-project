@@ -10,7 +10,7 @@
     gap: 0.5vw;
     
 }
-.BenefitLeft{
+.BenefitLeft p{
     font-size: 15px;
     line-height: 22.5px;
     letter-spacing: 0px;
@@ -21,19 +21,22 @@
 }
 .BenefitCenter{
     align-items: center;
-    margin-left: 5vw;
+    
 }
 .BenefitCenter h1{
     width: 25vw;
     font-size: 35px;
     line-height: 40px;
     letter-spacing: 0px;
+    margin-left: 5vw;
 }
 .BenefitCenter p{
     font-size: 15px; 
     line-height: 25px;
      font-weight: 200;
       letter-spacing: 0px;
+      margin-left: 5vw;
+
 }
 .BenefitCenter section {
     font-size: 15px; 
@@ -41,6 +44,8 @@
      font-weight: 200;
       letter-spacing: 0px;
      margin-top: 5vh;
+     margin-left: 5vw;
+
      
 }
 
@@ -63,11 +68,11 @@
   }
   
   .circle-container .circle .item{
-    clip: rect(0px, 120px, 120px, 65px);
+    clip: rect(0px, 150px, 150px, 65px);
   }
   
   .circle-container .circle .item .fill{
-    clip: rect(0px, 65px, 120px, 0px);
+    clip: rect(0px, 65px, 150px, 0px);
     clip: rect(0px, 100px, 62px, 0);
     background-color: rgb(255, 208, 0)
   }
@@ -109,7 +114,7 @@
   }
 
 @media only screen and  (max-width:768px) {
-  .benefit{
+  .Benefit{
     display: flex;
     flex-direction: column;
     font-size: 15px;
@@ -118,53 +123,48 @@
     padding-top: 5vh;
    /* height: 80vh;*/
   }
-  .benefitLeft{
-    font-size: 15px;
-    line-height: 22.5px;
-    letter-spacing: 0px;
-    width: 20vw;
-    font-weight: 700;
-  /*  margin-left: 10vw;
-   margin-bottom: 10vh;*/
+  .BenefitLeft{
+    display: none;
 }
-.benefitCenter{
+.BenefitCenter{
     align-items: center;
-    margin-left: 10vw;
-   /* margin-top: -35vh;*/
+   width: 100vw;
 }
-.benefitCenter h1{
+.BenefitCenter h1{
     width: 80vw;
     font-size: 25px;
     line-height: 40px;
     letter-spacing: 0px;
 }
-.benefitCenter p{
- /* margin-top: 10vh;*/
+.BenefitCenter p{
+  
     font-size: 12.5px; 
     line-height: 25px;
      font-weight: 200;
       letter-spacing: 1px;
 }
-.benefitCenter section {
+.BenefitCenter section {
     font-size: 12.5px; 
     line-height: 25px;
      font-weight: 200;
       letter-spacing: 1px;
      margin-top: 5vh;
      
+     
 }
 .circle-container{
   width: 150px;
-  height: 150px;
-  background: #E1E1E1;
-  border-radius: 50%;
- /* margin-left: 35vw;*/
-  margin-top: 5vh;
+    height: 150px;
+    background: #f9fafa;
+    border-radius: 50%;
+    align-items: center;
+    text-align: center;
 }
+
 .circle-container p{
-  margin-top: 28vh;
-  width: 85vw;
- /* margin-left: -20vw;*/
+  
+  width: 90vw;
+  margin-left: 15%;
   font-size: 13px;
 }
 }
