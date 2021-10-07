@@ -1,4 +1,4 @@
-.Benefit{
+.benefit{
     color: #0d1a85;
     font-size: 15px;
     font-weight: 700;
@@ -10,7 +10,7 @@
     gap: 0.5vw;
     
 }
-.BenefitLeft p{
+.benefitLeft p{
     font-size: 15px;
     line-height: 22.5px;
     letter-spacing: 0px;
@@ -19,18 +19,21 @@
     margin-left: 10vw;
     margin-top: 20vh;
 }
-.BenefitCenter{
+.benefitCenter{
     align-items: center;
     
 }
-.BenefitCenter h1{
+.benefitCenter h1{
     width: 25vw;
     font-size: 35px;
     line-height: 40px;
     letter-spacing: 0px;
     margin-left: 5vw;
 }
-.BenefitCenter p{
+.benefit--short-p{
+  display: none;
+}
+.benefitCenter p{
     font-size: 15px; 
     line-height: 25px;
      font-weight: 200;
@@ -38,7 +41,7 @@
       margin-left: 5vw;
 
 }
-.BenefitCenter section {
+.benefitCenter section {
     font-size: 15px; 
     line-height: 25px;
      font-weight: 200;
@@ -111,10 +114,13 @@
   .circle-container p{
       margin-top: 35vh;
       width: 12.5vw;
+     
   }
-
+   .circle--p {
+    display: none;
+  }
 @media only screen and  (max-width:768px) {
-  .Benefit{
+  .benefit{
     display: flex;
     flex-direction: column;
     font-size: 15px;
@@ -124,31 +130,47 @@
    align-items: center;
    
   }
-  .BenefitLeft{
+  .benefitLeft{
     display: none;
 }
-.BenefitCenter{
+.benefitCenter{
     align-items: center;
-   width: 100vw;
-}
-.BenefitCenter h1{
     width: 80vw;
-    font-size: 25px;
-    line-height: 40px;
+}
+.benefitCenter h1{
+  padding-top: 10vh; 
+  width: 80vw;
+    font-size: 20px;
+    line-height: 20px;
     letter-spacing: 0px;
+    font-weight: 500;
 }
-.BenefitCenter p{
+#benefit--short-p {
+  display: inline;
+ align-items: center;
+ text-align: center;
+}
+
+#benefit--short-p p{
+  width: 70vw;
+  font-size: 13px;
+ font-weight: 700;
+ padding-top: 2.5vh;
+}
   
-    font-size: 12.5px; 
-    line-height: 25px;
-     font-weight: 200;
-      letter-spacing: 1px;
+  
+.benefitCenter p{
+  
+    font-size: 13px; 
+    line-height: 19px;
+     font-weight: 300;
+      letter-spacing: 0px;
 }
-.BenefitCenter section {
-    font-size: 12.5px; 
-    line-height: 25px;
-     font-weight: 200;
-      letter-spacing: 1px;
+.benefitCenter section {
+    font-size: 13px; 
+    line-height: 19px;
+     font-weight: 300;
+      letter-spacing: px;
      margin-top: 5vh;
      
      
@@ -160,12 +182,25 @@
     border-radius: 50%;
     align-items: center;
     text-align: center;
+    margin-top: 10vh;
+    margin-left: 0;
+   
 }
 
 .circle-container p{
+    
+  display: none;
   
-  width: 90vw;
-  margin-left: 5vw;
+}
+.circle--p {
+  display:inline;
+  text-align: center;
+  
+}
+.circle--p p{
   font-size: 13px;
+  font-weight: 600;
+  width: 75vw;
+  padding-left: 12vw;
 }
 }
