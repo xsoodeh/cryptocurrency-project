@@ -21,7 +21,7 @@
     width:50vw;
 
 }
-@media screen and (min-width: 321px)and (max-width: 375px){
+@media (min-width: 321px)and (max-width: 375px){
    .Heading{
        padding: 40vw 8vw 60vw 10vw;
    }
@@ -33,7 +33,7 @@
     }
 
 }
-@media screen and (min-width: 376px)and (max-width: 425px){
+@media (min-width: 376px)and (max-width: 425px){
     .Heading{
         padding: 1vw 1vw 85vw 10vw;
 
@@ -99,7 +99,7 @@
     column-gap: 4vw;
     flex-wrap: wrap;
     margin-left:16.5vw;
-    margin-right: 10vw;
+    /*margin-right: 10vw;*/
 }
 
 .accordion {
@@ -183,36 +183,7 @@
         padding: 9vw 16vw 10vw 15vw;
     }
 
-
-    @media screen and (max-width: 750px) {
-
-        .firstRow {
-            display: flex;
-            flex-direction: column;
-            width:80vw;
-            column-gap: 0;
-            row-gap: 10vw;
-        }
-        .accordion{
-            width:65vw;
-        }
-
-         .btn {
-            font-size: 1.3rem;
-            /*letter-spacing: 0.3px;*/
-        }
-        .bottomText {
-            line-height: 18px;
-
-        }
-
-        .answer {
-            line-height: 18px;
-            font-size: 13px;
-            padding-top: 0;
-    }
-}
-@media screen and (min-width: 321px)and (max-width: 375px){
+@media (min-width: 321px)and (max-width: 375px){
     .accordionTitle{
         width: 75vw;
     }
@@ -225,7 +196,7 @@
     }
 
 }
-@media screen and (min-width: 376px)and (max-width: 425px){
+@media (min-width: 376px)and (max-width: 425px){
     .accordionTitle{
         width: 70vw;
     }
@@ -237,6 +208,37 @@
         /*padding: 40vw 5vw 10vw 7.4vw;*/
     }
 
+}
+
+@media (min-width:426px) and (max-width: 750px) {
+
+    .firstRow {
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+        column-gap: 0;
+        row-gap: 10vw;
+    }
+
+    .accordion {
+        width: 65vw;
+    }
+
+    .btn {
+        font-size: 1.3rem;
+        /*letter-spacing: 0.3px;*/
+    }
+
+    .bottomText {
+        line-height: 18px;
+
+    }
+
+    .answer {
+        line-height: 18px;
+        font-size: 13px;
+        padding-top: 0;
+    }
 }
 
 
