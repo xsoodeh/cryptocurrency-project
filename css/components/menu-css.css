@@ -15,9 +15,6 @@
     opacity: 90% ;
     transition-timing-function: linear;
     min-height: 10vh;
-
-
-
 }
 .logo{
     grid-area: logo;
@@ -44,6 +41,12 @@
     color: #FFFFFF;
     cursor:pointer;
 }
+
+button.active {
+    background-color: #1b245b;
+    color: #FFFFFF;
+}
+
 #menu-berger{
     display: none;
 }
