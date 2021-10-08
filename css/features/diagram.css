@@ -42,7 +42,7 @@ table {
 @media only screen and (max-width: 768px) {
     .diagram {
         flex-direction: column;
-        margin-top: 20vh;
+        padding-top: 10vh;
         height: 80vh;
         justify-content: center;
     }

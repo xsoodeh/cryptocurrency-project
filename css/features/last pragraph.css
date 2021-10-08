@@ -2,7 +2,7 @@
 .lastPragraph{
     margin-top: 6vw;
     display: grid;
-    grid-template-columns: 41vw 32vw;
+    grid-template-columns: 40vw 25vw;
     /*grid-template-rows: auto;*/
     grid-template-areas: 'text1 empety'
                           'text2 subTitle';
@@ -11,37 +11,21 @@
 }
 .p1{
     grid-area: text1;
-    /*font-size: 15px; */
-    /*line-height: 25px;*/
-    /* font-weight: 200;*/
-    /*  letter-spacing: 0px;*/
-    /*  width: 40vw;*/
       color: #0d1a85;
-      /*margin-left: 30vw;*/
+      
 }
  .p2{
      grid-area: text2;
-    /*font-size: 15px; */
-    /*line-height: 25px;*/
-     /*font-weight: 200;*/
-     /* letter-spacing: 0px;*/
-     /*margin-top: 5vh;*/
-     /*color: #0d1a85;*/
-     /*width: 40vw;*/
-     /*margin-left: 30vw;*/
+   
 
 }
 .shortText{
     grid-area: subTitle;
 
-    /*width: 12.5vw;*/
-    /*color: #0d1a85;*/
-    /*margin-left: 5vw;*/
-    /*margin-top: 5vh;*/
-    /*height: 25vh;*/
-    /*font-weight: 700;*/
 }
-
+.ideaBox--subText{
+    display: none;
+}
 @media only screen  and (max-width:768px){
     .lastPragraph{
         display: flex;
@@ -80,5 +64,13 @@
       margin-top: 15vh;
       font-weight: 700;
       margin-left: 12.5vw;
+    }
+    .ideaBox--subText{
+        display: block;
+        padding-left: 10vw;
+        width: 85vw;
+        font-size: 15px;
+        font-weight: 700;
+        text-align: center;
     }
 }

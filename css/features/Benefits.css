@@ -1,17 +1,8 @@
 .benefit {
-    /*color: #0d1a85;*/
-    /*font-size: 15px;*/
-    /*font-weight: 700;*/
-    /*line-height: 1.5;*/
-    /*padding-top: 5vh;*/
-    /*height: 80vh;*/
-    /*display: flex;*/
-    /*flex-direction: row;*/
-    /*gap: 0.5vw;*/
-    /*padding-top: 10vw;*/
+  
     display:grid;
     grid-template-columns:20vw 40vw 20vw;
-    grid-template-rows:10vw 20vw 20vw;
+   /* grid-template-rows:10vw 20vw 20vw;*/
     grid-template-areas: 'empety1 hbenfits empety2'
                           'subtitle1 text1 circlepart'
                          'empety3 text2 subtitle2';
@@ -22,116 +13,48 @@
     width: 12.5vw;
     font-weight: 700;
 }
-
+ .benefit-subTitle2{
+   display: none;
+ }
 .benefitLeft {
     grid-area:subtitle1;
-    /*font-size: 15px;*/
-    /*line-height: 22.5px;*/
-    /*letter-spacing: 0px;*/
-
-    /*padding: 8vw 5vw;*/
+    
 }
 
 
 .benefit h2 {
     grid-area: hbenfits;
-    /*width: 25vw;*/
+    padding-top: 5vh;
     font-size: 3.5rem;
     line-height: 40px;
     letter-spacing: 0px;
     font-weight: 500;
-    /*padding-bottom: 3vw;*/
+    
 }
 
 .benefit p {
     grid-area:text1;
 
-    /*font-size: 15px; */
-    /*line-height: 25px;*/
-    /* font-weight: 200;*/
-    /*  letter-spacing: 0px;*/
 }
 
 .benefit section {
     grid-area:text2;
+    margin-top: 5vh;
     
 }
 
 
 .circle-container {
     grid-area:circlepart;
+    padding-left: 5vw;
 }
 .circle-text{
     grid-area:subtitle2;
-    /*padding-left: 10vw;*/
+    padding-left: 5vw;
+    margin-top: 10vh;
 }
 
-@media only screen and  (max-width: 768px) {
-    /*.benefit {*/
-    /*    !*display: flex;*!*/
-    /*    flex-direction: column;*/
-    /*    !*font-size: 15px;*!*/
-    /*    !*font-weight: 700;*!*/
-    /*    !*line-height: 1.5;*!*/
-    /*    !*padding-top: 5vh;*!*/
-    /*    !*height: 80vh;*!*/
-    /*}*/
 
-    /*.benefit-subTitle {*/
-    /*    width: 80%;*/
-    /*    !*font-weight: 700;*!*/
-    /*    text-align: center;*/
-    /*}*/
-
-    /*.benefitLeft {*/
-    /*    font-size: 15px;*/
-    /*    line-height: 22.5px;*/
-    /*    !*letter-spacing: 0px;*!*/
-    /*    !*width: 90vw;*!*/
-    /*    !*font-weight: 700;*!*/
-    /*    !*margin-left: 10vw;*!*/
-    /*    !*margin-bottom: 10vh;*!*/
-    /*}*/
-
-    /*.benefitCenter {*/
-    /*    !*align-items: center;*!*/
-    /*    !*margin-left: 10vw;*!*/
-    /*    !*margin-top: -35vh;*!*/
-    /*    width: 95vw;*/
-    /*    padding: 4vw;*/
-
-    /*}*/
-
-    /*.benefitCenter h2 {*/
-    /*    width: 80vw;*/
-    /*    font-size: 25px;*/
-    /*    line-height: 40px;*/
-    /*    letter-spacing: 0px;*/
-    /*}*/
-
-    /*.benefitCenter p {*/
-    /*    margin-top: 10vh;*/
-    /*    font-size: 12.5px;*/
-    /*    line-height: 25px;*/
-    /*    font-weight: 200;*/
-    /*    letter-spacing: 1px;*/
-    /*}*/
-
-    /*.benefitCenter section {*/
-    /*    font-size: 12.5px;*/
-    /*    line-height: 25px;*/
-    /*    font-weight: 200;*/
-    /*    letter-spacing: 1px;*/
-    /*    margin-top: 5vh;*/
-
-    /*}*/
-
-    /*.circle-container {*/
-    /*    padding-right: 20vw;*/
-    /*    !* justify-self: center;*!*/
-    /*}*/
-
-}
 
 /*----------------------------------------circle part---------------------------------*/
 
@@ -181,22 +104,54 @@
     color: rgb(66, 61, 61);
 }
 
-
+.benefitCircle-subTitle{
+  display: none;
+}
 
 @media only screen and  (max-width: 768px) {
 
-    /*.circle-container{*/
-    /*    width: 150px;*/
-    /*    height: 150px;*/
-    /*    background: #E1E1E1;*/
-    /*    border-radius: 50%;*/
-    /*    margin-left: 35vw;*/
-    /*    margin-top: 5vh;*/
-    /*}*/
-    /*.circle-container p{*/
-    /*    margin-top: 28vh;*/
-    /*width: 85vw;*/
-    /*margin-left: -20vw;*/
-    /*font-size: 13px;*/
+  .benefit{
+    display: flex;
+    flex-direction: column;
+  }
+  .benefit-subTitle {
+    display: none;
+}
+.benefit-subTitle2{
+  display: inline;
+  width: 80vw;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 700;
+  padding-left: 10vw;
+}
+.benefit h2{
+  padding-top: 10vh;
+  padding-left: 10vw;
+  font-size: 2.5rem;
+  line-height: 25px;
+}
+.benefit p{
+  padding-left: 10vw;
+  font-size: 15px;
+
+}
+.benefit section{
+  padding-left: 10vw;
+  padding-top: 5vh;
+}
+.circle-container {
+  padding-left: 30vw;
+  padding-top: 10vh;
+}
+.benefitCircle-subTitle{
+  text-align: center;
+  display: block;
+  padding-top: 12vh;
+  font-size: 15px;
+  width: 90vw;
+  padding-left: 5vw;
+  font-weight: 700;
+}
 }
 

@@ -2,182 +2,118 @@
     /* box-sizing: inherit; */
     -webkit-font-smoothing: antialiased;
 }
+
 .iconPart{
     display: grid;
-    /*grid-template-columns:40vw;*/
-    /*grid-template-rows: repeat(2,30fr);*/
+  /*grid-template-columns:45fr 45fr;*/
     grid-template-areas: 'box wallet'
                           'glob key';
+                          
    background-color:rgb(244, 250, 244);
    margin-top:10vh;
-border: 1px solid rgba(202, 221, 248, 0.8);
+   border: 1px solid rgba(202, 221, 248, 0.8);
     justify-items: center;
     align-items: center;
     justify-content: center;
     align-content: center;
     padding: 5vw;
 }
+              /*-----box---*/
 .iconPart--box{
     display: flex;
     flex-direction: row;
 }
 
+.boxContent{
+    padding-top: 5vh;
+    margin: 0;
+}
+.boxContent h3{
+    font-size: 17px;
+}
+.boxContent p{
+    letter-spacing: 0px;
+    font-size: 15px;
+    line-height: 20px;
+}
 .iconPart--box:hover  img{
     transition: ease-out 0.5s;
     transform: translateY(-20px);
 }
 .box{
 grid-area: box;
-    /*width:30vw;*/
-    /*height: 45vh;*/
- /* background-color: chocolate;*/
- /*   margin: auto;*/
- /*   padding: 0;*/
+
 }
 .iconPart--box p{
     width:20vw
+    
 }
 .iconPart--box img{
     padding: 4vw;
-width:104px;
+    width:104px;
     height: 104px;
 }
-
+.iconPart--box   ::before{
+    width: 0px;
+   border-top: #ffc327 solid 1px;
+ /*  background-color: #ffc327;*/
+  height: 2px;
+  margin: 0 auto;
+    transition:  all 1s ease-in-out;
+    content: "";
+    display: block;
+    top: -1vh;
+   /* left: 10vw;*/
+    position: relative;
+}
  .iconPart--box :hover h3::before{
     width: 100px;
-    border-top: #ffc327 solid 1px;
+  border-top: #ffc327 solid 1px;
+  /*  background-color: #ffc327;*/
+  height: 2px;
+  margin: 0 auto;
     transition:  all 1s ease-in-out;
     content: "";
     display: block;
-    /*margin: 0 auto;*/
-    /*height: 2px;*/
     top: -1vh;
-    left: 10vw;
+   /* left: 10vw;*/
     position: relative;
 }
-.boxIMG::before{
-    width: 0px;
-    background-color: #ffc327;
-    transition:  all 1s ease-in-out;
-    content: "";
-    display: block;
-    margin: 0 auto; 
-    height: 2px;
-    /*top: 10vh;*/
-    /*left: 10vw;*/
-    position: relative;
-}
-
-
-
-.boxIMG {
-
-    /*width: 40vw;*/
-  background-color: orchid;
-    /*height: 40vh;*/
-    margin: auto;
-    
-}
-
- .boxContent {
-    /* background-color: blue;*/
-    /* width: 20vw;*/
-     margin: 0;
-     /*margin-left: 18vw;*/
-     
- }
-
 
 .iconDiv {
-   /* background-color: cadetblue;*/
-   /* width: 8vw;*/
     margin: 0px;
-    /*margin-left: 8vw;*/
-   /*height: 30vh;*/
     
 }
-/*.iconDiv img{
-    margin-top: 13vh;   
-}
- */
 
+                                  /* -----iconpart box wallet */
 
-.boxIMG h3{
-   /* margin-left: 18vw;*/
-   /* margin-top: -18vh;*/
-    color: #0d1a85;
-    font-size: 25px;
-    font-weight: 700;
-   
-   
-    
-}
-.boxIMG p{
-   /* margin-left: 18vw;*/
-   
-    /*width: 20vw;*/
-    /*font-size: 15px;*/
-    line-height: 20px;
-    letter-spacing :0;
-    color: #0d1a85;
-}
+                                   
  .wallet{
      grid-area: wallet;
-
-     /*width: 45vw;*/
-    /*height: 45vh;*/
- /*background-color: chocolate;*/
     padding: 0;
-    /*margin-left: -10vw;*/
-    /*margin-top: 5vh;*/
- }   
+    
+ } 
+  
  .walletCon {
-   /* background-color: blue;*/
-   /* width: 20vw;*/
     margin: 0;
-    /*margin-left: 18vw;*/
-    
+    padding-top: 5vh;
+
 }
 
-.walletImg:hover::before{
-    width: 100px;
-    background-color: #ffc327;
-    transition:  all .3s ease-in-out;
-    content: "";
-    display: block;
-    margin: 0 auto;
-    height: 2px;
-    left: 10vw;
-    top: 10vh;
-    position: relative;
-    
-}
-.walletImg::before{
-    width: 0px;
-    background-color: #ffc327;
-    transition:  all .3s ease-in-out;
-    content: "";
-    display: block;
-    margin: 0 auto;
 
-    left: 10vw;
-    height: 2px;
-    top: 10vh;
-   position: relative;
-}
 .wallet h3{
     
-    /*margin-top: -18vh;*/
+    
     color: #0d1a85;
-    font-size: 25px;
+    font-size: 17px;
     font-weight: 700;
 
 }
 .wallet P{
-    /*width: 20vw;*/
+    
     font-size: 15px;
     line-height: 20px;
-    letter-spacing :0;
+    letter-spacing :0px;
     color: #0d1a85;
 
 }
@@ -186,127 +122,45 @@ width:104px;
     transition: ease-out 0.5s;
     
 }
+                                       /*------ globe box ------*/
 .globe{
     grid-area: glob;
-
-    /*width: 45vw;*/
-    /*height: 55vh;*/
- /* background-color: chocolate;*/
     margin: auto;
     padding: 0;
-   
-   
-}
-.globeImg {
-    /*width: 42vw;*/
-   /* background-color: orchid;*/
-   /*  height: 45vh;*/
-     margin: auto;
 }
 
-/*.globeCon {
-    background-color: blue;*/
-   /* width: 20vw;*/
-   /* margin: 0;*/
-    /*margin-left: 18vw;
-    
-}*/
+
+
 .globe h3{
     
-    /*margin-top: -18vh;*/
+   
     color: #0d1a85;
-    font-size: 25px;
+    font-size: 17px;
     font-weight: 700;
 
 }
 .globe p {
-    /*width: 20vw;*/
+   
     font-size: 15px;
     line-height: 20px;
     letter-spacing :0;
     color: #0d1a85;
 }
-.globeImg:hover::before{
-    width: 100px;
-    background-color: #ffc327;
-    transition:  all .3s ease-in-out;
-    content: "";
-    display: block;
-    margin: 0 auto;
-    height: 2px;
-    left: 10vw;
-    top: 10vh;
-    position: relative;
-    
-}
-.globeImg::before{
-    width: 0px;
-    background-color: #ffc327;
-    transition:  all .3s ease-in-out;
-    content: "";
-    display: block;
-    margin: 0 auto;
+                                 /*------ key box ------*/
 
-    /*left: 10vw;*/
-    height: 2px;
-    top: 10vh;
-   position: relative;
-}
 .key{
     grid-area:key;
-
-    /*width: 45vw;*/
-    /*height: 55vh;*/
- /* background-color: chocolate;*/
- /*margin-left: -10vw;*/
- 
     padding: 0;
 }
 
-.keyImg{
-    
-    /*width: 40vw;*/
-  /* background-color: orchid;*/
-  /*  height: 45vh;*/
-    margin: auto;
-    
-}
-.keyImg:hover::before{
-    width: 90px;
-    background-color: #ffc327;
-    transition:  all .3s ease-in-out;
-    content: "";
-    display: block;
-    margin: 0 auto;
-    height: 2px;
-    /*top: 8vh;*/
-    /*left: 10vw;*/
-    position: relative;
-}
-.keyImg::before{
-    width: 100px;
-    background-color: #ffc327;
-    transition:  all .3s ease-in-out;
-    content: "";
-    display: block;
-    margin: 0 auto; 
-    height: 2px;
-    top: 8vh;
-    left: 10vw;
-   position: relative;
-}
+
+
 .keyCon {
-   /* background-color: blue;*/
-   /* width: 20vw;*/
-    margin: 0;
-    /*margin-left: 18vw;*/
-    
+    margin: 0; 
 }
 .key h3{
-    
-    /*margin-top: -18vh;*/
     color: #0d1a85;
-    font-size: 25px;
+    font-size: 17px;
     font-weight: 700;
 }
 .key p{
@@ -330,201 +184,6 @@ width:104px;
     .iconPart--box p{
         width:90%;
     }
-/*.box{*/
-/*    */
-/*    width: 100vw;*/
-/*    height: 30vh;*/
-/*  !*background-color: chocolate;*!*/
-/*    margin: auto;*/
-/*    padding: 0;*/
-/*   */
-/*}*/
-/*.boxIMG {*/
 
-/*    width: 85vw;*/
-/*  !* background-color: orchid;*!*/
-/*    height: 30vh;*/
-/*    margin: auto;*/
-/*    */
-/*}*/
-
-/* .boxContent {*/
-/*     !*background-color: blue;*!*/
-/*     width: 55vw;*/
-/*     margin-top: 8vh;*/
-/*    */
-/*     margin-left: 28vw;*/
-/*     */
-/* }*/
-
-/*.boxIMG h3{*/
-/*   !* margin-left: 18vw;*!*/
-/*    margin-top: -25vh;*/
-/*    color: #0d1a85;*/
-/*    font-size: 18px;*/
-/*    font-weight: 700;*/
-/*    */
-/*    */
-/*}*/
-/*.boxIMG p{*/
-/*   !* margin-left: 18vw;*!*/
-/*   */
-/*    width: 50vw;*/
-/*    font-size: 13px;*/
-/*    line-height: 20px;*/
-/*    letter-spacing :0;*/
-/*    color: #0d1a85;*/
-/*}*/
-/*.wallet{*/
-/*    */
-/*    width: 100vw;*/
-/*    height: 30vh;*/
-/*  !*background-color: chocolate;*!*/
-/*    margin: auto;*/
-/*    padding: 0;*/
-/*   */
-/*}*/
-/*.walletImg {*/
-
-/*    width: 85vw;*/
-/*  !* background-color: orchid;*!*/
-/*    height: 40vh;*/
-/*    margin: auto;*/
-/*    */
-/*}*/
-
-/* .walletCon {*/
-/*    !* background-color: blue;*!*/
-/*     width: 55vw;*/
-/*     margin-top: 8vh;*/
-/*    */
-/*     margin-left: 28vw;*/
-/*     */
-/* }*/
-
-
-/*.walletImg h3{*/
-/*   !* margin-left: 18vw;*!*/
-/*    margin-top: -25vh;*/
-/*    color: #0d1a85;*/
-/*    font-size: 18px;*/
-/*    font-weight: 700;*/
-/*    */
-/*    */
-/*}*/
-/*.walletImg p{*/
-/*   !* margin-left: 18vw;*!*/
-/*   */
-/*    width: 50vw;*/
-/*    font-size: 13px;*/
-/*    line-height: 20px;*/
-/*    letter-spacing :0;*/
-/*    color: #0d1a85;*/
-/*}*/
-/*.globe{*/
-/*    */
-/*    width: 100vw;*/
-/*    height: 45vh;*/
-/* !* background-color: chocolate;*!*/
-/*    margin: auto;*/
-/*    padding: 0;*/
-/*   */
-/*}*/
-/*.globeImg {*/
-
-/*    width: 85vw;*/
-/*  !* background-color: orchid;*!*/
-/*    height: 40vh;*/
-/*    margin: auto;*/
-/*    */
-/*}*/
-
-/* .globeCon {*/
-/*    !* background-color: blue;*!*/
-/*     width: 55vw;*/
-/*     margin-top: 8vh;*/
-/*    */
-/*     margin-left: 28vw;*/
-/*     */
-/* }*/
-
-/*.globeImg h3{*/
-/*   !* margin-left: 18vw;*!*/
-/*    margin-top: -25vh;*/
-/*    color: #0d1a85;*/
-/*    font-size: 18px;*/
-/*    font-weight: 700;*/
-/*    */
-/*    */
-/*}*/
-/*.globeImg p{*/
-/*   !* margin-left: 18vw;*!*/
-/*   */
-/*    width: 60vw;*/
-/*    font-size: 13px;*/
-/*    line-height: 20px;*/
-/*    letter-spacing :0;*/
-/*    color: #0d1a85;*/
-/*}*/
-/*.key{*/
-/*    */
-/*    width: 100vw;*/
-/*    height: 45vh;*/
-/* !* background-color: chocolate;*!*/
-/*    margin: auto;*/
-/*    padding: 0;*/
-/*   */
-/*}*/
-/*.keyImg {*/
-
-/*    width: 85vw;*/
-/*  !* background-color: orchid;*!*/
-/*    height: 40vh;*/
-/*    margin: auto;*/
-/*    */
-/*}*/
-
-/* .keyCon {*/
-/*    !* background-color: blue;*!*/
-/*     width: 55vw;*/
-/*     margin-top: 8vh;*/
-/*    */
-/*     margin-left: 28vw;*/
-/*     */
-/* }*/
-
-
-/*.iconDiv {*/
-/*   !* background-color: cadetblue;*!*/
-/*    width: 15vw;*/
-/*    margin: 0px;*/
-/*    margin-left: 4vw;*/
-/*   height: 30vh;*/
-/*    */
-/*}*/
-/*.iconDiv img{*/
-/*    margin-top: 13vh;    */
-/*}*/
-
-
-
-/*.keyImg h3{*/
-/*   !* margin-left: 18vw;*!*/
-/*    margin-top: -25vh;*/
-/*    color: #0d1a85;*/
-/*    font-size: 18px;*/
-/*    font-weight: 700;*/
-/*    */
-/*    */
-/*}*/
-/*.keyImg p{*/
-/*   !* margin-left: 18vw;*!*/
-/*   */
-/*    width: 60vw;*/
-/*    font-size: 13px;*/
-/*    line-height: 20px;*/
-/*    letter-spacing :0;*/
-/*    color: #0d1a85;*/
-/*}*/
 
 }
