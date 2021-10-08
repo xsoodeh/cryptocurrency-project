@@ -1,20 +1,20 @@
 $(document).ready(function () {
     // Add minus icon for collapse element which is open by default
     $(".collapse.show").each(function () {
-        $(this).siblings(".card-header").find(".btn i").html("remove");
-        $(this).prev(".card-header").addClass("highlight");
+        $(this).siblings(".question").find(".btn i").html("remove");
+        $(this).prev(".question").addClass("highlight");
     });
 
     // Toggle plus minus icon on show hide of collapse element
     $(".collapse").on('show.bs.collapse', function () {
-        $(this).parent().find(".card-header .btn i").html("remove");
+        $(this).parent().find(".question .btn i").html("remove");
     }).on('hide.bs.collapse', function () {
-        $(this).parent().find(".card-header .btn i").html("add");
+        $(this).parent().find(".question .btn i").html("add");
     });
 
     // Highlight open collapsed element
-    $(".card-header .btn").click(function () {
-        $(".card-header").not($(this).parents()).removeClass("highlight");
-        $(this).parents(".card-header").toggleClass("highlight");
+    $(".question .btn").click(function () {
+        $(".question").not($(this).parents()).removeClass("highlight");
+        $(this).parents(".question").toggleClass("highlight");
     });
 });

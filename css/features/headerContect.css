@@ -1,17 +1,20 @@
 
 .headerContent h6{
-   padding-top: 20vh;
+   padding-top: 10vh;
     margin-left: 15vw;
     color: #80a3d3;
     display: inline-block;
     
-    font-size: 20px; line-height: 25px; font-weight: 300; letter-spacing: 5px;
+    font-size: 20px; 
+    line-height: 25px; 
+    font-weight: 300; 
+    letter-spacing: 5px;
 }
 
 .headerContent h1{
     
-    font-size: 60px;
-    line-height: 59px;
+    font-size: 70px;
+    line-height: 80px;
     letter-spacing: 0px;
     display: inline-block;
     font-weight: 900;
@@ -25,4 +28,13 @@
 .headerContent{
     display: inline-block;
    width: 60vw;
+}
+@media screen and (max-width: 750px) {
+    .headerContent h1 {
+        font-size: 4.2rem;
+        line-height: 4.7rem;
+        width: 80vw;
+
+
+    }
 }

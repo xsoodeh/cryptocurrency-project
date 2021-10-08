@@ -1,102 +1,158 @@
-html
-body {
-    background:var(--main-color);
-    font-family: 'Poppins', sans-serif
-}
-.mainContainer{
+
+.mainContainer {
     background-color: var(--main-color);
-}
-.Heading {
-
-    margin-left: 240px;
-    margin-bottom: 150px;
-    margin-top: 120px;
-}
-.mainTitle {
     color: var(--menu-text-color);
-    font-size: 70px;
+}
+
+/**{*/
+/*    border: #ffc327 solid 1px;*/
+
+/*----------------------------------heading setting------------------------------*/
+.Heading {
+    padding: 8vw 8vw 15vw 16vw;
+    /*margin-left: 120px;*/
+
+
+}
+
+.mainTitle {
+    font-size: 7rem;
     font-weight: 700;
-}
-.mob-title{
-    display: none;
+    width: 50vw;
+
 }
 
-@media screen and (max-width: 750px){
+@media (min-width: 321px)and (max-width: 375px) {
     .Heading {
+        padding: 40vw 8vw 9vw 9vw;
+        margin-bottom: 40px;
+    }
 
-        margin-left: 130px;
-        margin-bottom: 150px;
-        margin-top: 200px;
-    }
-    .mob-title{
-        display: flex;
-        color: var(--menu-text-color);
-        font-size: 55px;
+    .mainTitle {
+        font-size: 4.2rem;
         font-weight: 700;
-    }
-    .mainTitle{
-        display: none;
+        width: 80vw;
+        line-height: 4.7rem;
+        padding-right: 20vw;
+        padding-bottom: 30vw;
+
     }
 
 }
+
+@media (min-width: 376px)and (max-width: 425px) {
+    .Heading {
+        padding: 8vw 1vw 15vw 10vw;
+
+    }
+
+    .mainTitle {
+        font-size: 4.2rem;
+        font-weight: 700;
+        width: 60vw;
+        line-height: 4.7rem;
+    }
+
+
+}
+
 .smallTitle {
     color: #7fa4da;
     font-weight: 400;
     margin-bottom: 20px;
     font-size: 20px;
     letter-spacing: 5px;
-
 }
-@media screen and (max-width: 750px){
-    .smallTitle{
-        font-size: 15px;
+
+@media (min-width: 321px)and (max-width: 375px) {
+    .smallTitle {
+        font-weight: 400;
+        margin-bottom: 20px;
+        font-size: 1.3rem;
+        letter-spacing: 0.3rem;
     }
-
 }
 
-.accordion {
-    margin-top: 60px; /* Add space above accordion */
-    margin-left: 0;
+@media screen and (min-width: 376px)and (max-width: 425px) {
+    .smallTitle {
+        font-size: 1.3rem;
+        letter-spacing: 0.2rem;
 
-}
-.mob-subtitle {
-    display: none;
-
-}
-.secondBox{
-    margin-left:-20px;
-
+    }
 }
 
-.accordion .card {
-    border-width: 1px 0 1px 0;
-    color: var(--menu-text-color);
+/*----------------------faq setting-----------------------------*/
+
+.accordionTitle {
+    padding-bottom: 4vw;
+    width: 34rem;
+}
+@media (min-width: 321px)and (max-width: 375px){
+    .accordionTitle{
+        line-height: 2rem;
+    }
+}
+.firstRow {
+    display: flex;
+    flex-direction: row;
+    row-gap: 7vw;
+    column-gap: 4vw;
+    flex-wrap: wrap;
+    margin-left: 16.5vw;
+    /*margin-right: 10vw;*/
+}
+@media (min-width: 321px)and (max-width: 375px){
+    .firstRow{
+        margin-left: 10vw;
+    }
+}
+    .accordion {
+    width: 470px;
+}
+
+.card {
+    /*border-width: 1px 0 1px 0;*/
+    /*color: var(--menu-text-color);*/
     border: none;
     background-color: var(--main-color);
     border-left: solid 2px #ffffff1a;
+    padding-bottom: 0.5vw;
+
 }
 
-.accordion .card .card-header {
+.question {
     background: var(--main-color);
     padding-top: 7px;
     padding-bottom: 7px;
     border-radius: 0;
     margin-bottom: -2px;
-    font-family: "Roboto", sans-serif;
 }
-.number{
+@media (min-width: 321px)and (max-width: 375px){
+    .question{
+
+    }
+}
+
+.number {
     font-weight: 700;
-    margin-right: 25px;
+    margin-left: 15px;
+    margin-right: 30px;
     font-size: 13px;
+
+
 }
-.accordion .card-header h2 span {
+
+.question h2 span {
     float: left;
+    clear: both;
     margin-top: 10px;
-    border-left: solid 2px ;
+    border-left: solid 2px;
+    width: 80%;
+
 
 }
 
-.accordion .card-header .btn {
+.btn {
     font-size: 1.5rem;
     letter-spacing: 0.3px;
     font-weight: 500;
@@ -105,138 +161,127 @@ body {
     position: relative;
     top: -2px;
     margin-bottom: 10px;
-
+}
+@media (min-width: 321px)and (max-width: 375px){
+    .btn{
+        width: 23rem;
+        font-size: 1.3rem;
+    }
 }
 
-.accordion .card-header i {
+.question i {
     float: right;
+    clear: both;
     font-size: 1.6rem;
     font-weight: bold;
     position: relative;
     top: 5px;
     color: #4f537d;
 }
+@media (min-width: 321px)and (max-width: 375px){
+    .question i{
+        margin-top: -22px;
 
-.accordion .card-body {
-    background:var(--main-color);
+    }
+}
+
+.answer {
+    background: var(--main-color);
     border-left: solid 2px var(--second-color);
-    color: var(--menu-text-color);
-    padding-left: 70px;
+    /*color: var(--menu-text-color);*/
+    padding-left: 60px;
     padding-right: 40px;
     font-size: 15px;
     font-weight: 400;
 }
-@media screen and (max-width: 750px){
-    .accordion .card-body{
-        font-size: 13px;
+
+@media (min-width: 321px)and (max-width: 375px) {
+
+    .accordion {
+        margin-left: 0;
+        padding: 0;
+    }
+
+
+
+    .answer {
+        font-size: 1.3rem;
+        padding-right: 6rem;
+        line-height: 2rem;
     }
 }
 
-.accordion .highlight {
+.highlight {
 
     background: var(--main-color);
     border-left: solid 2px var(--second-color);
     color: var(--second-color);
 }
 
-.firsstRow {
-    display: flex;
-    flex-direction: row;
-}
-
-.seCondRow {
-    display: flex;
-    flex-direction: row;
-}
-
-.normalDisplay {
-    color: var(--menu-text-color);
-    margin-bottom: 50px;
-    font-size: 27px;
-    font-weight: bold;
-
-}
-
 .bottomText {
     color: var(--menu-text-color);
-    margin-left: 250px;
-    margin-top: 150px;
-    font-size: 15px;
-    padding-right: 240px;
-    font-weight: 400;
+    padding: 9vw 16vw 10vw 15vw;
 }
 
+@media (min-width: 321px)and (max-width: 375px) {
+    .accordionTitle {
+        width: 75vw;
+    }
 
-#accordionExample {
-    margin-left: 250px;
-    width: 500px;
+
 }
-
-#accordion_Example {
-    margin-left: 50px;
-    width: 500px;
-}
-
-#accordion-Example {
-    margin-left: 250px;
-    width: 500px;
-}
-
-#accordion__Example {
-    margin-left: 50px;
-    width: 500px;
-}
-@media screen and (max-width: 750px) {
-
-    .firsstRow {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .seCondRow {
-        display: flex;
-        flex-direction: column;
-    }
-    .accordion .card-header .btn {
-        font-size: 1.3rem;
-        letter-spacing: 0.3px;
-
-
-    }
-}
-@media screen and (max-width: 750px){
-
-    .firstBox{
-        margin-left:-125px;
-    }
-    .secondBox{
-        margin-left: 75px;
-    }
-    .thirdBox{
-        margin-left: -125px;
-    }
-    .fourthBox{
-        margin-left: 75px;
-    }
+@media (min-width: 321px)and (max-width: 375px){
     .bottomText{
-        margin-left: 125px;
-        padding-right: 150px;
-        font-size: 13px;
-        font-weight: 400;
+        line-height: 2rem;
+        padding: 40vw 5vw 10vw 7.4vw;
+        width: 30rem;
     }
 }
+@media (min-width: 376px)and (max-width: 425px) {
+    .accordionTitle {
+        width: 70vw;
+    }
 
+    .question {
+        /*display: flex;*/
 
-@media screen and (max-width: 750px) {
-    .mob-subtitle {
+    }
+
+    .bottomText {
+        /*padding: 40vw 5vw 10vw 7.4vw;*/
+    }
+
+}
+
+@media (min-width: 426px) and (max-width: 750px) {
+
+    .firstRow {
         display: flex;
-        color: var(--menu-text-color);
-        font-size: 20px;
-        font-weight: bold;
-        margin-bottom: 40px;
+        flex-direction: column;
+        width: 80vw;
+        column-gap: 0;
+        row-gap: 10vw;
     }
 
-    .normalDisplay {
-        display: none;
+    .accordion {
+        width: 65vw;
+    }
+
+    .btn {
+        font-size: 1.3rem;
+        /*letter-spacing: 0.3px;*/
+    }
+
+    .bottomText {
+        line-height: 18px;
+
+    }
+
+    .answer {
+        line-height: 18px;
+        font-size: 13px;
+        padding-top: 0;
     }
 }
+
+
