@@ -3,6 +3,7 @@
     background-color: var(--main-color);
     color: var(--menu-text-color);
 }
+
 /**{*/
 /*    border: #ffc327 solid 1px;*/
 
@@ -12,56 +13,48 @@
     /*margin-left: 120px;*/
 
 
-
 }
 
 .mainTitle {
     font-size: 7rem;
     font-weight: 700;
-    width:50vw;
-
-}
-@media (min-width: 321px)and (max-width: 375px){
-   .Heading{
-       padding: 40vw 8vw 60vw 10vw;
-   }
-    .mainTitle{
-        font-size: 4.2rem;
-        font-weight: 700;
-        width: 65vw;
-        line-height: 4.7rem;
-    }
-
-}
-@media (min-width: 376px)and (max-width: 425px){
-    .Heading{
-        padding: 1vw 1vw 85vw 10vw;
-
-    }
-    .mainTitle{
-        font-size: 2rem;
-        font-weight: 700;
-        width: 40%;
-        line-height: 4.7rem;
-    }
-
+    width: 50vw;
 
 }
 
-@media screen and (max-width: 750px) {
+@media (min-width: 321px)and (max-width: 375px) {
     .Heading {
-        padding: 30vw 5vw 40vw 10vw;
+        padding: 40vw 8vw 9vw 9vw;
+        margin-bottom: 40px;
     }
 
     .mainTitle {
         font-size: 4.2rem;
-        line-height: 4.7rem;
         font-weight: 700;
-        width: 80%;
+        width: 80vw;
+        line-height: 4.7rem;
+        padding-right: 20vw;
+        padding-bottom: 30vw;
+
     }
+
 }
 
+@media (min-width: 376px)and (max-width: 425px) {
+    .Heading {
+        padding: 8vw 1vw 15vw 10vw;
 
+    }
+
+    .mainTitle {
+        font-size: 4.2rem;
+        font-weight: 700;
+        width: 60vw;
+        line-height: 4.7rem;
+    }
+
+
+}
 
 .smallTitle {
     color: #7fa4da;
@@ -71,55 +64,73 @@
     letter-spacing: 5px;
 }
 
-@media screen and (max-width: 750px) {
+@media (min-width: 321px)and (max-width: 375px) {
     .smallTitle {
+        font-weight: 400;
+        margin-bottom: 20px;
         font-size: 1.3rem;
-        letter-spacing: 3px;
-        margin-bottom: 7vw;
+        letter-spacing: 0.3rem;
     }
 }
-@media screen and (min-width: 376px)and (max-width: 425px){
-    .smallTitle{
+
+@media screen and (min-width: 376px)and (max-width: 425px) {
+    .smallTitle {
         font-size: 1.3rem;
         letter-spacing: 0.2rem;
 
     }
 }
+
 /*----------------------faq setting-----------------------------*/
 
 .accordionTitle {
     padding-bottom: 4vw;
     width: 34rem;
 }
-
+@media (min-width: 321px)and (max-width: 375px){
+    .accordionTitle{
+        line-height: 2rem;
+    }
+}
 .firstRow {
     display: flex;
     flex-direction: row;
     row-gap: 7vw;
     column-gap: 4vw;
     flex-wrap: wrap;
-    margin-left:16.5vw;
+    margin-left: 16.5vw;
     /*margin-right: 10vw;*/
 }
-
-.accordion {
-    width:470px;
+@media (min-width: 321px)and (max-width: 375px){
+    .firstRow{
+        margin-left: 10vw;
+    }
 }
- .card {
+    .accordion {
+    width: 470px;
+}
+
+.card {
     /*border-width: 1px 0 1px 0;*/
     /*color: var(--menu-text-color);*/
     border: none;
     background-color: var(--main-color);
     border-left: solid 2px #ffffff1a;
-     padding-bottom: 0.5vw;
+    padding-bottom: 0.5vw;
+
 }
- .question {
+
+.question {
     background: var(--main-color);
     padding-top: 7px;
     padding-bottom: 7px;
     border-radius: 0;
     margin-bottom: -2px;
-    /*display: inline-block;*/
+}
+@media (min-width: 321px)and (max-width: 375px){
+    .question{
+
+    }
 }
 
 .number {
@@ -128,18 +139,20 @@
     margin-right: 30px;
     font-size: 13px;
 
+
 }
 
- .question h2 span {
+.question h2 span {
     float: left;
-     clear: both;
+    clear: both;
     margin-top: 10px;
     border-left: solid 2px;
-     width:80%
+    width: 80%;
 
- }
 
-  .btn {
+}
+
+.btn {
     font-size: 1.5rem;
     letter-spacing: 0.3px;
     font-weight: 500;
@@ -148,20 +161,31 @@
     position: relative;
     top: -2px;
     margin-bottom: 10px;
-
+}
+@media (min-width: 321px)and (max-width: 375px){
+    .btn{
+        width: 23rem;
+        font-size: 1.3rem;
+    }
 }
 
- .question i {
+.question i {
     float: right;
-     clear: both;
+    clear: both;
     font-size: 1.6rem;
     font-weight: bold;
     position: relative;
     top: 5px;
     color: #4f537d;
- }
+}
+@media (min-width: 321px)and (max-width: 375px){
+    .question i{
+        margin-top: -22px;
 
- .answer {
+    }
+}
+
+.answer {
     background: var(--main-color);
     border-left: solid 2px var(--second-color);
     /*color: var(--menu-text-color);*/
@@ -171,46 +195,65 @@
     font-weight: 400;
 }
 
-    .highlight {
+@media (min-width: 321px)and (max-width: 375px) {
 
-        background: var(--main-color);
-        border-left: solid 2px var(--second-color);
-        color: var(--second-color);
+    .accordion {
+        margin-left: 0;
+        padding: 0;
     }
 
-    .bottomText {
-        color: var(--menu-text-color);
-        padding: 9vw 16vw 10vw 15vw;
-    }
 
-@media (min-width: 321px)and (max-width: 375px){
-    .accordionTitle{
+
+    .answer {
+        font-size: 1.3rem;
+        padding-right: 6rem;
+        line-height: 2rem;
+    }
+}
+
+.highlight {
+
+    background: var(--main-color);
+    border-left: solid 2px var(--second-color);
+    color: var(--second-color);
+}
+
+.bottomText {
+    color: var(--menu-text-color);
+    padding: 9vw 16vw 10vw 15vw;
+}
+
+@media (min-width: 321px)and (max-width: 375px) {
+    .accordionTitle {
         width: 75vw;
     }
-    .question {
-        display: flex;
 
-    }
-    .bottomText{
-        padding: 40vw 5vw 10vw 7.4vw;
-    }
 
 }
-@media (min-width: 376px)and (max-width: 425px){
-    .accordionTitle{
+@media (min-width: 321px)and (max-width: 375px){
+    .bottomText{
+        line-height: 2rem;
+        padding: 40vw 5vw 10vw 7.4vw;
+        width: 30rem;
+    }
+}
+@media (min-width: 376px)and (max-width: 425px) {
+    .accordionTitle {
         width: 70vw;
     }
+
     .question {
         /*display: flex;*/
 
     }
-    .bottomText{
+
+    .bottomText {
         /*padding: 40vw 5vw 10vw 7.4vw;*/
     }
 
 }
 
-@media (min-width:426px) and (max-width: 750px) {
+@media (min-width: 426px) and (max-width: 750px) {
 
     .firstRow {
         display: flex;
