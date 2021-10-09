@@ -25,10 +25,11 @@
 
 
 .miner-text {
-    margin-right: 7vw;
+    margin-right:40px;
 }
 .miner img{
-    width: 35vw;
+    width:463px;
+    margin:auto 35px;
 }
 /*------------------------------setting for 1024px desktop------------------*/
 @media (min-width: 1000px) and (max-width: 1024px){
@@ -37,6 +38,12 @@
     }
     .benefits-text{
         width: 36%;
+    }
+    .miner-text {
+        margin-left:40px;
+    }
+    .benefits-text button{
+        margin-top:3.3vw;
     }
 }
 /*-----------------------------------setting for 4k desktops------------------------*/
