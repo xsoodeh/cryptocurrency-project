@@ -2,6 +2,7 @@ a {
     text-decoration:none;
     color: inherit;
     font-family: 'Poppins', sans-serif;
+    cursor: pointer;
 
 }
 a:active, a:hover, a:visited{

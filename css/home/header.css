@@ -8,12 +8,14 @@
     box-sizing:border-box;
 }
 #header img {
-    animation:myanimation 4s;
+    /*animation:myanimation 4s;*/
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform-origin: 50% 50% 0px;
 }
 
 @keyframes myanimation {
     0% {
-        transform: rotateY(-80deg);
+        transform: rotateY(80deg);
     }
     50% {
         transform: rotateY(0deg);
