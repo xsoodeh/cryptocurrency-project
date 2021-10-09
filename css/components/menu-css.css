@@ -1,47 +1,52 @@
 .menu{
-    min-height: 12vh;
+    height:70px;
     width: 100%;
     background-color:var(--main-color);
     display: grid;
-    grid-template-columns: 30% 70%;
+    /*grid-template-columns: 20% 79%;*/
     grid-template-areas: "logo buttons";
     border-bottom:solid #3c4e89 1px ;
     box-sizing:initial;
     z-index: 1;
+    /*justify-items: center;*/
+    align-items: center;
+
 }
-.sticky {
-    position: fixed;
-    top: 0;
-    opacity: 90% ;
-    transition-timing-function: linear;
-    min-height: 10vh;
-}
-.logo{
+#logo{
     grid-area: logo;
-    height: 7vh;
+    height: 37px;
+    width: 137px;
     align-self: center;
-    padding-left: 2vw;
+    padding-left: 1.5vw;
     cursor:pointer;
     display: inline-block;
 
 }
+
 .menu--items{
     grid-area: buttons;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    align-content: center;
+    align-content:center;
 }
-.menu--items-button{
+.menu--items button{
     color:var(--third-color) ;
-    background-color: var(--main-color);
+    padding:0 30px;
+    height:70px;
+    background-color:var(--main-color);
 }
-.menu--items-button:hover{
+.menu--items .buy-btn{
+    color: #07074d;
+    background-color: var(--second-color);
+    transition:  all 1s ease-in-out;
+
+}
+button:hover{
     background-color: #1b245b;
     color: #FFFFFF;
-    cursor:pointer;
+    transition:  all 1s ease-in-out;
 }
-
 button.active {
     background-color: #1b245b;
     color: #FFFFFF;
@@ -53,12 +58,27 @@ button.active {
 #menu-mob{
     display: none;
 }
+/*--------------------------------sticky menu settings-----------------------*/
+.sticky {
+    position: fixed;
+    top: 0;
+    opacity: 90% ;
+    transition: all 2s ease-out;
 
+}
+.stickyMenu-button{
+    height: 60px;
+}
+.stickyMenu-logo{
+    width: 162px;
+    height:36px ;
+}
+/*----------------------------------------*/
 @media screen and (max-width: 750px) {
     .menu--items{
         display: none;
     }
-    .logo{
+    #logo{
         height:35%;
     }
 

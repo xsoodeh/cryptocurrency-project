@@ -30,10 +30,18 @@ function closeMenuBody() {
 window.onscroll= function(){scrollNav()};
 function scrollNav(){
     let navbar = document.getElementById("menu");
+    let logo=document.getElementById("logo");
+    let menuButtons=document.getElementById("menuButtons");
     if (document.body.scrollTop > 75|| document.documentElement.scrollTop > 75) {
         navbar.classList.add("sticky");
+        // navbar.classList.add("stickyMenu-logo");
+        // logo.classList.add("stickyMenu-logo");
+        // menuButtons.classList.add("stickyMenu-button");
     }
     else {
         navbar.classList.remove("sticky");
+        // navbar.classList.remove("stickyMenu-logo");
+        // logo.classList.remove("stickyMenu-logo");
+        // menuButtons.classList.remove("stickyMenu-button");
     }
 }
