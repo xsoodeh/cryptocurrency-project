@@ -1,23 +1,23 @@
 button{
     text-align: center;
-    /*padding: 0.9vw 30px;*/
     border: 0;
     font-size: 1.5rem;
     font-family: 'Poppins', sans-serif;
     cursor: pointer;
+
 }
 
 .select-btn{
     color:var(--text-color);
     background-color: var(--second-color);
     border: none;
+    padding:15px 50px;
 
 }
 
 .menu--items .buy-btn:hover,.select-btn:hover{
     background-color: #f1b925;
-    transition:  all 1s ease-in-out;
-
+    transition:  all 0.3s ease-in-out;
 }
 @media screen and (max-width: 750px ) {
     button {
