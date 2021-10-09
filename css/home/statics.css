@@ -1,13 +1,18 @@
 #static{
-    margin-top: 3vw;
+    margin-top:25px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-items: center;
 }
-#static p{
-    width:50%;
-text-align: center;
+#static p {
+    width: 45%;
+    text-align: center;
+}
+    #static h2{
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
 }
 @media screen and (max-width: 750px) {
     #static p{

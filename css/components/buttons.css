@@ -8,16 +8,20 @@ button{
 }
 
 .select-btn{
-    color:var(--text-color);
+    color:#161c53;
     background-color: var(--second-color);
     border: none;
-    padding:15px 50px;
+    width: 174px;
+    height: 45px;
 
 }
 
 .menu--items .buy-btn:hover,.select-btn:hover{
     background-color: #f1b925;
     transition:  all 0.3s ease-in-out;
+    color:#161c53;
+
+
 }
 @media screen and (max-width: 750px ) {
     button {
