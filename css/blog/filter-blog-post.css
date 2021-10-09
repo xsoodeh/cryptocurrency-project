@@ -68,7 +68,7 @@ a.authors:after {
     padding: 2px;
 }
 a.reset::before {
-    content: '\e963';
+    content: '\e82a';
     font-family: "mfn-icons";
     padding: 2px;
 }
