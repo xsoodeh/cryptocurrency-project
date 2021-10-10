@@ -186,34 +186,35 @@ grid-area: box;
     }
 
     .boxContent h3{
-        font-size: 13px;
-        line-height: 19px;
+        font-size: 15px;
+        line-height: 20px;
     }
     .boxContent p{
         letter-spacing: 0px;
-        font-size: 13px;
-        line-height: 19px;
+        font-size: 15px;
+        line-height: 20px;
     }
     .wallet h3{
-        font-size: 13px;
+        font-size: 15px;
         line-height: 19px;
         font-weight: 700;
     
     }
     .wallet P{
-        font-size: 13px;
-        line-height: 19px;
+        font-size: 15px;
+        line-height: 20px;
         letter-spacing :0px;
     }
     .globe h3{
-        font-size: 13px;
+        font-size: 15px;
         font-weight: 700;
-        line-height: 19px;
+        line-height: 20px;
     
     }
     .globe p {
-        font-size: 13px;
-        line-height: 19px;
+        font-size: 15px;
+        line-height: 20px;
+
         letter-spacing :0;
     }
     .key h3{
@@ -223,9 +224,64 @@ grid-area: box;
     }
     .key p{
         
-        font-size: 13px;
-        line-height: 19px;
+        font-size: 15px;
+        line-height: 20px;
         letter-spacing :0;
     
     }
+}
+@media only screen and (max-width:428px){
+    .iconPart {
+        display: flex;
+        flex-direction: column;
+       /*  width: 95%;*/
+        
+     }
+         .iconPart--box p{
+             width:90%;
+         }
+     
+         .boxContent h3{
+             font-size: 13px;
+             line-height: 19px;
+         }
+         .boxContent p{
+             letter-spacing: 0px;
+             font-size: 13px;
+             line-height: 19px;
+         }
+         .wallet h3{
+             font-size: 13px;
+             line-height: 19px;
+             font-weight: 700;
+         
+         }
+         .wallet P{
+             font-size: 13px;
+             line-height: 19px;
+             letter-spacing :0px;
+         }
+         .globe h3{
+             font-size: 13px;
+             font-weight: 700;
+             line-height: 19px;
+         
+         }
+         .globe p {
+             font-size: 13px;
+             line-height: 19px;
+             letter-spacing :0;
+         }
+         .key h3{
+             line-height: 19px;
+             font-size: 13px;
+             font-weight: 700;
+         }
+         .key p{
+             
+             font-size: 13px;
+             line-height: 19px;
+             letter-spacing :0;
+         
+         }
 }
