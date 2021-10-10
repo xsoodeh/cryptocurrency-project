@@ -62,7 +62,7 @@ footer ion-icon:hover{
     align-items: center;
     padding: 0 55px;
 }
-.icons{
+footer .icons{
     margin-left: 195px;
 }
 .up-icon-mob {
@@ -111,7 +111,7 @@ footer ion-icon:hover{
         justify-items: start;
         padding: 0;
     }
-    .icons{
+   footer .icons{
         margin-left:125px;
     }
 }
