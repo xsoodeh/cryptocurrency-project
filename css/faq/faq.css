@@ -129,14 +129,15 @@
 
 @media (min-width: 320px)and (max-width: 375px) {
     .Heading {
-        padding: 40vw 8vw 9vw 9vw;
+        padding: 38vw 4vw 9vw 10vw;
         margin-bottom: 40px;
+
     }
 
     .mainTitle {
         font-size: 4.2rem;
         font-weight: 700;
-        width: 70vw;
+        width: 90vw;
         line-height: 4.7rem;
         padding-right: 20vw;
         padding-bottom: 30vw;
@@ -145,7 +146,7 @@
 
     .bottomText {
         line-height: 2rem;
-        padding: 40vw 5vw 10vw 7.4vw;
+        padding: 40vw 6vw 10vw 7.4vw;
         width: 30rem;
     }
 
@@ -155,19 +156,15 @@
 
     .answer {
         font-size: 1.3rem;
-        padding-right: 6rem;
+        padding-right: 7.5rem;
+        padding-bottom: 3rem;
         line-height: 2rem;
-    }
-
-    .question i {
-        margin-top: -22px;
-
     }
 
     .btn {
         width: 23rem;
         font-size: 1.3rem;
-        text-align-last: center;
+
     }
 
     .firstRow {
@@ -188,6 +185,15 @@
     .accordionTitle {
         line-height: 2rem;
     }
+    .btn-link {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: center;
+        justify-items: center;
+        align-content: center;
+    }
+
 }
 
 @media (min-width: 376px)and (max-width: 425px) {
