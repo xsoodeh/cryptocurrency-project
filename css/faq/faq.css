@@ -4,76 +4,17 @@
     color: var(--menu-text-color);
 }
 
-/**{*/
-/*    border: #ffc327 solid 1px;*/
-
 /*----------------------------------heading setting------------------------------*/
 .Heading {
     padding: 8vw 8vw 15vw 16vw;
-    /*margin-left: 120px;*/
-
-
 }
 
 .mainTitle {
     font-size: 7rem;
     font-weight: 700;
     width: 50vw;
-
 }
 
-@media (min-width: 320px)and (max-width: 375px) {
-    .Heading {
-        padding: 40vw 8vw 9vw 9vw;
-        margin-bottom: 40px;
-    }
-
-    .mainTitle {
-        font-size: 4.2rem;
-        font-weight: 700;
-        width: 70vw;
-        line-height: 4.7rem;
-        padding-right: 20vw;
-        padding-bottom: 30vw;
-
-    }
-}
-@media (min-width: 376px)and (max-width: 425px) {
-    .Heading {
-        padding: 35vw 15vw 60vw 8vw;
-    }
-
-    .mainTitle {
-        font-size: 4.2rem;
-        font-weight: 700;
-        width: 82vw;
-        line-height: 4.7rem;
-    }
-}
-@media (min-width: 426px) and (max-width: 750px){
-    .Heading {
-        padding: 35vw 15vw 30vw 8vw;
-    }
-
-    .mainTitle {
-        font-size: 4.2rem;
-        font-weight: 700;
-        width: 82vw;
-        line-height: 4.7rem;
-    }
-}
-@media (min-width: 1000px)and (max-width: 1024px){
-    .Heading {
-        padding: 15vw 15vw 15vw 5vw;
-    }
-
-    .mainTitle {
-        font-size: 7rem;
-        font-weight: 700;
-        width: 82vw;
-        line-height: 7.5rem;
-    }
-}
     .smallTitle {
     color: #7fa4da;
     font-weight: 400;
@@ -81,41 +22,11 @@
     font-size: 20px;
     letter-spacing: 5px;
 }
-
-@media (min-width: 320px)and (max-width: 375px) {
-    .smallTitle {
-        font-weight: 400;
-        margin-bottom: 20px;
-        font-size: 1.3rem;
-        letter-spacing: 0.3rem;
-    }
-}
-
-@media (min-width: 376px)and (max-width: 425px) {
-    .smallTitle {
-        font-size: 1.3rem;
-        letter-spacing: 0.3rem;
-
-    }
-}
-
 /*----------------------faq setting-----------------------------*/
 
 .accordionTitle {
     padding-bottom: 4vw;
     width: 34rem;
-}
-@media (min-width: 321px)and (max-width: 375px){
-    .accordionTitle{
-        line-height: 2rem;
-    }
-}
-@media screen and (min-width: 376px)and (max-width: 425px){
-    .accordionTitle{
-        line-height: 2rem;
-        width: 60rem;
-        padding-bottom: 5rem;
-    }
 }
 .firstRow {
     display: flex;
@@ -126,36 +37,7 @@
     margin-left: 16.5vw;
 
 }
-@media (min-width: 321px)and (max-width: 375px){
-    .firstRow{
-        margin-left: 10vw;
-    }
-}
-    .accordion {
-    width: 470px;
-}
-@media screen and (min-width: 376px)and (max-width: 425px){
-    .firstRow{
-        margin-left: 10vw;
-    }
-}
-@media (min-width: 426px) and (max-width: 750px){
 
-    .firstRow{
-        margin-left: 10vw;
-    }
-    
-}
-@media (min-width: 1000px)and (max-width: 1024px){
-    .accordion{
-        width: 400px;
-    }
-    .firstRow{
-        margin-left: 5vw;
-        display: flex;
-        flex-direction: row;
-    }
-}
 .card {
     /*border-width: 1px 0 1px 0;*/
     /*color: var(--menu-text-color);*/
@@ -203,18 +85,6 @@
     top: -2px;
     margin-bottom: 10px;
 }
-@media (min-width: 321px)and (max-width: 375px){
-    .btn{
-        width: 23rem;
-        font-size: 1.3rem;
-    }
-}
-@media screen and (min-width: 376px)and (max-width: 425px) {
-    .btn {
-        width: 23rem;
-        font-size: 1.3rem;
-    }
-}
 
 @media (min-width: 426px) and (max-width: 750px){
     /*.btn{*/
@@ -232,12 +102,7 @@
     top: 5px;
     color: #4f537d;
 }
-@media (min-width: 321px)and (max-width: 375px){
-    .question i{
-        margin-top: -22px;
 
-    }
-}
 
 .answer {
     background: var(--main-color);
@@ -247,30 +112,6 @@
     padding-right: 40px;
     font-size: 15px;
     font-weight: 400;
-}
-
-@media (min-width: 321px)and (max-width: 375px) {
-
-    .answer {
-        font-size: 1.3rem;
-        padding-right: 6rem;
-        line-height: 2rem;
-    }
-}
-@media (min-width: 376px)and (max-width: 425px) {
-
-    .answer {
-        font-size: 1.3rem;
-        padding-right: 8rem;
-        line-height: 2rem;
-        padding-bottom: 3rem;
-    }
-}
-@media (min-width: 426px) and (max-width: 750px){
-    .answer{
-        padding-right: 0.5rem;
-        padding-bottom: 4rem;
-    }
 }
 
 .highlight {
@@ -284,22 +125,93 @@
     color: var(--menu-text-color);
     padding: 9vw 16vw 10vw 15vw;
 }
-
-@media (min-width: 321px)and (max-width: 375px) {
-    .accordionTitle {
-        width: 75vw;
+@media (min-width: 320px)and (max-width: 375px) {
+    .Heading {
+        padding: 40vw 8vw 9vw 9vw;
+        margin-bottom: 40px;
     }
 
+    .mainTitle {
+        font-size: 4.2rem;
+        font-weight: 700;
+        width: 70vw;
+        line-height: 4.7rem;
+        padding-right: 20vw;
+        padding-bottom: 30vw;
 
-}
-@media (min-width: 321px)and (max-width: 375px){
+    }
     .bottomText{
         line-height: 2rem;
         padding: 40vw 5vw 10vw 7.4vw;
         width: 30rem;
     }
+    .accordionTitle {
+        width: 75vw;
+    }
+    .answer {
+        font-size: 1.3rem;
+        padding-right: 6rem;
+        line-height: 2rem;
+    }
+    .question i{
+        margin-top: -22px;
+
+    }
+    .btn{
+        width: 23rem;
+        font-size: 1.3rem;
+    }
+    .firstRow{
+        margin-left: 10vw;
+    }
+
+    .accordion {
+        width: 470px;
+    }
+    .smallTitle {
+        font-weight: 400;
+        margin-bottom: 20px;
+        font-size: 1.3rem;
+        letter-spacing: 0.3rem;
+    }
+    .accordionTitle{
+        line-height: 2rem;
+    }
 }
 @media (min-width: 376px)and (max-width: 425px) {
+    .Heading {
+        padding: 35vw 15vw 60vw 8vw;
+    }
+
+    .mainTitle {
+        font-size: 4.2rem;
+        font-weight: 700;
+        width: 82vw;
+        line-height: 4.7rem;
+    }
+    .smallTitle {
+        font-size: 1.3rem;
+        letter-spacing: 0.3rem;
+
+    }
+    .accordionTitle{
+        line-height: 2rem;
+        width: 60rem;
+        padding-bottom: 5rem;
+    }
+    .firstRow{
+        margin-left: 10vw;
+    }
+    .btn {
+        width: 23rem;
+        font-size: 1.3rem;
+    }
+    .answer {
+        font-size: 1.3rem;
+        padding-right: 8rem;
+        line-height: 2rem;
+        padding-bottom: 3rem;
+    }
     .accordionTitle {
         width: 70vw;
     }
@@ -308,31 +220,37 @@
         padding: 40vw 8vw 10vw 7.4vw;
         line-height:1.8rem ;
     }
-
 }
 @media (min-width: 426px) and (max-width: 750px){
-    .bottomText {
-        padding: 40vw 6vw 10vw 7.4vw;
-        line-height:1.8rem ;
+    .Heading {
+        padding: 35vw 15vw 30vw 8vw;
     }
-}
-@media (min-width: 1000px)and (max-width: 1024px){
-    .bottomText {
-        padding: 14vw 4vw 15vw 4vw;
-        /*line-height:1.8rem ;*/
+
+    .mainTitle {
+        font-size: 4.2rem;
+        font-weight: 700;
+        width: 82vw;
+        line-height: 4.7rem;
     }
-}
-
-@media (min-width: 426px) and (max-width: 750px) {
-
-    .firstRow {
+    .firstRow{
+        margin-left: 10vw;
         display: flex;
         flex-direction: column;
         width: 80vw;
         column-gap: 0;
         row-gap: 10vw;
     }
-
+    .answer{
+        padding-right: 0.5rem;
+        padding-bottom: 4rem;
+        line-height: 18px;
+        font-size: 13px;
+        padding-top: 0;
+    }
+    .bottomText {
+        padding: 40vw 6vw 10vw 7.4vw;
+        line-height:1.8rem ;
+    }
     .accordion {
         width: 65vw;
     }
@@ -342,16 +260,29 @@
         /*letter-spacing: 0.3px;*/
     }
 
-    .bottomText {
-        line-height: 1.8rem;
-
+}
+@media (min-width: 1000px)and (max-width: 1024px){
+    .Heading {
+        padding: 15vw 15vw 15vw 5vw;
     }
 
-    .answer {
-        line-height: 18px;
-        font-size: 13px;
-        padding-top: 0;
+    .mainTitle {
+        font-size: 7rem;
+        font-weight: 700;
+        width: 82vw;
+        line-height: 7.5rem;
+    }
+    .bottomText {
+        padding: 14vw 4vw 15vw 4vw;
+        /*line-height:1.8rem ;*/
+    }
+    .accordion{
+        width: 400px;
+    }
+    .firstRow{
+        margin-left: 5vw;
+        display: flex;
+        flex-direction: row;
     }
 }
-
 
