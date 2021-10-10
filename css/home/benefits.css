@@ -4,31 +4,55 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-top: 20vh;
+    margin-top: 148px;
+    column-gap: 60px;
 }
 .benefits-text{
     width: 30%;
 }
 .benefits-text p{
-    line-height:3.2rem;
+    line-height:2.5rem;
 }
 .benefits-text button{
     margin-top: 2.5vw;
 }
 .benefits-money-text{
-    margin-left: 3vw;
+    margin-right:50px;
 }
 .benefits-money img{
-    width:37vw;
+    width:520px;
 }
 
 
 .miner-text {
-    margin-right: 7vw;
+    margin-right:40px;
 }
 .miner img{
-    width: 35vw;
+    width:463px;
+    margin:auto 35px;
 }
+/*------------------------------setting for 1024px desktop------------------*/
+@media (min-width: 1000px) and (max-width: 1024px){
+    .benefits-money img{
+        width:461px;
+    }
+    .benefits-text{
+        width: 36%;
+    }
+    .miner-text {
+        margin-left:40px;
+    }
+    .benefits-text button{
+        margin-top:3.3vw;
+    }
+}
+/*-----------------------------------setting for 4k desktops------------------------*/
+@media (min-width:2560px) {
+    .benefits-text{
+        width: 16%;
+    }
+}
+
 
 @media screen and (max-width: 750px) {
     .benefits {

@@ -1,35 +1,37 @@
 footer{
     background-image: url("../../img/crypto-home-slider-bg.png");
     background-repeat: repeat;
-    background-size: cover;
-    min-height: 70vh;
+    background-size:107vw;
+    height:534px;
     width: 100%;
     color:#a7a8b6;
-
+    background-position: -71vw 21vw;
+    overflow: hidden;
 }
 footer .select-btn{
     color: black;
-    margin-top: 3vw;
+    margin-top: 23px;
 }
 
 .footer-columns{
     display: flex;
     flex-direction: row;
-    align-items:center;
-    justify-items: center;
-    align-content: space-evenly;
-    justify-content: center;
-    column-gap: 2.5vw;
-    padding-top:6vw;
-    padding-bottom:6vw;
+    align-items:flex-start;
+    column-gap:22px;
+    padding: 90px 0 74px 152px;
     border:1px solid rgba(255,255,255,.1);
 }
+.footer-columns ul{
+    padding:0 40px 0 0;
+    margin: 0;
+}
 .footer-columns p,.footer-columns h3{
-    width: 19vw;
+    width:244px;
 }
 .footer-columns h3,h4{
     color: white;
 }
+
 footer li{
     line-height: 3.6rem;
 }
@@ -44,7 +46,7 @@ footer li a:hover, #footer-info:hover,.copy-right a:hover{
 }
 #footer-info{
     color: var(--second-color);
-    padding-top: 2vw;
+    padding-top:15px;
     cursor: pointer;
 }
 footer ion-icon:hover{
@@ -53,19 +55,67 @@ footer ion-icon:hover{
 .copy-right{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    min-height: 10vh;
+    column-gap: 100px;
+    /*justify-content: space-evenly;*/
+    /*justify-items: center;*/
+    height:84px;
     align-items: center;
+    padding: 0 55px;
+}
+footer .icons{
+    margin-left: 195px;
 }
 .up-icon-mob {
     display: none;
 }
-    .up{
+.up{
         color: white;
         font-size: 2.5rem;
-        padding: 0 2vw;
     }
+.up:hover{
+    color: white;
+}
+.up-icon-desk{
+    margin-left:13px;
 
+}
+/*---------------------------------------------setting for 4k desktops------------------------------*/
+@media screen and (min-width:1500px) {
+    .footer-columns{
+        justify-items:center;
+        justify-content: center;
+        padding-right: 180px;
+    }
+    .copy-right{
+        justify-items: center;
+        justify-content:start;
+        /*column-gap:180px;*/
+        padding-left: 25%;
+    }
+}
+/*---------------------------------------------setting for 1024px desktops------------------------------*/
+@media (min-width: 900px) and (max-width:1030px) {
+    .footer-columns{
+        padding: 90px 0 74px 50px;
+        column-gap: 30px;
+    }
+    .footer-columns p,.footer-columns h3{
+        width:216px;
+    }
+    .footer-columns ul{
+        padding:0;
+    }
+    .copy-right{
+        column-gap:50px;
+        justify-content:start;
+        justify-items: start;
+        padding: 0;
+    }
+   footer .icons{
+        margin-left:125px;
+    }
+}
+/*------------------------------------------------------*/
 
 @media screen and (max-width: 750px){
     .footer-columns{

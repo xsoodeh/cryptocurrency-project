@@ -1,23 +1,26 @@
 button{
     text-align: center;
-    padding: 0.9vw 2.1vw;
     border: 0;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     font-family: 'Poppins', sans-serif;
     cursor: pointer;
 
 }
+
 .select-btn{
-    color:var(--text-color);
+    color:#161c53;
     background-color: var(--second-color);
     border: none;
+    width: 174px;
+    height: 45px;
+
 }
-.select-btn:hover {
- background-color: #d7a113;
-}
-.buy-btn{
-color: #07074d;
-    text-transform: capitalize;
+
+.menu--items .buy-btn:hover,.select-btn:hover{
+    background-color: #f1b925;
+    transition:  all 0.3s ease-in-out;
+    color:#161c53;
+
 
 }
 @media screen and (max-width: 750px ) {

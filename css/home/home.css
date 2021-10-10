@@ -1,8 +1,8 @@
 hr{
-    border: 1px solid lightgray;
+    border: 1px solid rgba(59, 59, 59, 0.08);
     width: 80%;
     clear: both;
-    margin-top: 10vw;
+    margin-top: 100px;
 }
 .benefits h2, #static h2 {
     margin-bottom: 15px;
@@ -13,6 +13,8 @@ hr{
     font-size: 14px;
     justify-content: center;
     align-items: center;
+    /*font-size: 3rem;*/
+
 }
 .icons ion-icon{
     padding: 8px;

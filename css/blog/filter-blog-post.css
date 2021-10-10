@@ -1,33 +1,45 @@
-
-.filter-container{
+.filter-container {
     display: grid;
     grid-template-columns: 70% 30%;
     grid-template-areas: "filter-icons show";
-    width:85vw;
-    height: 14vh;
+    /* width: 85vw;
+    height: 14vh; */
     align-items: center;
-    padding-top:1.5vw;
-    padding-bottom: 1.5vw;
+    /* padding-top: 1.5vw;
+    padding-bottom: 1.5vw; */
+
+    width: 1200px;
+    height: 85px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 17px;
 }
+
 .filter-content {
     grid-area: filter-icons;
     align-items: center;
     margin-left: 11.5vw;
 }
 
-.reset{
-    grid-area:show;
+.reset {
+    grid-area: show;
     justify-self: end;
 }
-.filter-content a, .filter-content span {
+
+.filter-content a,
+.filter-content span {
     padding: 12px;
 }
-.filter-content a:hover, .reset:hover, .post-more:hover{
-    color:#0095eb;
+
+.filter-content a:hover,
+.reset:hover,
+.post-more:hover {
+    color: #0095eb;
     text-decoration: underline;
 }
+
 .label {
-    color: #8a8a8a;
+    color: #a8a8a8;
 }
 
 a.cat:before {
@@ -41,6 +53,7 @@ a.cat:after {
     font-family: "mfn-icons";
     padding: 2px;
 }
+
 a.tags:before {
     content: '\e92f';
     font-family: "mfn-icons";
@@ -67,31 +80,40 @@ a.authors:after {
     font-family: "mfn-icons";
     padding: 2px;
 }
+
 a.reset::before {
-    content: '\e963';
+    content: '\e82a';
     font-family: "mfn-icons";
     padding: 2px;
 }
-@media screen and (max-width:750px){
-    .filter-container{
-        width:100%;
+
+@media screen and (max-width:750px) {
+    .filter-container {
+        width: 100%;
     }
-    .filter-container a, .filter-container span{
+
+    .filter-container a,
+    .filter-container span {
         font-size: 1.3rem;
         padding: 0.7vw;
     }
-    .label{
+
+    .label {
         display: none;
     }
+
     .reset {
         justify-self: center;
     }
+
     a.cat:before {
-       content: none;
+        content: none;
     }
+
     a.tags:before {
         content: none;
     }
+
     .filter-content {
         margin-left: 5vw;
     }

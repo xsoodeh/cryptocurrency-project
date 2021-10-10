@@ -1,11 +1,14 @@
-<!DOCTYPE html>
+<!DOCTYPE html" >
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>BeCryptoCurrency – BeTheme</title>
-    <link rel="shortcut icon" href="https://themes.muffingroup.com/be/cryptocurrency/wp-content/themes/betheme/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnecthref="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../css/base/global.css">
@@ -14,38 +17,38 @@
 <body>
 <!--menu for laptop-->
 <div class="menu" id="menu">
-    <img class="logo" src="../img/crypto-logo-retina.png"/>
-    <div id="menu-berger" onclick="openMenu()">
-        <ion-icon name="menu-outline"></ion-icon>
-    </div>
+    <img id="logo" src="../img/crypto-logo-retina.png"/>
+
     <div class="menu--items">
-        <button class="menu--items-button"><a href="home.html">Home</a></button>
-        <button class="menu--items-button"><a href="features.html">Features</a></button>
-        <button class="menu--items-button"><a href="blog.html">Blog</a></button>
-        <button class="menu--items-button"><a href="faq.html">FAQ</a></button>
-        <button class="menu--items-button">About & Contact</button>
-        <button class="select-btn buy-btn"><a
+        <div id="menu-berger" onclick="openMenu()">
+            <!--        <ion-icon name="menu-outline"></ion-icon>-->
+        </div>
+        <button class="active menuButtons"><a href="home.html">Home</a></button>
+        <button class="menuButtons"><a href="features.html">Features</a></button>
+        <button class="menuButtons" ><a href="blog.html">Blog</a></button>
+        <button class="menuButtons"><a href="faq.html">FAQ</a></button>
+        <button class="menuButtons">About & Contact</button>
+        <button class="buy-btn menuButtons"><a
                 href="https://themeforest.net/item/betheme-responsive-multipurpose-wordpress-theme/7758048?ref=muffingroup&irgwc=1&clickid=T4Ky5GxzaxyIUlVxIw0gnRHAUkBVijU35UmwVs0&iradid=275988&irpid=1289117&iradtype=ONLINE_TRACKING_LINK&irmptype=mediapartner&mp_value1=&utm_campaign=af_impact_radius_1289117&utm_medium=affiliate&utm_source=impact_radius">
-            buy now
+            Buy now
             </a></button>
     </div>
 </div>
 <!--menu for mobile-device-->
 <div id="menu-mob" class="menu-mob-close">
-    <div>
-        <ion-icon name="close-outline" id="menu-mob-close" onclick="closeMenu()"></ion-icon>
+    <div id="menu-mob-close" onclick="closeMenu()">
     </div>
-    <button class="select-btn buy-btn">
+    <button class="buy-btn">
         <a
                 href="https://themeforest.net/item/betheme-responsive-multipurpose-wordpress-theme/7758048?ref=muffingroup&irgwc=1&clickid=T4Ky5GxzaxyIUlVxIw0gnRHAUkBVijU35UmwVs0&iradid=275988&irpid=1289117&iradtype=ONLINE_TRACKING_LINK&irmptype=mediapartner&mp_value1=&utm_campaign=af_impact_radius_1289117&utm_medium=affiliate&utm_source=impact_radius">
-            buy now
+            Buy now
         </a>
     </button>
-    <button class="menu--items-button"> <a href="home.html">Home</a></button>
-    <button class="menu--items-button"><a href="features.html">Features</a></button>
-    <button class="menu--items-button"><a href="blog.html">Blog</a></button>
-    <button class="menu--items-button"><a href="faq.html">FAQ</a></button>
-    <button class="menu--items-button">About & Contact</button>
+    <button id='home-button' class="active"> <a href="home.html">Home</a></button>
+    <button><a href="features.html">Features</a></button>
+    <button><a href="blog.html">Blog</a></button>
+    <button><a href="faq.html">FAQ</a></button>
+    <button >About & Contact</button>
     <div class="menu-mob-icons icons">
         <ion-icon name="logo-twitter"></ion-icon>
         <ion-icon name="logo-vimeo"></ion-icon>
@@ -58,12 +61,12 @@
 <div id="main-elements" onclick="closeMenuBody()">
 <!--    header-->
 <div id="header">
-    <img src="../img/crypto-home-coin.png"/>
     <div class="header-text">
         <p>blockchain revolution</p>
         <h1>Decentralize everything </h1>
         <button class="select-btn"><a href="#post-selected">Learn about crypto</a></button>
     </div>
+    <img src="../img/crypto-home-coin.png"/>
     <div style="clear: both"></div>
 </div>
 
@@ -205,7 +208,7 @@
 <div class="benefits benefits-money" >
     <img src="../img/crypto-home-globe.png"/>
     <div class="benefits-text benefits-money-text">
-        <h2>Benefits of money</br>decentralization</h2>
+        <h2>Benefits of money decentralization</h2>
         <p>Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat,
             a feugiat urna maximus. Cras massa nibh, tincidunt ut eros.</p>
         <button class="select-btn"><a href="features.html">View more details</a></button>
@@ -219,13 +222,96 @@
     <p>Ut ultricies imperdiet sodales. Aliquam fringilla aliquam ex sit amet elementum.
         Proin bibendum sollicitudin feugiat ipsum dos et omnia</p>
     </div>
+</div>
+<div class="diagram">
+    <img id="circleDiagram" src="../img/crypto-home-circle-diagram (1).png">
+    <div class="wrapperTable">
+        <table rules="rows" style="border-color: thistle;"
+               class="cryptoTable">
+            <tbody>
+            <thead>
+            <tr class="Thead">
+                <td></td>
+                <td>Price</td>
+                <td>Volume (24h)</td>
+                <td>Change</td>
+            </tr>
+            <tr class="TTbody">
+                <td>
+                    <img src="https://themes.muffingroup.com/be/cryptocurrency/wp-content/uploads/2018/06/crypto-home-bitcoin.png"
+                         style="margin-right:5px; margin-top:5px;">
+                    Bitcoin
+                </td>
+                <td>$6 345</td>
+                <td>$3 410 520</td>
+                <td>
+                    <span style="color:#26921b;">+0.4%</span>
+                </td>
+            </tr>
+            <tr class="TTbody">
+                <td>
+                    <img src="https://themes.muffingroup.com/be/cryptocurrency/wp-content/uploads/2018/06/crypto-home-eth.png"
+                         style="margin-right:5px; margin-top:5px;">
+                    Ethereum
+                </td>
+                <td>$435.65</td>
+                <td>$1 418 630 000</td>
+                <td><span style="color:#26921b;">+1.3%</span></td>
+            </tr>
+            <tr class="TTbody">
+                <td>
+                    <img src="https://themes.muffingroup.com/be/cryptocurrency/wp-content/uploads/2018/06/crypto-home-dash.png"
+                         style="margin-right:5px; margin-top:5px;">
+                    Dash
+                </td>
+                <td>$229.19</td>
+                <td>$153 088 000</td>
+                <td>
+                    <span style="color:#d90000;">-0.9%</span>
+                </td>
+            </tr>
+            <tr class="TTbody">
+                <td class="tg-us36"><img
+                        src="https://themes.muffingroup.com/be/cryptocurrency/wp-content/uploads/2018/06/crypto-home-litecoin.png"
+                        style="margin-right:5px; margin-top:5px;">
+                    Litecoin
+                </td>
+                <td>$80.53</td>
+                <td>$283 573 000</td>
+                <td><span style="color:#26921b;">+2.2%</span></td>
+            </tr>
+            <tr class="TTbody">
+                <td>
+                    <img src="https://themes.muffingroup.com/be/cryptocurrency/wp-content/uploads/2018/06/crypto-home-monero.png"
+                         style="margin-right:5px; margin-top:5px;">
+                    Monero
+                </td>
+                <td>$127.35</td>
+                <td>$41 956 900</td>
+                <td><span style="color:#26921b;">+3.75%</span></td>
+            </tr>
+            <tr class="TTbody">
+                <td>
+                    <img src="https://themes.muffingroup.com/be/cryptocurrency/wp-content/uploads/2018/06/crypto-home-steem.png"
+                         style="margin-right:5px; margin-top:5px;">
+                    Steem
+                </td>
+                <td>$1.26</td>
+                <td>$902 686</td>
+                <td><span style="color:#d90000;">-2.88%</span></td>
+            </tr>
+
+            </thead>
+            </tbody>
+        </table>
+    </div>
+</div>
 
 
 <!--    miner part-->
 <div class="benefits miner">
     <div class="benefits-text miner-text">
-        <h2>Investing in newer</br>
-            miners</h2>
+        <h2>Investing in newer miners</h2>
         <p>Mauris rhoncus orci in imperdiet placerat.
             Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus.
             Cras massa nibh, tincidunt ut eros.</p>
