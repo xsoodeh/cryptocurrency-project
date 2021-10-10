@@ -2,17 +2,17 @@
    background-image: url(../../img/crypto-home-slider-bg.png);
    background-size: cover;
    background-repeat: no-repeat;
-   background-position: top ;
-   height: 95vh;
+   background-position: top left;
+   height: 100vh;
    width: 100vw;
 }
-@media only screen and  (max-width:768px){
+@media only screen and  (max-width:428px){
    .header{
       background-image: url(../../img/crypto-home-slider-bg.png);
       background-size: cover;
       background-repeat: no-repeat;
-      background-position: top ;
-      height: 80vh;
+      background-position: top left;
+      height: 85vh;
       width: 100vw;
    }
 

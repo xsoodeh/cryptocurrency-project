@@ -23,32 +23,30 @@
     grid-area: subTitle;
 
 }
-.ideaBox--subText{
-    display: none;
-}
+
 @media only screen  and (max-width:428px){
     .lastPragraph{
         display: flex;
         flex-direction: column;
     }
     .lastPragraph .p1{
-       margin-top: 35vh;
+      margin-top: 20vh;
         font-size: 13px; 
-        line-height: 25px;
+        line-height: 19px;
          font-weight: 200;
           letter-spacing: 0px;
-          width: 80vw;
+          width: 75vw;
           color: #0d1a85;
           margin-left: 15vw;
     }
     .lastPragraph .p2{
         font-size: 13px; 
-        line-height: 25px;
+        line-height: 19px;
          font-weight: 200;
           letter-spacing: 0px;
           margin-top: -25vh;
          color: #0d1a85;
-         width: 80vw;
+         width: 75vw;
          margin-left:15vw;
     
     }
@@ -65,22 +63,15 @@
       font-weight: 700;
       margin-left: 12.5vw;
     }
-    .ideaBox--subText{
-        display: block;
-        padding-left: 10vw;
-        width: 85vw;
-        font-size: 15px;
-        font-weight: 700;
-        text-align: center;
-    }
+    
 }
-@media only screen  and (max-width:768px){
+@media only screen  and (min-width:428px) and (max-width:760px){
     .lastPragraph{
         display: flex;
         flex-direction: column;
     }
     .lastPragraph .p1{
-       margin-top: 35vh;
+       margin-top: 20vh;
         font-size: 15px; 
         line-height: 25px;
          font-weight: 200;
@@ -113,12 +104,5 @@
       font-weight: 700;
       margin-left: 12.5vw;
     }
-    .ideaBox--subText{
-        display: block;
-        padding-left: 10vw;
-        width: 85vw;
-        font-size: 15px;
-        font-weight: 700;
-        text-align: center;
-    }
+    
 }

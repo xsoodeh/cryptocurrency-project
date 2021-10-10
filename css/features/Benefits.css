@@ -58,6 +58,7 @@
 
 /*----------------------------------------circle part---------------------------------*/
 
+
 .circle .item, .fill {
     width: 150px;
     height: 150px;
@@ -66,11 +67,11 @@
 }
 
 .item {
-    clip: rect(0px, 150px, 150px, 64px);
+    clip: rect(0px, 160px, 160px, 64px);
 }
 
 .fill {
-    clip: rect(0px, 64px, 150px, 0px);
+    clip: rect(0px, 64px, 160px, 0px);
     background-color: rgb(255, 208, 0);
 }
 
@@ -136,12 +137,12 @@
   padding-left: 10vw;
   font-size: 13px;
   line-height: 19px;
-  width: 85vw;
+  width: 80vw;
 
 }
 .benefit section{
   padding-left: 10vw;
-  padding-top: 2.5vh;
+  padding-top: 0.5vh;
   font-size: 13px;
   line-height: 19px;
   width: 85vw;
@@ -151,19 +152,19 @@
 }
 .circle-container {
   padding-left: 30vw;
-  padding-top: 10vh;
+  padding-top: 5vh;
 }
 .benefitCircle-subTitle{
   text-align: center;
   display: block;
-  padding-top: 12vh;
+  padding-top: 8vh;
   font-size: 13px;
   width: 85vw;
   padding-left: 5vw;
   font-weight: 700;
 }
 }
-@media only screen and  (max-width: 768px){
+@media only screen and  (min-width: 428px) and (max-width:768){
   .benefit{
     display: flex;
     flex-direction: column;
@@ -183,38 +184,38 @@
 .benefit h2{
   padding-top: 10vh;
   padding-left: 15vw;
-  font-size: 2.5rem;
+  font-size: 2rem;
   line-height: 25px;
-  width: 40vw;
+  
 }
 .benefit p{
   padding-left: 15vw;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 19px;
-  width: 70vw;
+  width:75vw;
 
 }
 .benefit section{
   padding-left: 15vw;
-  padding-top: 2vh;
-  font-size: 14px;
+  padding-top: 1vh;
+  font-size: 13px;
   line-height: 19px;
-  width: 70vw;
+  width: 65vw;
 
 
 
 }
 .circle-container {
-  padding-left: 35vw;
-  padding-top: 10vh;
+ 
+  padding-top: 5vh;
 }
 .benefitCircle-subTitle{
   text-align: center;
   display: block;
-  padding-top: 5vh;
-  font-size: 15px;
-  width: 80vw;
- padding-left: 3.5vw;
+  padding-top: 8vh;
+  font-size: 13px;
+  width: 85vw;
+ padding-left: 2.5vw;
   font-weight: 700;
 }
 }

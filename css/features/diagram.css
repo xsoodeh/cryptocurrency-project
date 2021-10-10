@@ -17,17 +17,17 @@
 .Thead {
     font-size: 15px;
     font-weight: 800;
-    color: rgba(54, 50, 50, 0.685);
+    color: rgba(15, 14, 14, 0.829);
 }
 
 tbody, td, tr {
     border-right: 1px solid #ddd;
     border-top: 1px solid #ddd;
-    padding: 2vh 2vw;
+    padding: 1.75vh 1.75vw;
     /*font-weight: 700;*/
 
 }
-
+ 
 .TTbody {
     /*color: #0d1a85;*/
     border-right: 0 transparent;
@@ -36,6 +36,7 @@ tbody, td, tr {
 
 table {
     border-collapse: collapse;
+    
 }
 
 @media only screen and (max-width: 428px) {
@@ -49,18 +50,17 @@ table {
     #circleDiagram {
       /*  margin-left: 10vw;*/
         width: 85vw;
-        margin-top: 30vh;
+       
     }
 
     .wrapperTable {
       /*  margin-left: 15vw;*/
         margin-top: 2vh;
+       
     }
 
     .Thead {
-        font-size: 13px;
-        font-weight: 800;
-        color: rgba(54, 50, 50, 0.685);
+        font-size: 13px; 
     }
 
     .TTbody {
@@ -69,7 +69,8 @@ table {
         font-size: 13px;
     }
 }
-@media only screen and (max-width: 768px) {
+  
+@media only screen and (min-width: 428px) and (max-width:768) {
     .diagram {
         flex-direction: column;
         padding-top: 10vh;
@@ -80,7 +81,7 @@ table {
     #circleDiagram {
       /*  margin-left: 10vw;*/
         width: 70vw;
-        margin-top: 30vh;
+       
     }
 
     .wrapperTable {
@@ -90,8 +91,6 @@ table {
 
     .Thead {
         font-size: 13px;
-        font-weight: 800;
-        color: rgba(54, 50, 50, 0.685);
     }
 
     .TTbody {
