@@ -10,13 +10,13 @@
                           'glob key';
                           
    background-color:rgb(244, 250, 244);
-   margin-top:10vh;
+  /* margin-top:10vh;*/
    border: 1px solid rgba(202, 221, 248, 0.8);
-    justify-items: center;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    padding: 5vw;
+    justify-items: left;
+    align-items: left;
+    justify-content: left;
+    align-content: left;
+    padding: 10vw;
 }
               /*-----box---*/
 .iconPart--box{
@@ -53,11 +53,11 @@ grid-area: box;
     width:104px;
     height: 104px;
 }
-.iconPart--box   ::before{
+.iconPart--box  ::before{
     width: 0px;
-   border-top: #ffc327 solid 1px;
+   border-top: #ffc327 solid 2px;
  /*  background-color: #ffc327;*/
-  height: 2px;
+ /* height: 2px;*/
   margin: 0 auto;
     transition:  all 1s ease-in-out;
     content: "";
@@ -68,9 +68,9 @@ grid-area: box;
 }
  .iconPart--box :hover h3::before{
     width: 100px;
-  border-top: #ffc327 solid 1px;
+  border-top: #ffc327 solid 2px;
   /*  background-color: #ffc327;*/
-  height: 2px;
+ /* height: 2px;*/
   margin: 0 auto;
     transition:  all 1s ease-in-out;
     content: "";
