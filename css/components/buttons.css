@@ -35,6 +35,11 @@ button{
     }
 
     .select-btn {
-        padding: 3vw;
+        padding:6px 20px;
+    }
+}
+@media (min-width: 321px) and (max-width: 380px ) {
+    .select-btn {
+        padding:5px 17px;
     }
 }

@@ -53,15 +53,13 @@ button:hover{
     background-color: #1b245b;
     color: #FFFFFF;
 }
-#menu-berger {
+#menu-berger1024, #menu-berger--mob {
     font-size: 2.2rem;
     color: #FFFFFF;
     width:auto;
     align-items: center;
-
-
 }
-#menu-berger:before{
+#menu-berger1024:before,#menu-berger--mob:after{
     content:'\e960';
     font-family: "mfn-icons";
     font-style: normal;
@@ -70,10 +68,10 @@ button:hover{
     /*text-align: center;*/
     /*font-variant: normal;*/
     padding-right: 26px;
-    line-height: 67px;
+    /*line-height: 67px;*/
 
 }
-#menu-berger{
+#menu-berger--mob, #menu-berger1024{
     display: none;
 }
 #menu-mob{
@@ -173,28 +171,6 @@ font-size: 2.2rem;
     width: 162px;
     height:36px;
 }
-/*----------------------------------------*/
-@media screen and (max-width: 750px) {
-    .menu--items{
-        display: none;
-    }
-    #logo{
-        height:35%;
-    }
-#menu-mob{
-    display: flex;
-    flex-direction: column;
-}
-    #menu-berger{
-    width:auto;
-    display:flex;
-    flex-direction: row-reverse;
-    padding-right: 4vw;
-}
-
-
-
-    }
 /*------------------------------------setting for 1024px-----------------------------------*/
 @media (min-width: 1000px)and (max-width: 1024px) {
     .menu--items button {
@@ -205,7 +181,7 @@ font-size: 2.2rem;
         display: inline-block;
     }
 
-    #menu-berger {
+    #menu-berger1024 {
         display:inline-block;
 
     }
@@ -214,3 +190,31 @@ font-size: 2.2rem;
         flex-direction: column;
     }
 }
+/*---------------------------Common settings for mobile phone and tablet---------------*/
+@media screen and (max-width: 1000px) {
+    .menu{
+        height: 60px;
+    }
+    .menu--items{
+        display: none;
+    }
+    #logo{
+        padding-left: 15px;
+    }
+    #menu-mob{
+    display: flex;
+    flex-direction: column;
+}
+    #menu-berger--mob {
+    display: flex;
+        justify-content: flex-end;
+    }
+    #menu-berger--mob:after{
+        padding-right: 15px;
+    }
+    .move-menu{
+        transform: translate(-130px);
+
+    }
+    }
+
