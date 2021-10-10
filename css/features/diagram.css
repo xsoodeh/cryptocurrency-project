@@ -4,9 +4,8 @@
     padding-top:8vw;
     align-items: center;
     justify-content: center;
-    /*margin-top: 20vh;*/
     gap: 5vw;
-    /*height: 80vh;*/
+    
 }
 .diagram:first-child{
     width: 445px;
@@ -48,13 +47,13 @@ table {
     }
 
     #circleDiagram {
-        margin-left: 10vw;
+      /*  margin-left: 10vw;*/
         width: 85vw;
         margin-top: 30vh;
     }
 
     .wrapperTable {
-        margin-left: 15vw;
+      /*  margin-left: 15vw;*/
         margin-top: 2vh;
     }
 

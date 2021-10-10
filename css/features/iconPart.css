@@ -9,14 +9,15 @@
     grid-template-areas: 'box wallet'
                           'glob key';
                           
+                         column-gap: 5vw;
    background-color:rgb(244, 250, 244);
-  /* margin-top:10vh;*/
+   margin-top:10vh;
    border: 1px solid rgba(202, 221, 248, 0.8);
     justify-items: left;
     align-items: left;
     justify-content: left;
     align-content: left;
-    padding: 10vw;
+    padding: 8vw;
 }
               /*-----box---*/
 .iconPart--box{
@@ -30,6 +31,7 @@
 }
 .boxContent h3{
     font-size: 17px;
+    line-height: 23px;
 }
 .boxContent p{
     letter-spacing: 0px;
@@ -164,8 +166,6 @@ grid-area: box;
     font-weight: 700;
 }
 .key p{
-    
-    /*width: 20vw;*/
     font-size: 15px;
     line-height: 20px;
     letter-spacing :0;
@@ -178,12 +178,54 @@ grid-area: box;
 .iconPart {
    display: flex;
    flex-direction: column;
-    width: 100%;
-   /*margin-top: 171vh;*/
+  /*  width: 95%;*/
+   
 }
     .iconPart--box p{
         width:90%;
     }
 
-
+    .boxContent h3{
+        font-size: 13px;
+        line-height: 19px;
+    }
+    .boxContent p{
+        letter-spacing: 0px;
+        font-size: 13px;
+        line-height: 19px;
+    }
+    .wallet h3{
+        font-size: 13px;
+        line-height: 19px;
+        font-weight: 700;
+    
+    }
+    .wallet P{
+        font-size: 13px;
+        line-height: 19px;
+        letter-spacing :0px;
+    }
+    .globe h3{
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 19px;
+    
+    }
+    .globe p {
+        font-size: 13px;
+        line-height: 19px;
+        letter-spacing :0;
+    }
+    .key h3{
+        line-height: 19px;
+        font-size: 13px;
+        font-weight: 700;
+    }
+    .key p{
+        
+        font-size: 13px;
+        line-height: 19px;
+        letter-spacing :0;
+    
+    }
 }

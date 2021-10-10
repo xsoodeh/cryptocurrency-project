@@ -20,7 +20,12 @@
 @media only screen  and (max-width:768px){
 
    .ideaBox{
-       width: 75%;
+       width: 85%;
+       padding-left: 5vw;
+   }
+   
+   .ideaBox p:before{
+       border: right 2vh;
    }
 }
 
