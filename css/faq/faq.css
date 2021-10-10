@@ -6,7 +6,7 @@
 
 /*----------------------------------heading setting------------------------------*/
 .Heading {
-    padding: 9vw 8vw 15vw 14vw;
+    padding: 9vw 8vw 14vw 14vw;
 
 }
 
@@ -15,6 +15,7 @@
     font-weight: 700;
     width: 50vw;
     line-height: 7.7rem;
+
 }
 
 .smallTitle {
@@ -32,7 +33,7 @@
 }
 
 .accordionTitle {
-    padding-bottom: 4vw;
+    padding-bottom: 3vw;
     width: 34rem;
 }
 
@@ -42,7 +43,7 @@
     row-gap: 7vw;
     column-gap: 4vw;
     flex-wrap: wrap;
-    margin-left: 16.5vw;
+    margin-left: 15vw;
 
 }
 
@@ -93,14 +94,6 @@
     top: -2px;
     margin-bottom: 10px;
 }
-
-@media (min-width: 426px) and (max-width: 750px) {
-    /*.btn{*/
-    /*    width: 28rem;*/
-    /*    font-size: 1.3rem;*/
-    /*}*/
-}
-
 .question i {
     float: right;
     clear: both;
@@ -131,7 +124,7 @@
 
 .bottomText {
     color: var(--menu-text-color);
-    padding: 9vw 16vw 10vw 15vw;
+    padding: 9vw 13vw 10vw 14vw;
 }
 
 @media (min-width: 320px)and (max-width: 375px) {
