@@ -50,6 +50,7 @@ table {
     #circleDiagram {
       /*  margin-left: 10vw;*/
         width: 85vw;
+        padding-top: 10vh;
        
     }
 
