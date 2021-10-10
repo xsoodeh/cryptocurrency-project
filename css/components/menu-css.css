@@ -89,7 +89,6 @@ button:hover{
     position: fixed;
     top:0;
     right: 0;
-    font-size: 0.6rem;
     z-index: 2;
 }
 #menu-mob button{
@@ -124,9 +123,10 @@ height: 40px;
 font-size: 2.2rem;
     float: right;
 }
-.menu-mob-icons{
+#menu-mob .menu-mob-icons{
     color: var(--third-color);
     padding:20px;
+    font-size: 14px;
 }
 .menu-mob-icons ion-icon:hover{
     color: #FFFFFF;

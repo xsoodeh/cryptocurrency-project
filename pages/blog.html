@@ -15,47 +15,49 @@
 </head>
 
 <body>
-    <div class="menu" id="menu">
-        <img id="logo" src="../img/crypto-logo-retina.png" />
-        <div id="menu-berger" onclick="openMenu()">
-            <ion-icon name="menu-outline"></ion-icon>
-        </div>
-        <div class="menu--items">
-            <button ><a href="home.html">Home</a></button>
-            <button><a href="features.html">Features</a></button>
-            <button class="active"><a href="blog.html">Blog</a></button>
-            <button><a href="faq.html">FAQ</a></button>
-            <button>About & Contact</button>
-            <button class="buy-btn"><a
-                    href="https://themeforest.net/item/betheme-responsive-multipurpose-wordpress-theme/7758048?ref=muffingroup&irgwc=1&clickid=T4Ky5GxzaxyIUlVxIw0gnRHAUkBVijU35UmwVs0&iradid=275988&irpid=1289117&iradtype=ONLINE_TRACKING_LINK&irmptype=mediapartner&mp_value1=&utm_campaign=af_impact_radius_1289117&utm_medium=affiliate&utm_source=impact_radius">
-                    buy now
-                </a></button>
-        </div>
-    </div>
+<!--menu for laptop-->
+<div class="menu" id="menu">
+    <img id="logo" src="../img/crypto-logo-retina.png"/>
 
-    <div id="menu-mob" class="menu-mob-close">
-        <div>
-            <ion-icon name="close-outline" id="menu-mob-close" onclick="closeMenu()"></ion-icon>
+    <div class="menu--items">
+        <div id="menu-berger" onclick="openMenu()">
+            <!--        <ion-icon name="menu-outline"></ion-icon>-->
         </div>
-        <button class="select-btn buy-btn">
-            <a
+        <button class=" menuButtons"><a href="home.html">Home</a></button>
+        <button class="menuButtons"><a href="features.html">Features</a></button>
+        <button class="menuButtons active" ><a href="blog.html">Blog</a></button>
+        <button class="menuButtons"><a href="faq.html">FAQ</a></button>
+        <button class="menuButtons">About & Contact</button>
+        <button class="buy-btn menuButtons"><a
                 href="https://themeforest.net/item/betheme-responsive-multipurpose-wordpress-theme/7758048?ref=muffingroup&irgwc=1&clickid=T4Ky5GxzaxyIUlVxIw0gnRHAUkBVijU35UmwVs0&iradid=275988&irpid=1289117&iradtype=ONLINE_TRACKING_LINK&irmptype=mediapartner&mp_value1=&utm_campaign=af_impact_radius_1289117&utm_medium=affiliate&utm_source=impact_radius">
-                buy now
-            </a>
-        </button>
-        <button class="menu--items-button"> <a href="home.html">Home</a></button>
-        <button class="menu--items-button"><a href="features.html">Features</a></button>
-        <button class="menu--items-button"><a href="blog.html">Blog</a></button>
-        <button class="menu--items-button"><a href="faq.html">FAQ</a></button>
-        <button class="menu--items-button">About & Contact</button>
-        <div class="menu-mob-icons icons">
-            <ion-icon name="logo-twitter"></ion-icon>
-            <ion-icon name="logo-vimeo"></ion-icon>
-            <ion-icon name="play"></ion-icon>
-            <ion-icon name="logo-pinterest"></ion-icon>
-        </div>
+            Buy now
+        </a></button>
     </div>
-    <div class="main-elements" onclick="closeMenuBody()">
+</div>
+<!--menu for mobile-device-->
+<div id="menu-mob" class="menu-mob-close">
+    <div id="menu-mob-close" onclick="closeMenu()">
+    </div>
+    <button class="buy-btn">
+        <a
+                href="https://themeforest.net/item/betheme-responsive-multipurpose-wordpress-theme/7758048?ref=muffingroup&irgwc=1&clickid=T4Ky5GxzaxyIUlVxIw0gnRHAUkBVijU35UmwVs0&iradid=275988&irpid=1289117&iradtype=ONLINE_TRACKING_LINK&irmptype=mediapartner&mp_value1=&utm_campaign=af_impact_radius_1289117&utm_medium=affiliate&utm_source=impact_radius">
+            Buy now
+        </a>
+    </button>
+    <button id='home-button' > <a href="home.html">Home</a></button>
+    <button><a href="features.html">Features</a></button>
+    <button class="active"><a href="blog.html" >Blog</a></button>
+    <button><a href="faq.html">FAQ</a></button>
+    <button >About & Contact</button>
+    <div class="menu-mob-icons icons">
+        <ion-icon name="logo-twitter"></ion-icon>
+        <ion-icon name="logo-vimeo"></ion-icon>
+        <ion-icon name="play"></ion-icon>
+        <ion-icon name="logo-pinterest"></ion-icon>
+    </div>
+</div>
+
+<div class="main-elements" onclick="closeMenuBody()">
         <!-- header blog -->
         <section>
             <div class="blog-header">
@@ -412,66 +414,55 @@
             </div>
         </div>
         <!--    end posts of blog-->
-        <footer>
-            <div class="footer-columns">
-                <div>
-                    <h3>Pellentesque gravida nec leo nec scelerisque</h3>
-                    <button class="select-btn"><a href="features.html">View more details</a></button>
-                </div>
-                <div>
-                    <ul>
-                        <h4>Useful links</h4>
-                        <li><a href="#">Lorem ipsum</a></li>
-                        <li><a href="#"> Consectetur adipisicing</a></li>
-                        <li><a href="#">Elitsed do eiusmund</a></li>
-                        <li><a href="#">Tempor incididunt</a></li>
-                        <li><a href="#">Altabore</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <ul>
-                        <h4>More links</h4>
-                        <li><a href="#">Lorem ipsum</a></li>
-                        <li><a href="#"> Consectetur adipisicing</a></li>
-                        <li><a href="#">Elitsed do eiusmund</a></li>
-                        <li><a href="#">Tempor incididunt</a></li>
-                        <li><a href="#">Altabore</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4>Our mission</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Ut enim ad minim veniam.</p>
-                    <p id="footer-info">Read more</p>
-                </div>
+    <!--  start  footer -->
+    <footer>
+        <div class="footer-columns">
+            <div >
+                <h3>Pellentesque gravida nec leo nec scelerisque</h3>
+                <button class="select-btn"><a href="features.html">View more details</a></button>
             </div>
-            <div class="copy-right">
-                <a href="#">
-                    <ion-icon name="chevron-up-outline" class="up-icon-mob up"></ion-icon>
-                </a>
+            <div>
+                <ul>
+                    <h4>Useful links</h4>
+                    <li><a href="#">Lorem ipsum</a> </li>
+                    <li><a href="#">  Consectetur adipisicing</a></li>
+                    <li><a href="#">Elitsed do eiusmund</a></li>
+                    <li><a href="#">Tempor incididunt</a></li>
+                    <li><a href="#">Altabore</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <h4>More links</h4>
+                    <li><a href="#">Lorem ipsum</a> </li>
+                    <li><a href="#">  Consectetur adipisicing</a></li>
+                    <li><a href="#">Elitsed do eiusmund</a></li>
+                    <li><a href="#">Tempor incididunt</a></li>
+                    <li><a href="#">Altabore</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Our mission</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam.</p>
+                <p id="footer-info">Read more</p>
+            </div>
+        </div>
+        <div class="copy-right">
+            <a href="#"> <ion-icon name="chevron-up-outline" class="up-icon-mob up"></ion-icon></a>
 
-                <p>© 2021 Betheme by <a href="#">Muffin group</a> | All Rights Reserved | Powered by <a
-                        href="#">WordPress</a></p>
-                <div class="icons">
-                    <a href="#">
-                        <ion-icon name="logo-twitter"></ion-icon>
-                    </a>
-                    <a href="#">
-                        <ion-icon name="logo-vimeo"></ion-icon>
-                    </a>
-                    <a href="#">
-                        <ion-icon name="play"></ion-icon>
-                    </a>
-                    <a href="#">
-                        <ion-icon name="logo-pinterest"></ion-icon>
-                    </a>
-                    <a href="#">
-                        <ion-icon name="chevron-up-outline" class="up-icon-desk up"></ion-icon>
-                    </a>
-                </div>
+            <p>© 2021 Betheme by <a href="#">Muffin group</a> | All Rights Reserved | Powered by <a href="#">WordPress</a></p>
+            <div class="icons">
+                <a href="#"> <ion-icon name="logo-twitter"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-vimeo"></ion-icon></a>
+                <a href="#"> <ion-icon name="play"></ion-icon></a>
+                <a href="#"> <ion-icon name="logo-pinterest"></ion-icon></a>
+                <a href="#"> <ion-icon name="chevron-up-outline" class="up-icon-desk up"></ion-icon></a>
             </div>
-        </footer>
+        </div>
+
+    </footer>
     </div>
 </body>
 <script src="../js/menu-java-script.js"></script>
