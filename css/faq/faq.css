@@ -6,28 +6,36 @@
 
 /*----------------------------------heading setting------------------------------*/
 .Heading {
-    padding: 8vw 8vw 15vw 16vw;
+    padding: 9vw 8vw 15vw 14vw;
+
 }
 
 .mainTitle {
     font-size: 7rem;
     font-weight: 700;
     width: 50vw;
+    line-height: 7.7rem;
 }
 
-    .smallTitle {
+.smallTitle {
     color: #7fa4da;
     font-weight: 400;
     margin-bottom: 20px;
     font-size: 20px;
     letter-spacing: 5px;
+    padding-bottom: 1rem;
 }
+
 /*----------------------faq setting-----------------------------*/
+.accordion {
+    width: 470px;
+}
 
 .accordionTitle {
     padding-bottom: 4vw;
     width: 34rem;
 }
+
 .firstRow {
     display: flex;
     flex-direction: row;
@@ -86,7 +94,7 @@
     margin-bottom: 10px;
 }
 
-@media (min-width: 426px) and (max-width: 750px){
+@media (min-width: 426px) and (max-width: 750px) {
     /*.btn{*/
     /*    width: 28rem;*/
     /*    font-size: 1.3rem;*/
@@ -125,6 +133,7 @@
     color: var(--menu-text-color);
     padding: 9vw 16vw 10vw 15vw;
 }
+
 @media (min-width: 320px)and (max-width: 375px) {
     .Heading {
         padding: 40vw 8vw 9vw 9vw;
@@ -140,44 +149,53 @@
         padding-bottom: 30vw;
 
     }
-    .bottomText{
+
+    .bottomText {
         line-height: 2rem;
         padding: 40vw 5vw 10vw 7.4vw;
         width: 30rem;
     }
+
     .accordionTitle {
         width: 75vw;
     }
+
     .answer {
         font-size: 1.3rem;
         padding-right: 6rem;
         line-height: 2rem;
     }
-    .question i{
+
+    .question i {
         margin-top: -22px;
 
     }
-    .btn{
+
+    .btn {
         width: 23rem;
         font-size: 1.3rem;
     }
-    .firstRow{
+
+    .firstRow {
         margin-left: 10vw;
     }
 
     .accordion {
         width: 470px;
     }
+
     .smallTitle {
         font-weight: 400;
         margin-bottom: 20px;
         font-size: 1.3rem;
         letter-spacing: 0.3rem;
     }
-    .accordionTitle{
+
+    .accordionTitle {
         line-height: 2rem;
     }
 }
+
 @media (min-width: 376px)and (max-width: 425px) {
     .Heading {
         padding: 35vw 15vw 60vw 8vw;
@@ -189,39 +207,46 @@
         width: 82vw;
         line-height: 4.7rem;
     }
+
     .smallTitle {
         font-size: 1.3rem;
         letter-spacing: 0.3rem;
 
     }
-    .accordionTitle{
+
+    .accordionTitle {
         line-height: 2rem;
         width: 60rem;
         padding-bottom: 5rem;
     }
-    .firstRow{
+
+    .firstRow {
         margin-left: 10vw;
     }
+
     .btn {
         width: 23rem;
         font-size: 1.3rem;
     }
+
     .answer {
         font-size: 1.3rem;
         padding-right: 8rem;
         line-height: 2rem;
         padding-bottom: 3rem;
     }
+
     .accordionTitle {
         width: 70vw;
     }
 
     .bottomText {
         padding: 40vw 8vw 10vw 7.4vw;
-        line-height:1.8rem ;
+        line-height: 1.8rem;
     }
 }
-@media (min-width: 426px) and (max-width: 750px){
+
+@media (min-width: 426px) and (max-width: 750px) {
     .Heading {
         padding: 35vw 15vw 30vw 8vw;
     }
@@ -232,7 +257,8 @@
         width: 82vw;
         line-height: 4.7rem;
     }
-    .firstRow{
+
+    .firstRow {
         margin-left: 10vw;
         display: flex;
         flex-direction: column;
@@ -240,17 +266,20 @@
         column-gap: 0;
         row-gap: 10vw;
     }
-    .answer{
+
+    .answer {
         padding-right: 0.5rem;
         padding-bottom: 4rem;
         line-height: 18px;
         font-size: 13px;
         padding-top: 0;
     }
+
     .bottomText {
         padding: 40vw 6vw 10vw 7.4vw;
-        line-height:1.8rem ;
+        line-height: 1.8rem;
     }
+
     .accordion {
         width: 65vw;
     }
@@ -261,7 +290,8 @@
     }
 
 }
-@media (min-width: 1000px)and (max-width: 1024px){
+
+@media (min-width: 1000px)and (max-width: 1024px) {
     .Heading {
         padding: 15vw 15vw 15vw 5vw;
     }
@@ -272,14 +302,17 @@
         width: 82vw;
         line-height: 7.5rem;
     }
+
     .bottomText {
         padding: 14vw 4vw 15vw 4vw;
         /*line-height:1.8rem ;*/
     }
-    .accordion{
+
+    .accordion {
         width: 400px;
     }
-    .firstRow{
+
+    .firstRow {
         margin-left: 5vw;
         display: flex;
         flex-direction: row;
