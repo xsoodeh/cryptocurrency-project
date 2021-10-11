@@ -67,8 +67,9 @@
       letter-spacing: 0px;
 }
 
- 
-@media only screen and (max-width:428px){
+
+
+@media only screen and (max-width:320px){
     .cardPost{
         display:flex;
         flex-direction: column;
@@ -91,7 +92,7 @@
         flex-direction: column;
         width: 45vw;
         padding-left: 10vw;
-        margin-top: 15vh;
+        margin-top: 5vh;
     }
     
      
@@ -134,13 +135,88 @@
         
     }
     .cardPostText2 h3{
-        font-size: 20px; 
+        font-size: 15px; 
         line-height: 32px;
          font-weight: 700;
           letter-spacing: 0px;
         
     }
 }
+
+@media only screen and (min-width:320px)and (max-width:428px){
+    .cardPost{
+        display:flex;
+        flex-direction: column;
+        margin-top: 0;
+        row-gap: 8vh;
+    }
+    
+     
+    #labtop{
+        width: 80vw;
+        height: 25vh;
+        
+       }
+         #chart{
+        width: 80vw;
+      height: 25vh;
+    }
+    .card1{
+        display: flex;
+        flex-direction: column;
+        width: 45vw;
+        padding-left: 10vw;
+        margin-top: 5vh;
+    }
+    
+     
+    .cardPostText{
+        font-weight: 600;
+        color: #0d1a85;
+        width: 80vw;
+    }
+
+    .cardPostText h3{
+    font-size: 20px;
+    line-height: 28px;
+     font-weight: 700;
+      letter-spacing: 0px;
+     }
+     .cardPostText p{
+        font-size: 13px;
+        line-height: 19px;
+         font-weight: 200;
+          letter-spacing: 0px;
+        
+    }
+    .card2{
+        width: 45vw;
+        display: flex;
+        flex-direction: column;
+        padding-left: 10vw;
+
+    }
+    .cardPostText2{
+        font-weight: 600;
+        color: #0d1a85;
+        width: 80vw;
+    }
+    .cardPostText2 p{
+        font-size: 13px; 
+        line-height: 19px;
+         font-weight: 200;
+          letter-spacing: 0px;
+        
+    }
+    .cardPostText2 h3{
+        font-size: 15px; 
+        line-height: 32px;
+         font-weight: 700;
+          letter-spacing: 0px;
+        
+    }
+}
+
 
 @media only screen and (min-width:428px)and (max-width:768px) {
     .cardPost{
