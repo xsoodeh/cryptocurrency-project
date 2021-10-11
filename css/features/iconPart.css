@@ -285,3 +285,13 @@ grid-area: box;
     
     }
 }
+@media only  screen and (min-width:768px)and (max-width:1024px){
+    .iconPart{
+        margin-top: 5vh;
+    }
+}
+@media only  screen and (min-width:2024px){
+    
+}
+    
+ 

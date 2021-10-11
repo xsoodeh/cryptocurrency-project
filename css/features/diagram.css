@@ -100,3 +100,12 @@ table {
         font-size: 13px;
     }
 }
+@media only screen and (min-width:768px)and (max-width:1024px) {
+    tbody, td, tr {
+        border-right: 1px solid #ddd;
+        border-top: 1px solid #ddd;
+        padding: 1.5vh 1.5vw;
+        /*font-weight: 700;*/
+    
+    }
+}

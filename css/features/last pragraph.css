@@ -105,3 +105,17 @@
     }
     
 }
+@media only screen and (min-width:768px)and (max-width:1024px){
+    .lastPragraph{
+        margin-top: 6vw;
+        display: grid;
+        grid-template-columns: 50vw 20vw;
+}
+}
+@media only  screen and (min-width:2024px){
+    .lastPragraph{
+        margin-top: 6vw;
+        display: grid;
+        grid-template-columns: 35vw 30vw;
+}
+}
