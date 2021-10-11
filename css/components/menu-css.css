@@ -3,12 +3,10 @@
     width: 100%;
     background-color:var(--main-color);
     display: grid;
-    /*grid-template-columns: 20% 79%;*/
     grid-template-areas: "logo buttons";
     border-bottom:solid #3c4e89 1px ;
     box-sizing:initial;
     z-index: 1;
-    /*justify-items: center;*/
     align-items: center;
 
 }
@@ -47,7 +45,7 @@
 button:hover{
     background-color: #1b245b;
     color: #FFFFFF;
-    transition:  all 1s ease-in-out;
+    transition:  all 0.3s ease-in-out;
 }
 .menu--items .active {
     background-color: #1b245b;
@@ -157,7 +155,9 @@ font-size: 2.2rem;
     position: fixed;
     top: 0;
     opacity: 90% ;
-    transition: all 2s ease-out;
+    transition: all 0.3s ease-out;
+    transition-delay: 0.2s;
+
     /*height: 60px;*/
 
 }
