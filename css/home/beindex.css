@@ -34,14 +34,20 @@
 @media (min-width: 1000px)and (max-width: 1024px) {
     #beindex-div{
         height: 92px;
+        justify-content:center;
+        align-items: baseline;
+        column-gap:0px;
+        padding-right:0;
     }
     .beindex-parameters{
-        /*width:150px;*/
-        /*word-wrap: initial;*/
+        width:198px;
+        padding-right: 20px;
+        text-align: center;
     }
     .beindex{
-        padding:0 120px 0 60px;
+        padding:0 140px 0 60px;
     }
+
 }
 /*----------------------------------------- setting 4k desktop-----------------------------*/
 @media (min-width: 2560px) {

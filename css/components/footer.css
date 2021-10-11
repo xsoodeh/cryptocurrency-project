@@ -119,7 +119,7 @@ footer .icons{
 
 @media screen and (max-width: 1000px){
     footer{
-        height:228vh;
+       height:228vh;
         background-size: 680vw;
         background-position:1000vw -760vw;
         background-origin: inherit;
