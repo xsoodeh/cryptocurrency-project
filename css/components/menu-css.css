@@ -172,7 +172,7 @@ button:hover {
 }
 
 .body-open-filter {
-    background-color: rgba(0, 0, 0, .6);
+    background: rgba(0, 0, 0, .6);
 }
 
 .menu-mob-show {
