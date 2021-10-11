@@ -2,9 +2,4 @@
 @import "header-blog.css";
 @import "filter-blog-post.css";
 @import "blog-post.css";
-
-
-
-/*h2 {*/
-/*    font-family: "p-medium";*/
-/*}*/
+@import "responsive.css"
