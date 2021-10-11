@@ -6,7 +6,7 @@
 
 /*----------------------------------heading setting------------------------------*/
 .Heading {
-    padding: 9vw 8vw 14vw 14vw;
+    padding: 9vw 8vw 14vw 15.5vw;
 
 }
 
@@ -15,7 +15,6 @@
     font-weight: 700;
     width: 50vw;
     line-height: 7.7rem;
-
 }
 
 .smallTitle {
@@ -37,7 +36,7 @@
     width: 34rem;
 }
 
-.firstRow {
+.accordionSectin {
     display: flex;
     flex-direction: row;
     row-gap: 7vw;
@@ -110,7 +109,7 @@
     border-left: solid 2px var(--second-color);
     /*color: var(--menu-text-color);*/
     padding-left: 60px;
-    padding-right: 40px;
+    padding-right: 12px;
     font-size: 15px;
     font-weight: 400;
 }
@@ -124,7 +123,7 @@
 
 .bottomText {
     color: var(--menu-text-color);
-    padding: 9vw 13vw 10vw 14vw;
+    padding: 9vw 15vw 10vw 15vw;
 }
 /*----------------------------------footer setting for faq-------------------------------*/
 #footer-faq{
@@ -146,15 +145,18 @@
         padding-bottom: 43vw;
 
     }
+
     .smallTitle {
         font-weight: 400;
         margin-bottom: 15px;
         font-size: 1.3rem;
         letter-spacing: 0.3rem;
     }
-    .firstRow {
+
+    .accordionSectin {
         margin-left: 12vw;
     }
+
     .accordion {
         width: 470px;
     }
@@ -171,7 +173,8 @@
         padding-bottom: 3rem;
         line-height: 2rem;
     }
-    .btn-link {
+
+    .btn {
         display: flex;
         flex-direction: row;
         align-items: baseline;
@@ -181,187 +184,201 @@
         width: 23rem;
         font-size: 1.3rem;
     }
-    .btn-link p{
-        width:550px;
-    }
+
     .bottomText {
         line-height: 2rem;
         padding: 40vw 5vw 40vw 10vw;
         width: 30rem;
     }
-    #footer-faq{
-        height:210vh;
-    }
 
-}
-
-@media (min-width: 375px)and (max-width: 425px) {
-    .Heading {
-        padding: 35vw 1vw 60vw 8vw;
-    }
-
-    .mainTitle {
-        font-size: 4.2rem;
-        font-weight: 700;
-        width: 82vw;
-        line-height: 4.7rem;
-    }
-
-    .smallTitle {
-        font-size: 1.3rem;
-        letter-spacing: 0.3rem;
-
-    }
-
-    .accordionTitle {
-        line-height: 2rem;
-        width: 60rem;
-        padding-bottom: 5rem;
-    }
-
-    .firstRow {
-        margin-left: 10vw;
-    }
-
-    /*.btn {*/
-    /*    !*width: 22rem;*!*/
-    /*    font-size: 1.3rem;*/
-
-    /*}*/
-    .btn-link {
-        font-size: 1.3rem;
-        display: flex;
-        flex-direction: row;
-        align-items: baseline;
-
-    }
-
-
-    .answer {
-        font-size: 1.3rem;
-        padding-right: 8rem;
-        line-height: 2rem;
-        padding-bottom: 3rem;
-    }
-
-    .accordionTitle {
-        width: 70vw;
-    }
-
-    .bottomText {
-        padding: 40vw 8vw 10vw 7.4vw;
-        line-height: 1.8rem;
-    }
-    #footer-faq{
-        height:210vh;
+    #footer-faq {
+        height: 210vh;
     }
 }
 
-@media (min-width: 425px) and (max-width: 750px) {
-    .Heading {
-        padding: 30vw 15vw 40vw 8vw;
+
+    @media (min-width: 376px)and (max-width: 425px) {
+        .Heading {
+            padding: 35vw 1vw 60vw 8vw;
+        }
+
+        .mainTitle {
+            font-size: 4.2rem;
+            font-weight: 700;
+            width: 82vw;
+            line-height: 4.7rem;
+        }
+
+        .smallTitle {
+            font-size: 1.3rem;
+            letter-spacing: 0.3rem;
+
+        }
+
+        .accordionTitle {
+            line-height: 2rem;
+            width: 70vw;
+            padding-bottom: 2rem;
+        }
+
+        .accordionSectin {
+            margin-left: 10vw;
+        }
+
+        .btn {
+            font-size: 1.3rem;
+            display: flex;
+            flex-direction: row;
+            align-items: baseline;
+            justify-content: left;
+            justify-items: left;
+        }
+        .answer {
+            font-size: 1.3rem;
+            padding-right: 3rem;
+            line-height: 2rem;
+            padding-bottom: 3rem;
+        }
+
+
+        .accordion {
+            width: 80vw;
+        }
+
+        .bottomText {
+            padding: 35vw 8vw 35vw 7.4vw;
+            line-height: 1.8rem;
+        }
+
+        #footer-faq {
+            height: 210vh;
+        }
     }
 
-    .mainTitle {
-        font-size: 4.2rem;
-        font-weight: 700;
-        width: 82vw;
-        line-height: 4.7rem;
-    }
-    .smallTitle{
-        font-size: 1.3rem;
+
+
+    @media (min-width: 426px) and (max-width: 750px) {
+        .Heading {
+            padding: 30vw 15vw 47vw 8vw;
+        }
+
+        .mainTitle {
+            font-size: 4.2rem;
+            font-weight: 700;
+            width: 82vw;
+            line-height: 4.7rem;
+        }
+
+        .smallTitle {
+            font-size: 1.3rem;
+        }
+
+        .accordionSectin {
+            margin-left: 10vw;
+            display: flex;
+            flex-direction: column;
+            width: 80vw;
+            column-gap: 0;
+            row-gap: 10vw;
+        }
+
+        .answer {
+            padding-right: 0.5rem;
+            padding-bottom: 4rem;
+            line-height: 18px;
+            font-size: 13px;
+            padding-top: 0;
+        }
+
+        .bottomText {
+            padding: 30vw 8vw 30vw 7.4vw;
+            line-height: 1.8rem;
+        }
+
+        .accordion {
+            width: 80vw;
+        }
+
+        .btn {
+            font-size: 1.3rem;
+            /*letter-spacing: 0.3px;*/
+        }
+
     }
 
-    .firstRow {
-        margin-left: 10vw;
-        display: flex;
-        flex-direction: column;
-        width: 80vw;
-        column-gap: 0;
-        row-gap: 10vw;
+    @media (min-width: 1000px)and (max-width: 1024px) {
+        .Heading {
+            padding: 12.3vw 18vw 22vw 4vw;
+            margin: 0;
+        }
+
+        .mainTitle {
+            font-size: 7rem;
+            font-weight: 700;
+            width: 72vw;
+            line-height: 8rem;
+            margin: 0;
+        }
+
+        .accordion {
+            width: 410px;
+        }
+
+        .accordionTitle {
+            padding-right: 2rem;
+            padding-bottom: 4rem;
+        }
+
+        .accordionSectin {
+            display: flex;
+            flex-direction: row;
+            margin-left: 50px;
+            column-gap: 6rem;
+        }
+
+        .answer {
+            padding-right: 1rem;
+            padding-bottom: 3rem;
+        }
+
+        .bottomText {
+            padding: 14vw 4vw 15vw 4vw;
+            /*line-height:1.8rem ;*/
+        }
+
+
+    }
+    @media (min-width: 2000px) {
+
+        .accordionSectin{
+            padding-top: 10rem;
+        }
+
+        .Heading {
+            padding: 5vw 12vw 5vw 30vw;
+            border-bottom: #3D4270 solid 0.01rem;
+        }
+
+        .accordionSectin {
+            display: flex;
+            flex-direction: row;
+            margin-left: 30vw;
+            margin-right: 20vw;
+            column-gap: 6rem;
+            padding-bottom: 12rem;
+
+        }
+
+        .bottomText {
+            padding: 0 30vw 5vw 30vw;
+            border-top: #3D4270 solid 0.01rem;
+        }
     }
 
-    .answer {
-        padding-right: 0.5rem;
-        padding-bottom: 4rem;
-        line-height: 18px;
-        font-size: 13px;
-        padding-top: 0;
+@media screen and (max-width: 320px) {
+    #footer-faq {
+        height: 218vh;
     }
-
-    .bottomText {
-        padding: 40vw 6vw 10vw 7.4vw;
-        line-height: 1.8rem;
-    }
-
-    .accordion {
-        width: 65vw;
-    }
-
-    .btn {
-        font-size: 1.3rem;
-        /*letter-spacing: 0.3px;*/
-    }
-
 }
 
-@media (min-width: 1000px)and (max-width: 1024px) {
-    .Heading {
-        padding: 12.3vw 18vw 22vw 4vw;
-        margin: 0;
-    }
-
-    .mainTitle {
-        font-size: 7rem;
-        font-weight: 700;
-        width: 72vw;
-        line-height: 8rem;
-        margin: 0;
-    }
-    .accordion {
-        width: 410px;
-    }
-    .accordionTitle{
-        padding-right: 2rem;
-        padding-bottom: 4rem;
-    }
-
-    .firstRow {
-        display: flex;
-        flex-direction: row;
-        margin-left: 50px;
-        column-gap: 6rem;
-    }
-    .answer{
-        padding-right: 1rem;
-        padding-bottom: 3rem;
-    }
-
-    .bottomText {
-        padding: 14vw 4vw 15vw 4vw;
-        /*line-height:1.8rem ;*/
-    }
-
-
-}
-@media (min-width: 1450px)and (max-width: 2560px){
-    .Heading {
-        padding: 5vw 12vw 8vw 30vw;
-    }
-    .firstRow {
-        display: flex;
-        flex-direction: row;
-        margin-left: 30vw;
-        margin-right: 20vw;
-        column-gap: 6rem;
-    }
-    .bottomText{
-        padding: 6vw 30vw 5vw 30vw;
-    }
-}
-@media screen and (max-width: 320px){
-    #footer-faq{
-        height:218vh;
-    }
-}
 
