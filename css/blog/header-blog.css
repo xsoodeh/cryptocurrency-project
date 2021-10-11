@@ -27,15 +27,43 @@
     margin-left: 77px;
 }
 
-@media screen and (max-width:750px) {
+/*----------------------------------------media screen 1024 desktops-------------------------------*/
+@media (min-width: 780px) and (max-width:1100px){
     .blog-header {
-        background-size: cover;
-        height: 40vh;
+        height: 340px;
+        padding:16vh 5vw;
     }
+    .h1-blog{
+        margin-left:0px;
+        position:initial;
+        padding: 0;
+        font-weight:700;
+    }
+    }
+/*--------------------------------media screen common setting mobile and tablets desktops-------------------------------*/
 
-    .h1-blog {
+@media screen and (max-width:780px) {
+    .blog-header {
+        height:51vw;
+        padding:7vh 6vh;
+    }
+    .h1-blog{
+        margin-left:0px;
+        position:initial;
         font-size: 4.8rem;
-        left: 4.5vw;
-        bottom: 15vw;
+    }
+}
+/*--------------------------------media screen for medium mobile----------------------------------------------------*/
+
+@media (max-width:375px) {
+    .blog-header {
+        height:57vw;
+    }
+}
+/*--------------------------------media screen for small mobile----------------------------------------------------*/
+
+@media (max-width:375px) {
+    .blog-header {
+        height:66.9vw;
     }
 }
