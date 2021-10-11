@@ -1,6 +1,5 @@
 
 @media screen and (min-width: 770px) {
-
     .sti-btn {
         display: flex;
         flex-direction: column;
@@ -51,3 +50,8 @@
         }
     }
 }
+@media screen and (max-width: 769px){
+    .sti-btn {
+        display: none;
+    }
+    }

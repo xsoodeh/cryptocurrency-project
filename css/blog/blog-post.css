@@ -54,7 +54,7 @@
 .post-title {
     font-weight: 500;
     line-height: 4rem;
-    margin-top: 1.5rem;
+    /*margin-top: 1.5rem;*/
 }
 
 .post-footer {
@@ -73,30 +73,57 @@
     border-left: 1px solid rgba(0, 0, 0, .08);
     padding-left: 1vw;
 }
+/*----------------------------------------media screen 4k desktops-------------------------------*/
+@media screen and (min-width: 2000px){
+    .blog-container {
+       justify-content:start;
+        padding-left:0vw;
+        /*padding-bottom: 0vw;*/
+        /*column-gap:10px;*/
+        /*row-gap: 1vw;*/
+        width:1039px;
+        margin:auto;
+    }
+
+}
+/*----------------------------------------media screen 1024 desktops-------------------------------*/
+@media (min-width: 780px) and (max-width:1100px){
+    .blog-container {
+        justify-content:start;
+        padding-left:0;
+        width:922px;
+        margin:auto;
+    }
+    .blog-post-img img, .blog-post-img {
+        width: 288px;
+        height: 215px;
+    }
+}
+
+/*--------------------------------media screen common setting mobile and tablets desktops-------------------------------*/
 
 @media screen and (max-width:750px) {
     .blog-container {
         flex-direction: column;
-        width: 90vw;
-        padding-left: 7vw;
+        width:85vw;
+        padding-left:0;
+        padding-bottom: 30px;
         row-gap: 4vw;
-
+        margin: auto;
     }
 
     .item {
-        width: 100%;
+        width:100%;
     }
 
     .blog-post-img,
     .blog-post-img img {
-        width: 85vw;
-        height: 45vh;
+        width:84.7vw;
+        height:63.5vw;
     }
 
     .blog-post-content {
-        width: 80%;
         margin-left: 6vw;
-
     }
 
     .post-info {
@@ -105,7 +132,38 @@
 
     .post-info i,
     .post-info span {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
-
+    .post-title {
+        line-height: 2.6rem;
+        padding:10px 0 0 0;
+        margin:0;
+    }
+    .p-blog{
+        width:100%;
+    }
 }
+
+/*--------------------------------media screen for medium mobile----------------------------------------------------*/
+@media screen and (max-width:375px) {
+    .blog-post-img,
+    .blog-post-img img {
+        width:82.5vw;
+        height:62vw;
+    }
+    .blog-container {
+        width: 80vw;
+    }
+    }
+/*--------------------------------media screen for medium mobile----------------------------------------------------*/
+@media screen and (max-width:325px) {
+    .blog-post-img,
+    .blog-post-img img {
+        width:79.5vw;
+        height:59.60vw;
+    }
+    .blog-container {
+        width:75vw;
+    }
+}
+
