@@ -190,9 +190,10 @@
 }  */
 
 
-/* screen size 325px */
+/* screen size 325px small phone */
 @media screen and (max-width:325px) {
 
+    /*   blog header*/
     .blog-container {
         flex-direction: column;
         width: 90vw;
@@ -220,6 +221,20 @@
         margin-top: -21px;
     }
 
+    /* filter section */
+
+    .filter-container .reset {
+        margin-bottom: 24px;
+    }
+
+    a.authors {
+
+        padding-left: 14.7vw;
+    }
+
+
+
+    /* blog section */
     .blog-post-img,
     .blog-post-img img {
         width: 285px;
@@ -231,14 +246,6 @@
         font-size: 1.2rem;
     }
 
-    a.authors {
-
-        padding-left: 14.7vw;
-    }
-
-    .filter-container .reset { 
-        margin-bottom: 24px;
-    }
 
     div.blog-post-img {
         width: 285px;
