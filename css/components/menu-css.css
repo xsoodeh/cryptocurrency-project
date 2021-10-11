@@ -154,7 +154,9 @@ button:hover {
 
     text-decoration: none;
 }
-
+.berger-mob-faq{
+    padding: 15px;
+}
 /*----------------------------------------------------js classes--------------------------------*/
 .move-menu {
     transform: translate(-110px);
