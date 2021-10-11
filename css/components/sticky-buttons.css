@@ -21,18 +21,20 @@
         border-radius: 0.2rem 0 0 0.2rem;
         font-size: 1.1rem;
         padding: 2px;
+        color: #F3F5F2;
+
     }
 
     .sti-btn-up {
         background-color: #06070C;
-        color: #ffffff;
+        /*color: #ffffff;*/
     }
     .sti-btn-up :first-child{
         font-size: 20px;
     }
     .sti-btn-down {
         background-color: #80B541;
-        color: #F3F5F2;
+        /*color: #F3F5F2;*/
     }
     .sti-btn-down img{
         width: 26px;
