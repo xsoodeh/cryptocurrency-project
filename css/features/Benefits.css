@@ -71,12 +71,12 @@
 }
 
 .fill {
-    clip: rect(0px, 64px, 160px, 0px);
+    clip: rect(0px, 125px, 50px, -17px);
     background-color: rgb(255, 208, 0);
 }
 
 .layer-1, .fill {
-  transform: rotate(74deg);
+  transform: rotate(71deg);
    /* transform: rotate(90deg);*/
     animation: fill ease-out 2s;
 }
