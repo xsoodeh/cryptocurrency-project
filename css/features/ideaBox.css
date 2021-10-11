@@ -14,13 +14,42 @@
     padding-left: 1vw;
     border-right: 1px solid #ddd;
     margin-right: 2vw;
+    align-items: baseline;
 
 }
 
-@media only screen  and (max-width:768px){
+.ideaBox--subText{
+    display: none;
+}
 
-   .ideaBox{
-       width: 75%;
+   @media only screen  and (max-width:428px){
+    .ideaBox{
+        width: 60%;
+        padding-left: 5vw;
+    }
+     .ideaBox--subText{
+    display: block;
+    padding-left: 10vw;
+    width: 80vw;
+    font-size: 13px;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 10vh;
+}
    }
+   @media only screen  and (min-width:428px) and (max-width:760px){
+    .ideaBox{
+        width: 80%;
+        padding-left: 5vw;
+    } 
+
+    .ideaBox--subText{
+        display: block;
+        padding-left: 10vw;
+        width: 85vw;
+        font-size: 15px;
+        font-weight: 700;
+        text-align: center;
+    }
 }
 
