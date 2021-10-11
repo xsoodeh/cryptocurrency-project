@@ -1,0 +1,53 @@
+
+@media screen and (min-width: 770px) {
+
+    .sti-btn {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        row-gap:8px;
+        top:395px;
+        right: 0;
+
+    }
+    .sti-btn a{
+        display: flex;
+        flex-flow: column;
+        width:65px;
+        height:65px;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        border-radius: 0.2rem 0 0 0.2rem;
+        font-size: 1.1rem;
+        padding: 2px;
+    }
+
+    .sti-btn-up {
+        background-color: #06070C;
+        color: #ffffff;
+    }
+    .sti-btn-up :first-child{
+        font-size: 20px;
+    }
+    .sti-btn-down {
+        background-color: #80B541;
+        color: #F3F5F2;
+    }
+    .sti-btn-down img{
+        width: 26px;
+        height: 26px;
+    }
+    .blink {
+        animation: blinker 4s infinite;
+    }
+
+    @keyframes blinker {
+        0%, 100%, 50% {
+            opacity: 1
+        }
+        25%, 75% {
+            opacity: .2
+        }
+    }
+}

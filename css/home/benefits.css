@@ -4,7 +4,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-top: 148px;
+    margin-top: 135px;
     column-gap: 60px;
 }
 .benefits-text{
@@ -53,26 +53,72 @@
     }
 }
 
-
-@media screen and (max-width: 750px) {
+/*----------------------------------------common setting for mobile and tablet--------------------------------*/
+@media screen and (max-width: 1000px) {
     .benefits {
         flex-direction: column;
+        /*height: 161px;*/
     }
 
-    .benefits-text {
-        width: 85%;
-    }
+.benefits-money-text{
+    padding-left: 45px;
+    width:75%;
 
+
+}
     .benefits-money img, .miner img {
-        width: 80vw;
-        padding-top: 10vw;
+        width:360px;
+        height: 281px;
+        padding-top:0;
     }
     .benefits-text p{
         line-height:normal;
     }
-
     .miner-text {
-        margin-right: 1vw;
+        margin-right:0;
+        width:90% ;
+        padding: 50px 0 25px 25px;
+    }
+    .miner h2{
+        width:200px;
+    }
+    .miner{
+        padding-bottom: 90px;
+    }
+    .benefits-text button{
+        margin-top:23px;
+    }
+
+}
+/*---------------------------------------- setting for medium mobile--------------------------------*/
+@media (min-width:326px) and (max-width: 375px) {
+    .benefits-money img, .miner img {
+        width:310px;
+        height: 242px;
+        padding-top: 10px;
+    }
+    .benefits-money-text {
+        width:75%;
+        padding-left: 50px;
+    }
+    .miner-text{
+        width:82%;
+        padding: 50px 0 15px 0;
+
+    }
+
+}
+/*---------------------------------------- setting for small mobile--------------------------------*/
+@media (max-width: 325px) {
+    .benefits-money img, .miner img {
+        width:255px;
+        height: 199px;
+    }
+    .benefits-money-text {
+        padding-left: 60px;
+    }
+    .miner-text{
+        padding: 50px 0 25px 38px;
     }
 
 }

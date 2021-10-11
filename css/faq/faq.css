@@ -1,6 +1,6 @@
 
 .mainContainer {
-    background-color: var(--main-color);
+    background-color: var(--main-color) !important;
     color: var(--menu-text-color);
 }
 
@@ -126,12 +126,15 @@
     color: var(--menu-text-color);
     padding: 9vw 13vw 10vw 14vw;
 }
-
+/*----------------------------------footer setting for faq-------------------------------*/
+#footer-faq{
+    height: max-content;
+}
+/*----------------------------------------------*/
 @media (min-width: 320px)and (max-width: 375px) {
     .Heading {
-        padding: 38vw 4vw 9vw 10vw;
+        padding: 40vw 4vw 9vw 10.5vw;
         margin-bottom: 40px;
-
     }
 
     .mainTitle {
@@ -140,43 +143,32 @@
         width: 90vw;
         line-height: 4.7rem;
         padding-right: 20vw;
-        padding-bottom: 30vw;
+        padding-bottom: 43vw;
 
     }
-
-    .bottomText {
-        line-height: 2rem;
-        padding: 40vw 6vw 10vw 7.4vw;
-        width: 30rem;
-    }
-
-    .accordionTitle {
-        width: 75vw;
-    }
-
-    .answer {
+    .smallTitle {
+        font-weight: 400;
+        margin-bottom: 15px;
         font-size: 1.3rem;
-        padding-right: 7.5rem;
-        padding-bottom: 3rem;
-        line-height: 2rem;
+        letter-spacing: 0.3rem;
     }
-
     .firstRow {
-        margin-left: 10vw;
+        margin-left: 12vw;
     }
-
     .accordion {
         width: 470px;
     }
 
-    .smallTitle {
-        font-weight: 400;
-        margin-bottom: 20px;
-        font-size: 1.3rem;
-        letter-spacing: 0.3rem;
+    .accordionTitle {
+        width: 75vw;
+        padding-bottom: 7vw;
+        line-height: 2rem;
     }
 
-    .accordionTitle {
+    .answer {
+        font-size: 1.3rem;
+        padding-right: 7rem;
+        padding-bottom: 3rem;
         line-height: 2rem;
     }
     .btn-link {
@@ -191,6 +183,14 @@
     }
     .btn-link p{
         width:550px;
+    }
+    .bottomText {
+        line-height: 2rem;
+        padding: 40vw 5vw 40vw 10vw;
+        width: 30rem;
+    }
+    #footer-faq{
+        height:210vh;
     }
 
 }
@@ -251,6 +251,9 @@
     .bottomText {
         padding: 40vw 8vw 10vw 7.4vw;
         line-height: 1.8rem;
+    }
+    #footer-faq{
+        height:210vh;
     }
 }
 
@@ -354,6 +357,11 @@
     }
     .bottomText{
         padding: 6vw 30vw 5vw 30vw;
+    }
+}
+@media screen and (max-width: 320px){
+    #footer-faq{
+        height:218vh;
     }
 }
 

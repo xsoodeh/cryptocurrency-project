@@ -18,11 +18,9 @@
 <!--menu for laptop-->
 <div class="menu" id="menu">
     <img id="logo" src="../img/crypto-logo-retina.png"/>
-
+    <div id="menu-berger--mob" onclick="openMenu()"></div>
     <div class="menu--items">
-        <div id="menu-berger" onclick="openMenu()">
-            <!--        <ion-icon name="menu-outline"></ion-icon>-->
-        </div>
+        <div id="menu-berger1024" onclick="openMenu()"></div>
         <button class="active menuButtons"><a href="home.html">Home</a></button>
         <button class="menuButtons"><a href="features.html">Features</a></button>
         <button class="menuButtons" ><a href="blog.html">Blog</a></button>
@@ -53,7 +51,7 @@
         <ion-icon name="logo-twitter"></ion-icon>
         <ion-icon name="logo-vimeo"></ion-icon>
         <ion-icon name="play"></ion-icon>
-        <ion-icon name="logo-pinterest"></ion-icon>
+        <span class="pinterest-icon"></span>
     </div>
 </div>
 
@@ -73,14 +71,13 @@
 <!--    beindex parameters setting-->
 <div id="beindex-div">
     <div class="beindex"><h5>Be<b>INDEX</b></h5></div>
-    <div class="beindex-parameters"><h5>BTC=<b>6345</b><span>USD</span><span>+0.4%</span></h5></div>
-    <div class="beindex-parameters"><h5>ETH=<b>438</b><span>USD</span><span>+1.3%</span></h5></div>
-    <div class="beindex-parameters"><h5>XRP=<b>0.461</b><span>USD</span><span id="negative-para">-1.2%</span></h5></div>
+    <div class="beindex-parameters"><h5>BTC<span>=</span><b>6 345</b><span>USD</span><span> +0.4%</span></h5></div>
+    <div class="beindex-parameters"><h5>ETH<span>=</span><b>438</b><span>USD</span><span>+1.3%</span></h5></div>
+    <div class="beindex-parameters"><h5>XRP<span>=</span><b>0.461</b><span>USD</span><span id="negative-para">-2.1%</span></h5></div>
 </div>
 
-<!--    posts of blog-->
+<!--    posts of blog-------->
 <div id="post-selected">
-        <!-- START BLOG post-->
         <div class="blog-container">
             <!--post 1-->
             <div class="item">
@@ -114,12 +111,6 @@
                             est. Vivamus lacus sed justo.
 
                         </p>
-                    </div>
-
-                    <div class="post-footer">
-                        <div class="post-links"><i class="icon-doc-text"></i> <a
-                                href="https://themes.muffingroup.com/be/cryptocurrency/orci-varius-natoque-penatibus/"
-                                class="post-more">Read more</a></div>
                     </div>
                 </div>
             </div>
@@ -155,11 +146,6 @@
                         est. Vivamus lacus sed justo.
 
                     </p>
-                    <div class="post-footer">
-                        <div class="post-links"><i class="icon-doc-text"></i> <a
-                                href="https://themes.muffingroup.com/be/cryptocurrency/orci-varius-natoque-penatibus/"
-                                class="post-more">Read more</a></div>
-                    </div>
                 </div>
             </div>
             <!-- END post 2-->
@@ -194,11 +180,6 @@
                         est. Vivamus lacus sed justo.
 
                     </p>
-                    <div class="post-footer">
-                        <div class="post-links"><i class="icon-doc-text"></i> <a
-                                href="https://themes.muffingroup.com/be/cryptocurrency/orci-varius-natoque-penatibus/"
-                                class="post-more">Read more</a></div>
-                    </div>
                 </div>
             </div>
 </div>
@@ -220,9 +201,8 @@
 <div id="static">
     <h2>Statistics and graphs</h2>
     <p>Ut ultricies imperdiet sodales. Aliquam fringilla aliquam ex sit amet elementum.
-        Proin bibendum sollicitudin feugiat ipsum dos et omnia</p>
+        </br>Proin bibendum sollicitudin feugiat ipsum dos et omnia</p>
     </div>
-</div>
 <div class="diagram">
     <img id="circleDiagram" src="../img/crypto-home-circle-diagram (1).png">
     <div class="wrapperTable">
@@ -382,13 +362,24 @@
                 <a href="#"> <ion-icon name="logo-twitter"></ion-icon></a>
                 <a href="#"><ion-icon name="logo-vimeo"></ion-icon></a>
                     <a href="#"> <ion-icon name="play"></ion-icon></a>
-                        <a href="#"> <ion-icon name="logo-pinterest"></ion-icon></a>
+                        <a href="#"><span class="pinterest-icon"></span></a>
                             <a href="#"> <ion-icon name="chevron-up-outline" class="up-icon-desk up"></ion-icon></a>
             </div>
         </div>
-
     </footer>
 </div>
+<!------------------------------------------sticky buttons----------------------------------- - -->
+<div class="sti-btn">
+    <a href="#" class="sti-btn-up">
+        <span class="blink"> 600&#x2B </span>
+        <span class="blink"> websites </span>
+    </a>
+    <a target="_blank" class="sti-btn-down" href="https://1.envato.market/DENky">
+       <img src="../img/buy.svg">
+        <span>Buy now</span>
+    </a>
+</div>
+
 </body>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

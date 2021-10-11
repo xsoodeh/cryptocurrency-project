@@ -34,14 +34,20 @@
 @media (min-width: 1000px)and (max-width: 1024px) {
     #beindex-div{
         height: 92px;
+        justify-content:center;
+        align-items: baseline;
+        column-gap:0px;
+        padding-right:0;
     }
     .beindex-parameters{
-        /*width:150px;*/
-        /*word-wrap: initial;*/
+        width:198px;
+        padding-right: 20px;
+        text-align: center;
     }
     .beindex{
-        padding:0 120px 0 60px;
+        padding:0 140px 0 60px;
     }
+
 }
 /*----------------------------------------- setting 4k desktop-----------------------------*/
 @media (min-width: 2560px) {
@@ -56,18 +62,36 @@
 
 }
 
-
-
-
-
-
-
-@media screen and (max-width: 750px) {
+/*----------------------------------------common setting for mobile and tablet--------------------------------*/
+@media screen and (max-width: 1000px) {
     #beindex-div {
         display: flex;
         flex-direction: column;
-        align-items:center ;
+        align-items:center;
+        /*align-content: center;*/
+        /*justify-items: center;*/
+        justify-content:space-evenly;
         font-size: 1.5rem;
-line-height: 0.8rem;
+        line-height:unset;
+        height: 161px;
+        row-gap:0;
+    }
+    #beindex-div h5{
+        font-size: 1.3rem;
+        line-height:1.9rem;
+        margin: 0;
+        padding: 0;
+        /*height: 34px;*/
+    }
+    .beindex{
+        padding:0;
+    }
+    .beindex-parameters span{
+        padding:4px;
+    }
+    .beindex-parameters b{
+        padding-left: 4px;
     }
 }
+
+

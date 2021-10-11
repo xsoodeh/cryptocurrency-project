@@ -18,14 +18,12 @@
 <!--menu for laptop-->
 <div class="menu" id="menu">
     <img id="logo" src="../img/crypto-logo-retina.png"/>
-
+    <div id="menu-berger--mob" onclick="openMenu()"></div>
     <div class="menu--items">
-        <div id="menu-berger" onclick="openMenu()">
-            <!--        <ion-icon name="menu-outline"></ion-icon>-->
-        </div>
+        <div id="menu-berger1024" onclick="openMenu()"></div>
         <button class=" menuButtons"><a href="home.html">Home</a></button>
         <button class="menuButtons"><a href="features.html">Features</a></button>
-        <button class="menuButtons active" ><a href="blog.html">Blog</a></button>
+        <button class="active menuButtons" ><a href="blog.html">Blog</a></button>
         <button class="menuButtons"><a href="faq.html">FAQ</a></button>
         <button class="menuButtons">About & Contact</button>
         <button class="buy-btn menuButtons"><a
@@ -46,14 +44,14 @@
     </button>
     <button id='home-button' > <a href="home.html">Home</a></button>
     <button><a href="features.html">Features</a></button>
-    <button class="active"><a href="blog.html" >Blog</a></button>
+    <button class="active"><a href="blog.html">Blog</a></button>
     <button><a href="faq.html">FAQ</a></button>
     <button >About & Contact</button>
     <div class="menu-mob-icons icons">
         <ion-icon name="logo-twitter"></ion-icon>
         <ion-icon name="logo-vimeo"></ion-icon>
         <ion-icon name="play"></ion-icon>
-        <ion-icon name="logo-pinterest"></ion-icon>
+        <span class="pinterest-icon"></span>
     </div>
 </div>
 
@@ -457,13 +455,23 @@
                 <a href="#"> <ion-icon name="logo-twitter"></ion-icon></a>
                 <a href="#"><ion-icon name="logo-vimeo"></ion-icon></a>
                 <a href="#"> <ion-icon name="play"></ion-icon></a>
-                <a href="#"> <ion-icon name="logo-pinterest"></ion-icon></a>
+                <a href="#"><span class="pinterest-icon"></span></a>
                 <a href="#"> <ion-icon name="chevron-up-outline" class="up-icon-desk up"></ion-icon></a>
             </div>
         </div>
 
     </footer>
     </div>
+<div class="sti-btn">
+    <a href="#" class="sti-btn-up">
+        <span class="blink"> 600&#x2B </span>
+        <span class="blink"> websites </span>
+    </a>
+    <a target="_blank" class="sti-btn-down" href="https://1.envato.market/DENky">
+        <img src="../img/buy.svg">
+        <span>Buy now</span>
+    </a>
+</div>
 </body>
 <script src="../js/menu-java-script.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

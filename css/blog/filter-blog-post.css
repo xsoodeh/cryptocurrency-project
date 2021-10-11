@@ -12,7 +12,10 @@
     height: 85px;
     padding-top: 0px;
     padding-bottom: 0px;
-    margin-top: 17px;
+    margin-top: 19px;
+    margin-bottom: 17px;
+
+    
 }
 
 .filter-content {
@@ -38,8 +41,10 @@
     text-decoration: underline;
 }
 
-.label {
+span.label {
     color: #a8a8a8;
+    padding-right: 3px;
+    padding-left: 0px;
 }
 
 a.cat:before {
