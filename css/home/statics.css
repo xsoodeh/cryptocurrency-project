@@ -24,6 +24,15 @@
 
 @media screen and (max-width: 750px) {
     #static p{
-        width:85%;}
-
+        width:85%;
+    }
+    #static h2{
+        margin-top: 40px;
+    }
+}
+/*--------------------------------------setting for small phone--------------------------*/
+@media screen and (max-width: 325px){
+    #static p{
+        width:80%;
+    }
 }

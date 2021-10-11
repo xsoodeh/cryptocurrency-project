@@ -36,10 +36,17 @@ button{
 
     .select-btn {
         padding:6px 20px;
+        width: 156px;
+        height: 39px;
     }
 }
 @media (min-width: 321px) and (max-width: 380px ) {
     .select-btn {
         padding:5px 17px;
+    }
+}
+@media (max-width: 320px ) {
+    .select-btn {
+        padding:4px 15px;
     }
 }
