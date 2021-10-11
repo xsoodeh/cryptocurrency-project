@@ -9,6 +9,7 @@ function openMenu() {
     menoBox.classList.remove("menu-mob-close");
     bodyBox.classList.add("move-menu");
     bodyBox.classList.remove("move-back-menu");
+    bodyBox.classList.add("body-open-filter");
     navbar.classList.add("move-menu");
     navbar.classList.remove("move-back-menu");
 }
@@ -20,20 +21,23 @@ function closeMenu() {
     menoBox.classList.remove("menu-mob-show");
     menoBox.classList.add("menu-mob-close");
     bodyBox.classList.remove("move-menu");
+    bodyBox.classList.remove("body-open-filter");
     bodyBox.classList.add("move-back-menu");
     navbar.classList.remove("move-menu");
     navbar.classList.add("move-back-menu");
 }
 function closeMenuBody() {
     let menoBox = document.getElementById("menu-mob");
+    let navbar = document.getElementById("menu");
     let bodyBox = document.getElementById("main-elements");
     if (menoBox.classList.contains("menu-mob-show")){
         menoBox.classList.remove("menu-mob-show");
         menoBox.classList.add("menu-mob-close");
         bodyBox.classList.remove("move-menu");
+        bodyBox.classList.remove("body-open-filter");
         bodyBox.classList.add("move-back-menu");
-        navbar.classList.remove("move-menu");
         navbar.classList.add("move-back-menu");
+        navbar.classList.remove("move-menu");
     }
 }
 

@@ -126,7 +126,11 @@
     color: var(--menu-text-color);
     padding: 9vw 13vw 10vw 14vw;
 }
-
+/*----------------------------------footer setting for faq-------------------------------*/
+#footer-faq{
+    height: max-content;
+}
+/*----------------------------------------------*/
 @media (min-width: 320px)and (max-width: 375px) {
     .Heading {
         padding: 38vw 4vw 9vw 10vw;
@@ -192,6 +196,9 @@
     .btn-link p{
         width:550px;
     }
+    #footer-faq{
+        height:210vh;
+    }
 
 }
 
@@ -251,6 +258,9 @@
     .bottomText {
         padding: 40vw 8vw 10vw 7.4vw;
         line-height: 1.8rem;
+    }
+    #footer-faq{
+        height:210vh;
     }
 }
 
@@ -354,6 +364,11 @@
     }
     .bottomText{
         padding: 6vw 30vw 5vw 30vw;
+    }
+}
+@media screen and (max-width: 320px){
+    #footer-faq{
+        height:218vh;
     }
 }
 
