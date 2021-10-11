@@ -54,7 +54,11 @@
 .post-title {
     font-weight: 500;
     line-height: 4rem;
+<<<<<<< HEAD
+    margin-top: 1.5rem;
+=======
     /*margin-top: 1.5rem;*/
+>>>>>>> 2351ae929a5ab707a449f7b4a275725873d7ff52
 }
 
 .post-footer {
@@ -73,6 +77,15 @@
     border-left: 1px solid rgba(0, 0, 0, .08);
     padding-left: 1vw;
 }
+<<<<<<< HEAD
+
+@media screen and (max-width:750px) {
+    .blog-container {
+        flex-direction: column;
+        width: 90vw;
+        padding-left: 7vw;
+        row-gap: 4vw;
+=======
 /*----------------------------------------media screen 4k desktops-------------------------------*/
 @media screen and (min-width: 2000px){
     .blog-container {
@@ -101,6 +114,7 @@
 }
 
 /*--------------------------------media screen common setting mobile and tablets desktops-------------------------------*/
+>>>>>>> 2351ae929a5ab707a449f7b4a275725873d7ff52
 
 @media screen and (max-width:750px) {
     .blog-container {
@@ -118,9 +132,19 @@
 
     .blog-post-img,
     .blog-post-img img {
+<<<<<<< HEAD
+        width: 85vw;
+        height: 45vh;
+    }
+
+    .blog-post-content {
+        width: 80%;
+        margin-left: 6vw;
+=======
         width:84.7vw;
         height:63.5vw;
     }
+>>>>>>> 2351ae929a5ab707a449f7b4a275725873d7ff52
 
     .blog-post-content {
         margin-left: 6vw;
@@ -132,6 +156,9 @@
 
     .post-info i,
     .post-info span {
+<<<<<<< HEAD
+        font-size: 1.2rem;
+=======
         font-size: 1.3rem;
     }
     .post-title {
@@ -154,6 +181,7 @@
     .blog-container {
         width: 80vw;
     }
+>>>>>>> 2351ae929a5ab707a449f7b4a275725873d7ff52
     }
 /*--------------------------------media screen for medium mobile----------------------------------------------------*/
 @media screen and (max-width:325px) {

@@ -76,7 +76,8 @@
 }
 
 .layer-1, .fill {
-    transform: rotate(90deg);
+  transform: rotate(74deg);
+   /* transform: rotate(90deg);*/
     animation: fill ease-out 2s;
 }
 
@@ -108,9 +109,7 @@
 .benefitCircle-subTitle{
   display: none;
 }
-
-@media only screen and  (max-width: 428px) {
-
+@media only screen and (min-width:320px)and (max-width:428px){
   .benefit{
     display: flex;
     flex-direction: column;
@@ -130,7 +129,7 @@
 .benefit h2{
   padding-top: 15vh;
   padding-left: 10vw;
-  font-size: 2.5rem;
+  font-size: 2rem;
   line-height: 25px;
 }
 .benefit p{
@@ -162,9 +161,12 @@
   width: 85vw;
   padding-left: 5vw;
   font-weight: 700;
+  padding-bottom: 5vh;
 }
 }
-@media only screen and  (min-width: 428px) and (max-width:768){
+
+
+  @media only screen and  (min-width: 428px) and (max-width:768){
   .benefit{
     display: flex;
     flex-direction: column;
@@ -184,7 +186,7 @@
 .benefit h2{
   padding-top: 10vh;
   padding-left: 15vw;
-  font-size: 2rem;
+  /*font-size: 2rem;*/
   line-height: 25px;
   
 }
@@ -218,4 +220,34 @@
  padding-left: 2.5vw;
   font-weight: 700;
 }
+}
+
+
+ @media only  screen and (min-width:768px)and (max-width:1024px){
+ 
+  .benefit {
+  
+    display:grid;
+    grid-template-columns:20vw 50vw 15vw;
+  }
+     .circle-text{
+       margin-top: 0;
+       padding-left: 5vw;
+     } 
+    
+     .circle-container {
+      
+      padding-left: 5vw;
+  }
+.benefit-subTitle{
+  width: 18vw;
+}
+  }
+  
+  @media only  screen and (min-width:2024px){
+    .benefit {
+  
+      display:grid;
+      grid-template-columns:15vw 35vw 15vw;
+  }
 }

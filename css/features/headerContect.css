@@ -28,18 +28,22 @@
     display: inline-block;
    width: 80vw;
 }
-
-@media screen and (max-width: 428px) {
+@media only screen and (min-width:320px)and (max-width:428px){
     .headerContent h1 {
         font-size: 4.2rem;
         line-height: 4.5rem;
         width: 80vw;
+        padding-left: 10vw;
+
     }
     .headerContent h6 {
-        font-size: 15px;
+        font-size: 13px;
+        letter-spacing: 2.5px;
+        padding-left: 10vw;
     }
 }
-@media screen and (min-width: 428px) and (max-width:760px) {
+
+@media only screen and (min-width: 428px) and (max-width:760px) {
     .headerContent h1 {
         font-size: 5rem;
         line-height: 5rem;
@@ -48,3 +52,47 @@
 
     }
 }
+@media only  screen and (min-width:768px)and (max-width:1024px){
+    .headerContent h1 {
+        font-size: 75px;
+        line-height: 78px;
+        font: 600;
+        padding-left: 8vw;
+        width: 65vw;
+     
+
+    }
+    .headerContent h6 {
+        font-size:20px;
+        letter-spacing: 5px;
+        padding-left:8vw;
+        padding-top: 10vh;
+    }
+}
+@media only  screen and (min-width:2024px){
+    .headerContent h1 {
+        font-size: 75px;
+        line-height: 78px;
+        font: 600;
+        padding-left: 25vw;
+        width: 40vw;
+     
+
+    }
+    .headerContent h6 {
+        font-size:20px;
+        letter-spacing: 5px;
+        padding-left:25vw;
+        padding-top: 10vh;
+    }
+}
+
+
+
+
+
+
+
+
+
+

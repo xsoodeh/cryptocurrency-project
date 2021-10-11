@@ -1,5 +1,9 @@
 
 @media screen and (min-width: 770px) {
+<<<<<<< HEAD
+
+=======
+>>>>>>> 2351ae929a5ab707a449f7b4a275725873d7ff52
     .sti-btn {
         display: flex;
         flex-direction: column;
@@ -49,9 +53,13 @@
             opacity: .2
         }
     }
+<<<<<<< HEAD
+}
+=======
 }
 @media screen and (max-width: 769px){
     .sti-btn {
         display: none;
     }
     }
+>>>>>>> 2351ae929a5ab707a449f7b4a275725873d7ff52
