@@ -14,9 +14,7 @@
    margin-top:10vh;
    border: 1px solid rgba(202, 221, 248, 0.8);
     justify-items: left;
-    align-items: left;
     justify-content: left;
-    align-content: left;
     padding: 8vw;
 }
               /*-----box---*/
@@ -290,8 +288,18 @@ grid-area: box;
         margin-top: 5vh;
     }
 }
-@media only  screen and (min-width:2024px){
-    
+@media only  screen and (min-width:2000px){
+    .iconPart{
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+    }
+.iconPart--box{
+    width: 500px;
+}
+.iconPart--box p{
+    width: 300px;
+}
 }
     
  

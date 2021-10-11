@@ -166,7 +166,7 @@
 }
 
 
-  @media only screen and  (min-width: 428px) and (max-width:768){
+  @media only screen and  (min-width: 428px) and (max-width:768px){
   .benefit{
     display: flex;
     flex-direction: column;
@@ -244,10 +244,15 @@
 }
   }
   
-  @media only  screen and (min-width:2024px){
+  @media only  screen and (min-width:2000px){
     .benefit {
-  
       display:grid;
-      grid-template-columns:15vw 35vw 15vw;
+      grid-template-columns:15vw 20vw 15vw;
+        /*width: 50%;*/
+        margin: auto;
   }
+      .benefit-subTitle{
+          width: 8vw;
+      }
+
 }
