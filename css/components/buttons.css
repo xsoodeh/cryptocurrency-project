@@ -1,29 +1,52 @@
 button{
-    text-transform: capitalize;
     text-align: center;
-    padding: 1.2vw 2.5vw;
     border: 0;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+
 }
+
 .select-btn{
-    color:var(--text-color);
+    color:#161c53;
     background-color: var(--second-color);
     border: none;
+    width: 174px;
+    height: 45px;
+
 }
-.select-btn:hover {
- background-color: #d7a113;
+
+.menu--items .buy-btn:hover,.select-btn:hover{
+    background-color: #f1b925;
+    transition:  all 0.3s ease-in-out;
+    color:#161c53;
+
+
 }
-.buy-btn{
-color: #07074d;
-}
-@media screen and (max-width: 750px ){
-    button{
+@media screen and (max-width: 750px ) {
+    button {
         font-size: 1.3rem;
     }
-    .buy-btn{
-        width:85%;
+
+    .buy-btn {
+        width: 85%;
         height: 8vh;
         margin: 4vw;
     }
-}
 
+    .select-btn {
+        padding:6px 20px;
+        width: 156px;
+        height: 39px;
+    }
+}
+@media (min-width: 321px) and (max-width: 380px ) {
+    .select-btn {
+        padding:5px 17px;
+    }
+}
+@media (max-width: 320px ) {
+    .select-btn {
+        padding:4px 15px;
+    }
+}

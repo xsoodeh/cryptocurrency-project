@@ -1,9 +1,10 @@
-:root{
+:root {
+
     --second-color: #ffc326;
     --main-color:#141A51;
     --text-color:#0d1a85;
     --third-color:#80a3d3;
     --menu-text-color:#FFF;
-    --text-size: 1.3rem;
+    --text-size: 1.5rem;
     --mob-width:750px;
 }

@@ -1,0 +1,176 @@
+footer{
+    background-image: url("../../img/crypto-home-slider-bg.png");
+    background-repeat: repeat;
+    background-size:107vw;
+    height:534px;
+    width: 100%;
+    color:#a7a8b6;
+    background-position: -71vw 21vw;
+    overflow: hidden;
+}
+footer .select-btn{
+    color: black;
+    margin-top: 23px;
+}
+
+.footer-columns{
+    display: flex;
+    flex-direction: row;
+    align-items:flex-start;
+    column-gap:22px;
+    padding: 90px 0 74px 152px;
+    border:1px solid rgba(255,255,255,.1);
+}
+.footer-columns ul{
+    padding:0 40px 0 0;
+    margin: 0;
+}
+.footer-columns p,.footer-columns h3{
+    width:244px;
+}
+.footer-columns h3,h4{
+    color: white;
+}
+
+footer li{
+    line-height: 3.6rem;
+}
+footer li a:hover, #footer-info:hover,.copy-right a:hover{
+    color: var(--second-color);
+    text-decoration:underline var(--second-color);
+}
+.footer-columns li:before{
+    content:">";
+    color: var(--second-color);
+    padding-right: 1vw;
+}
+#footer-info{
+    color: var(--second-color);
+    padding-top:15px;
+    cursor: pointer;
+}
+footer ion-icon:hover{
+    color: var(--second-color);
+}
+.copy-right{
+    display: flex;
+    flex-direction: row;
+    column-gap: 100px;
+    /*justify-content: space-evenly;*/
+    /*justify-items: center;*/
+    height:84px;
+    align-items: center;
+    padding: 0 55px;
+}
+footer .icons{
+    margin-left: 195px;
+}
+.up-icon-mob {
+    display: none;
+}
+.up{
+        color: white;
+        font-size: 2.5rem;
+    }
+.up:hover{
+    color: white;
+}
+.up-icon-desk{
+    margin-left:13px;
+
+}
+/*---------------------------------------------setting for 4k desktops------------------------------*/
+@media screen and (min-width:1500px) {
+    .footer-columns{
+        justify-items:center;
+        justify-content: center;
+        padding-right: 180px;
+    }
+    .copy-right{
+        justify-items: center;
+        justify-content:start;
+        /*column-gap:180px;*/
+        padding-left: 25%;
+    }
+}
+/*---------------------------------------------setting for 1024px desktops------------------------------*/
+@media (min-width: 900px) and (max-width:1030px) {
+    .footer-columns{
+        padding: 90px 0 74px 50px;
+        column-gap: 30px;
+    }
+    .footer-columns p,.footer-columns h3{
+        width:216px;
+    }
+    .footer-columns ul{
+        padding:0;
+    }
+    .copy-right{
+        column-gap:50px;
+        justify-content:start;
+        justify-items: start;
+        padding: 0;
+    }
+   footer .icons{
+        margin-left:125px;
+    }
+}
+/*------------------------------------------common setting fot tablet and mobile-------------------------------*/
+
+@media screen and (max-width: 1000px){
+    footer{
+       height:228vh;
+        background-size: 680vw;
+        background-position:1000vw -760vw;
+        background-origin: inherit;
+    }
+    .footer-columns{
+        flex-direction: column;
+        row-gap:40px;
+        align-items: start;
+        padding:110px 0 60px 35px;
+    }
+    .footer-columns p,.footer-columns h3{
+        width:80vw;
+    }
+    footer ul{
+        margin: 0;
+        padding: 0;
+        font-size: 1.3rem;
+    }
+    footer h4{
+        padding-bottom: 10px;
+    }
+    .copy-right{
+        flex-direction: column;
+        padding:0;
+        align-content: center;
+    }
+    .copy-right p{
+        width: 90%;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+    footer .icons{
+        margin-left:0;
+    }
+    .up-icon-mob{
+        display: inline-block;
+    }
+    .up-icon-desk{
+        display: none;
+    }
+    .up{
+        padding:25px;
+    }
+    }
+
+@media screen and (max-width:325px) {
+    footer{
+        height: 235vh;
+    }
+    .footer-columns p, .copy-right p{
+        width:75vw;
+    }
+}

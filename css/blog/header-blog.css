@@ -1,0 +1,69 @@
+/* START BLOG HEADER */
+
+.blog-header {
+    background-image: url("../../img/crypto-blog-headbg.jpg");
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    background-attachment: scroll;
+    width: 100%;
+    height: 52.1vh;
+    background-size: cover;
+    padding: 16vh 6vw;
+}
+
+.h1-blog {
+    color: #fff;
+    font-size: 8rem;
+    line-height: 9rem;
+    font-weight: 700;
+    letter-spacing: 0;
+    position: relative;
+    margin-top: 21px;
+    top: 0px;
+    bottom: 0px;
+    margin-bottom: 0px;
+    right: 0px;
+    left: 0px;
+    margin-left: 77px;
+}
+
+/*----------------------------------------media screen 1024 desktops-------------------------------*/
+@media (min-width: 780px) and (max-width:1100px){
+    .blog-header {
+        height: 340px;
+        padding:16vh 5vw;
+    }
+    .h1-blog{
+        margin-left:0px;
+        position:initial;
+        padding: 0;
+        font-weight:700;
+    }
+    }
+/*--------------------------------media screen common setting mobile and tablets desktops-------------------------------*/
+
+@media screen and (max-width:780px) {
+    .blog-header {
+        height:51vw;
+        padding:7vh 6vh;
+    }
+    .h1-blog{
+        margin-left:0px;
+        position:initial;
+        font-size: 4.8rem;
+    }
+}
+/*--------------------------------media screen for medium mobile----------------------------------------------------*/
+
+@media (max-width:375px) {
+    .blog-header {
+        height:57vw;
+    }
+}
+/*--------------------------------media screen for small mobile----------------------------------------------------*/
+
+@media (max-width:375px) {
+    .blog-header {
+        height:66.9vw;
+    }
+}

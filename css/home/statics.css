@@ -1,0 +1,38 @@
+#static{
+    margin-top:25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+#static p {
+    width: 45%;
+    text-align: center;
+}
+    #static h2{
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+/*-------------------setting for 4k desktops---------------------*/
+@media screen and (min-width: 2500px) {
+    #static p{
+        width:24%;}
+}
+/*---------------------------------*/
+
+
+@media screen and (max-width: 750px) {
+    #static p{
+        width:85%;
+    }
+    #static h2{
+        margin-top: 40px;
+    }
+}
+/*--------------------------------------setting for small phone--------------------------*/
+@media screen and (max-width: 325px){
+    #static p{
+        width:80%;
+    }
+}

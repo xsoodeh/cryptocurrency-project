@@ -1,0 +1,117 @@
+.app{
+    background-image: url("../../img/crypto-woman-with-coin.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width:100%;
+    height:540px;
+    margin-top:150px ;
+    background-size:cover;
+}
+.app-items {
+    padding-top: 120px;
+    width:40%;
+    display: flex;
+    flex-direction: column;
+    align-items:start;
+    float: right;
+    padding-right:130px;
+}
+#app-store img{
+    padding: 1.2vw 20px 1.2vw 0;
+    width:189px;
+    height:56px;
+}
+.app-text{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    width: 78%;
+}
+.app-text img{
+    width:50px;
+    padding: 1.2vw 20px 1.2vw 0;
+
+}
+
+/*------------------------------------setting for 1024px desktops-------------------------*/
+@media (min-width: 1000px) and (max-width: 1024px){
+    .app-items {
+        padding-right: 100px;
+    }
+    #app-store img{
+        padding: 2vw 5px 2vw 0;
+        width:179px;
+        height:53px;
+    }
+    .app-text{
+        width:95%;
+    }
+    }
+/*------------------------------------setting for 4k desktops-------------------------*/
+@media (min-width: 2000px) {
+    .app-items {
+    margin: auto;
+        padding-right: 250px;
+    }
+    .app-text{
+        width:38%;
+    }
+    .app{
+        background-position:0 -146px;
+    }
+}
+
+
+/*----------------------------------common setting for mobile and tablet---------------------------*/
+@media screen and (max-width:1000px){
+    .app{
+        height:100vh;
+        margin-top:0;
+    }
+    .app-items{
+        align-items:center;
+        float:none;
+        width:80%;
+        padding-left: 42px;
+
+    }
+    .app-items {
+        padding-top: 35vw;
+        padding-right: 0;
+    }
+    #app-store img {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 189px;
+        height: 56px;
+        padding:10px 0;
+    }
+    .app-text {
+        width: 114%;
+    }
+    .app-text p{
+        font-size: 1.3rem;
+        line-height: 1.9rem;
+    }
+    .app-text img{
+        padding:10px 20px;
+    }
+    }
+
+/*----------------------------------common setting for small mobile---------------------------*/
+@media screen and (max-width: 325px){
+    .app{
+        background-size:cover;
+        background-position: center bottom ;
+        height: 110vh;
+    }
+    .app-items {
+        padding-left:32px;
+        padding-top:44vw;
+    }
+    .app-text {
+        width: 108%;
+        /*padding-bottom: 200x;*/
+    }
+}

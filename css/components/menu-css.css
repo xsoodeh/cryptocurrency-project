@@ -1,116 +1,270 @@
-.menu{
-    height: 12vh;
+.menu {
+    height: 70px;
     width: 100%;
     background-color: var(--main-color);
-    opacity: 90% ;
     display: grid;
-    grid-template-columns: 30% 70%;
     grid-template-areas: "logo buttons";
-    border-bottom:solid #3c4e89 1px ;
-    box-sizing: border-box;
-    position: fixed;
+    border-bottom: solid #3c4e89 1px;
+    box-sizing: initial;
     z-index: 1;
-}
-.logo{
-    grid-area: logo;
-    height: 7vh;
-    align-self: center;
-    padding-left: 2vw;
-    cursor:pointer;
+    align-items: center;
 
 }
-.menu--items{
+
+#logo {
+    grid-area: logo;
+    height: 37px;
+    width: 170px;
+    align-self: center;
+    padding-left: 1.5vw;
+    cursor: pointer;
+    display: inline-block;
+
+}
+
+.menu--items {
     grid-area: buttons;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-content: center;
 }
-.menu--items-button{
-    color:var(--third-color) ;
+
+.menu--items button, #menu-mob button {
     background-color: var(--main-color);
+    color: var(--third-color);
 }
-.menu--items-button:hover{
+
+.menu--items button {
+    padding: 0 30px;
+    height: 70px;
+}
+
+.menu--items .buy-btn, #menu-mob .buy-btn {
+    color: #07074d;
+    background-color: var(--second-color);
+    /*transition:  all 1s ease-in-out;*/
+
+}
+
+button:hover {
     background-color: #1b245b;
     color: #FFFFFF;
-    cursor:pointer;
+    transition: all 0.3s ease-in-out;
 }
-#menu-berger{
-    display: none;
+
+.menu--items .active {
+    background-color: #1b245b;
+    color: #FFFFFF;
 }
-#menu-mob{
+
+#menu-berger1024, #menu-berger--mob {
+    font-size: 2.2rem;
+    color: #FFFFFF;
+    width: auto;
+    align-items: center;
+}
+
+#menu-berger1024:before, #menu-berger--mob:after {
+    content: '\e960';
+    font-family: "mfn-icons";
+    font-style: normal;
+    font-weight: 400;
+    width: 1em;
+    padding-right: 26px;
+
+}
+
+#menu-berger--mob, #menu-berger1024 {
     display: none;
 }
 
-@media screen and (max-width: 700px) {
-    .menu--items{
+#menu-mob {
+    display: none;
+}
+
+#menu-mob {
+    height: 100vh;
+    width: 250px;
+    background-color: var(--main-color);
+    flex-wrap: initial;
+    float: right;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 2;
+}
+
+#menu-mob button {
+    width: 100%;
+    text-align: left;
+    padding-left: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, .03);
+    height: 40px;
+}
+
+#home-button {
+    border-top: 1px solid rgba(255, 255, 255, .03);
+}
+
+#menu-mob .active {
+    color: white;
+}
+
+#menu-mob .buy-btn {
+    width: 85%;
+    margin: 1px auto 20px auto;
+    text-align: center;
+    padding-left: 0;
+}
+
+#menu-mob-close {
+    font-size: 3.3rem;
+    color: var(--third-color);
+    float: right;
+    padding: 18px;
+}
+
+#menu-mob-close:before {
+    content: '\e963';
+    font-family: "mfn-icons";
+    font-weight: 400;
+    font-size: 2.2rem;
+    float: right;
+}
+
+#menu-mob .menu-mob-icons {
+    color: var(--third-color);
+    padding: 20px;
+    font-size: 14px;
+}
+
+.menu-mob-icons ion-icon:hover {
+    color: #FFFFFF;
+}
+
+.pinterest-icon:before {
+    content: '\f312';
+    font-family: "mfn-icons";
+    font-weight: 400;
+    width: 1em;
+    margin-right: .2em;
+    text-align: center;
+    line-height: 1em;
+
+    text-decoration: none;
+}
+.berger-mob-faq{
+    padding: 15px;
+}
+/*----------------------------------------------------js classes--------------------------------*/
+.move-menu {
+    transform: translate(-110px);
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+    transition-delay: 0.3s;
+    filter: brightness(40%);
+}
+
+.move-back-menu {
+    transform: translate(0);
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+    transition-delay: 0s;
+}
+
+.body-open-filter {
+    background: rgba(0, 0, 0, .6);
+}
+
+.menu-mob-show {
+    transform: translate(0);
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+    transition-delay: 0.1s;
+}
+
+.menu-mob-close {
+    transform: translate(100vw);
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+    transition-delay: 0.1s;
+}
+
+/*--------------------------------sticky menu settings-----------------------*/
+.sticky {
+    position: fixed;
+    top: 0;
+    opacity: 90%;
+    transition: all 0.3s ease-out;
+    transition-delay: 0.2s;
+
+    /*height: 60px;*/
+
+}
+
+.stickyMenu-button {
+    height: 60px;
+}
+
+.stickyMenu-logo {
+    width: 162px;
+    height: 36px;
+}
+
+/*------------------------------------setting for 1024px-----------------------------------*/
+@media (min-width: 1000px)and (max-width: 1024px) {
+    .menu--items button {
         display: none;
     }
-    #menu-mob{
-    height: 100vh;
-    width: 76vw;
-    display: flex;
-    flex-direction: column;
-    background-color: var(--main-color);
-        flex-wrap: initial;
-        float: right;
-        position: fixed;
-        top:0;
-        right: 0;
-        font-size: 0.6rem;
-        z-index: 2;
-    }
-#menu-berger{
-    display:flex;
-    flex-direction: row-reverse;
-    padding: 4vw;
-    font-size: 3rem;
-    color: #FFFFFF;
 
-}
-    .menu--items-button{
-        width: 100%;
-        text-align:left;
-        padding-left: 5vw;
-       border-bottom:  1px solid rgba(255,255,255,.03);
-        line-height: 7vh;
+    .menu--items .buy-btn {
+        display: inline-block;
     }
 
-    #menu-mob-close{
-        font-size: 3rem;
-        color: var(--third-color);
-        float: right;
-        padding:4vw;
+    #menu-berger1024 {
+        display: inline-block;
+        padding: 22px 0;
+
     }
-    .menu-mob-icons{
+
+    #menu-mob {
         display: flex;
-        flex-direction: row;
-        padding: 3vw;
-        font-size: 14px;
-        color: var(--third-color);
-        justify-content: center;
+        flex-direction: column;
     }
-    .menu-mob-icons ion-icon{
-        padding: 8px;
-    }
-    .menu-mob-icons ion-icon:hover{
-        color: #FFFFFF;
-    }
-    .menu-mob-show{
-        transform: translate(0);
-        transition-duration: 0.5s;
-        transition-timing-function: linear;
-        transition-delay: 0.1s;
-    }
-    .menu-mob-close{
-        transform: translate(100vw);
-        transition-duration: 0.5s;
-        transition-timing-function: linear;
-        transition-delay: 0.1s;
-    }
+}
+
+/*---------------------------Common settings for mobile phone and tablet---------------*/
+@media screen and (max-width: 1000px) {
+    .menu {
+        height: 60px;
     }
 
-#beindex{
-    height: 7vh;
+    .menu--items {
+        display: none;
+    }
+
+    #logo {
+        padding-left: 15px;
+    }
+
+    #menu-mob {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #menu-berger--mob {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    #menu-berger--mob:after {
+        padding-right: 15px;
+    }
+
+    .move-menu {
+        transform: translate(-130px);
+
+    }
 }
 

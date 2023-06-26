@@ -1,0 +1,129 @@
+
+.benefits {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 135px;
+    column-gap: 60px;
+}
+.benefits-text{
+    width: 30%;
+}
+.benefits-text p{
+    line-height:2.5rem;
+}
+.benefits-text button{
+    margin-top: 2.5vw;
+}
+.benefits-money-text{
+    margin-right:50px;
+}
+.benefits-money img{
+    width:520px;
+}
+
+
+.miner-text {
+    margin-right:40px;
+}
+.miner img{
+    width:463px;
+    margin:auto 35px;
+}
+/*------------------------------setting for 1024px desktop------------------*/
+@media (min-width: 1000px) and (max-width: 1024px){
+    .benefits-money img{
+        width:461px;
+    }
+    .benefits-text{
+        width: 36%;
+    }
+    .miner-text {
+        margin-left:40px;
+    }
+    .benefits-text button{
+        margin-top:3.3vw;
+    }
+}
+/*-----------------------------------setting for 4k desktops------------------------*/
+@media (min-width:2560px) {
+    .benefits-text{
+        width: 16%;
+    }
+}
+
+/*----------------------------------------common setting for mobile and tablet--------------------------------*/
+@media screen and (max-width: 1000px) {
+    .benefits {
+        flex-direction: column;
+        /*height: 161px;*/
+    }
+
+.benefits-money-text{
+    padding-left: 45px;
+    width:75%;
+
+
+}
+    .benefits-money img, .miner img {
+        width:360px;
+        height: 281px;
+        padding-top:0;
+    }
+    .benefits-text p{
+        line-height:normal;
+    }
+    .miner-text {
+        margin-right:0;
+        width:90% ;
+        padding: 50px 0 25px 25px;
+    }
+    .miner h2{
+        width:200px;
+    }
+    .miner{
+        padding-bottom: 90px;
+    }
+    .benefits-text button{
+        margin-top:23px;
+    }
+
+}
+/*---------------------------------------- setting for medium mobile--------------------------------*/
+@media (min-width:326px) and (max-width: 375px) {
+    .benefits-money img, .miner img {
+        width:310px;
+        height: 242px;
+        padding-top: 10px;
+    }
+    .benefits-money-text {
+        width:75%;
+        padding-left: 50px;
+    }
+    .miner-text{
+        width:82%;
+        padding: 50px 0 15px 0;
+
+    }
+
+}
+/*---------------------------------------- setting for small mobile--------------------------------*/
+@media (max-width: 325px) {
+    .benefits-money img, .miner img {
+        width:255px;
+        height: 199px;
+    }
+    .benefits-money-text {
+        padding-left: 60px;
+    }
+    .miner-text{
+        padding: 50px 0 25px 38px;
+    }
+
+}
+
+
+
+
+

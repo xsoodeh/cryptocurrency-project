@@ -1,0 +1,384 @@
+
+.mainContainer {
+    background-color: var(--main-color) !important;
+    color: var(--menu-text-color);
+}
+
+/*----------------------------------heading setting------------------------------*/
+.Heading {
+    padding: 9vw 8vw 14vw 15.5vw;
+
+}
+
+.mainTitle {
+    font-size: 7rem;
+    font-weight: 700;
+    width: 50vw;
+    line-height: 7.7rem;
+}
+
+.smallTitle {
+    color: #7fa4da;
+    font-weight: 400;
+    margin-bottom: 20px;
+    font-size: 20px;
+    letter-spacing: 5px;
+    padding-bottom: 1rem;
+}
+
+/*----------------------faq setting-----------------------------*/
+.accordion {
+    width: 470px;
+}
+
+.accordionTitle {
+    padding-bottom: 3vw;
+    width: 34rem;
+}
+
+.accordionSectin {
+    display: flex;
+    flex-direction: row;
+    row-gap: 7vw;
+    column-gap: 4vw;
+    flex-wrap: wrap;
+    margin-left: 15vw;
+
+}
+
+.card {
+    /*border-width: 1px 0 1px 0;*/
+    /*color: var(--menu-text-color);*/
+    border: none;
+    background-color: var(--main-color);
+    border-left: solid 2px #ffffff1a;
+    padding-bottom: 0.5vw;
+
+}
+
+.question {
+    background: var(--main-color);
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-radius: 0;
+    margin-bottom: -2px;
+}
+
+.number {
+    font-weight: 700;
+    margin-left: 15px;
+    margin-right: 30px;
+    font-size: 13px;
+
+
+}
+
+.question h2 span {
+    float: left;
+    clear: both;
+    margin-top: 10px;
+    border-left: solid 2px;
+    width: 80%;
+
+
+}
+
+.btn {
+    font-size: 1.5rem;
+    letter-spacing: 0.3px;
+    font-weight: 500;
+    width: 100%;
+    text-align: left;
+    position: relative;
+    top: -2px;
+    margin-bottom: 10px;
+}
+.question i {
+    float: right;
+    clear: both;
+    font-size: 1.6rem;
+    font-weight: bold;
+    position: relative;
+    top: 5px;
+    color: #4f537d;
+}
+
+
+.answer {
+    background: var(--main-color);
+    border-left: solid 2px var(--second-color);
+    /*color: var(--menu-text-color);*/
+    padding-left: 60px;
+    padding-right: 12px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.highlight {
+
+    background: var(--main-color);
+    border-left: solid 2px var(--second-color);
+    color: var(--second-color);
+}
+
+.bottomText {
+    color: var(--menu-text-color);
+    padding: 9vw 15vw 10vw 15vw;
+}
+/*----------------------------------footer setting for faq-------------------------------*/
+#footer-faq{
+    height: max-content;
+}
+/*----------------------------------------------*/
+@media (min-width: 320px)and (max-width: 375px) {
+    .Heading {
+        padding: 40vw 4vw 9vw 10.5vw;
+        margin-bottom: 40px;
+    }
+
+    .mainTitle {
+        font-size: 4.2rem;
+        font-weight: 700;
+        width: 90vw;
+        line-height: 4.7rem;
+        padding-right: 20vw;
+        padding-bottom: 43vw;
+
+    }
+
+    .smallTitle {
+        font-weight: 400;
+        margin-bottom: 15px;
+        font-size: 1.3rem;
+        letter-spacing: 0.3rem;
+    }
+
+    .accordionSectin {
+        margin-left: 12vw;
+    }
+
+    .accordion {
+        width: 470px;
+    }
+
+    .accordionTitle {
+        width: 75vw;
+        padding-bottom: 7vw;
+        line-height: 2rem;
+    }
+
+    .answer {
+        font-size: 1.3rem;
+        padding-right: 7rem;
+        padding-bottom: 3rem;
+        line-height: 2rem;
+    }
+
+    .btn {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: left;
+        justify-items: left;
+        align-content: center;
+        width: 23rem;
+        font-size: 1.3rem;
+    }
+
+    .bottomText {
+        line-height: 2rem;
+        padding: 40vw 5vw 40vw 10vw;
+        width: 30rem;
+    }
+
+    #footer-faq {
+        height: 210vh;
+    }
+}
+
+
+    @media (min-width: 376px)and (max-width: 425px) {
+        .Heading {
+            padding: 35vw 1vw 60vw 8vw;
+        }
+
+        .mainTitle {
+            font-size: 4.2rem;
+            font-weight: 700;
+            width: 82vw;
+            line-height: 4.7rem;
+        }
+
+        .smallTitle {
+            font-size: 1.3rem;
+            letter-spacing: 0.3rem;
+
+        }
+
+        .accordionTitle {
+            line-height: 2rem;
+            width: 70vw;
+            padding-bottom: 2rem;
+        }
+
+        .accordionSectin {
+            margin-left: 10vw;
+        }
+
+        .btn {
+            font-size: 1.3rem;
+            display: flex;
+            flex-direction: row;
+            align-items: baseline;
+            justify-content: left;
+            justify-items: left;
+        }
+        .answer {
+            font-size: 1.3rem;
+            padding-right: 3rem;
+            line-height: 2rem;
+            padding-bottom: 3rem;
+        }
+
+
+        .accordion {
+            width: 80vw;
+        }
+
+        .bottomText {
+            padding: 35vw 8vw 35vw 7.4vw;
+            line-height: 1.8rem;
+        }
+
+        #footer-faq {
+            height: 210vh;
+        }
+    }
+
+
+
+    @media (min-width: 426px) and (max-width: 750px) {
+        .Heading {
+            padding: 30vw 15vw 47vw 8vw;
+        }
+
+        .mainTitle {
+            font-size: 4.2rem;
+            font-weight: 700;
+            width: 82vw;
+            line-height: 4.7rem;
+        }
+
+        .smallTitle {
+            font-size: 1.3rem;
+        }
+
+        .accordionSectin {
+            margin-left: 10vw;
+            display: flex;
+            flex-direction: column;
+            width: 80vw;
+            column-gap: 0;
+            row-gap: 10vw;
+        }
+
+        .answer {
+            padding-right: 0.5rem;
+            padding-bottom: 4rem;
+            line-height: 18px;
+            font-size: 13px;
+            padding-top: 0;
+        }
+
+        .bottomText {
+            padding: 30vw 8vw 30vw 7.4vw;
+            line-height: 1.8rem;
+        }
+
+        .accordion {
+            width: 80vw;
+        }
+
+        .btn {
+            font-size: 1.3rem;
+            /*letter-spacing: 0.3px;*/
+        }
+
+    }
+
+    @media (min-width: 1000px)and (max-width: 1024px) {
+        .Heading {
+            padding: 12.3vw 18vw 22vw 4vw;
+            margin: 0;
+        }
+
+        .mainTitle {
+            font-size: 7rem;
+            font-weight: 700;
+            width: 72vw;
+            line-height: 8rem;
+            margin: 0;
+        }
+
+        .accordion {
+            width: 410px;
+        }
+
+        .accordionTitle {
+            padding-right: 2rem;
+            padding-bottom: 4rem;
+        }
+
+        .accordionSectin {
+            display: flex;
+            flex-direction: row;
+            margin-left: 50px;
+            column-gap: 6rem;
+        }
+
+        .answer {
+            padding-right: 1rem;
+            padding-bottom: 3rem;
+        }
+
+        .bottomText {
+            padding: 14vw 4vw 15vw 4vw;
+            /*line-height:1.8rem ;*/
+        }
+
+
+    }
+    @media (min-width: 2000px) {
+
+        .accordionSectin{
+            padding-top: 10rem;
+        }
+
+        .Heading {
+            padding: 5vw 12vw 5vw 30vw;
+            border-bottom: #3D4270 solid 0.01rem;
+        }
+
+        .accordionSectin {
+            display: flex;
+            flex-direction: row;
+            margin-left: 30vw;
+            margin-right: 20vw;
+            column-gap: 6rem;
+            padding-bottom: 12rem;
+
+        }
+
+        .bottomText {
+            padding: 0 30vw 5vw 30vw;
+            border-top: #3D4270 solid 0.01rem;
+        }
+    }
+
+@media screen and (max-width: 320px) {
+    #footer-faq {
+        height: 218vh;
+    }
+}
+
+

@@ -1,0 +1,305 @@
+*, *::before, *::after {
+    /* box-sizing: inherit; */
+    -webkit-font-smoothing: antialiased;
+}
+
+.iconPart{
+    display: grid;
+  /*grid-template-columns:45fr 45fr;*/
+    grid-template-areas: 'box wallet'
+                          'glob key';
+                          
+                         column-gap: 5vw;
+   background-color:rgb(244, 250, 244);
+   margin-top:10vh;
+   border: 1px solid rgba(202, 221, 248, 0.8);
+    justify-items: left;
+    justify-content: left;
+    padding: 8vw;
+}
+              /*-----box---*/
+.iconPart--box{
+    display: flex;
+    flex-direction: row;
+}
+
+.boxContent{
+   padding-top: 5vh;
+    margin: 0;
+}
+.boxContent h3{
+    font-size: 17px;
+    line-height: 23px;
+}
+.boxContent p{
+    letter-spacing: 0px;
+    font-size: 15px;
+    line-height: 20px;
+}
+.iconPart--box:hover  img{
+    transition: ease-out 0.5s;
+    transform: translateY(-20px);
+}
+.box{
+grid-area: box;
+
+}
+.iconPart--box p{
+    width:20vw
+    
+}
+.iconPart--box img{
+    padding: 4vw;
+    width:104px;
+    height: 104px;
+}
+.iconPart--box  ::before{
+    width: 0px;
+   border-top: #ffc327 solid 2px;
+ /*  background-color: #ffc327;*/
+ /* height: 2px;*/
+  margin: 0 auto;
+    transition:  all 1s ease-in-out;
+    content: "";
+    display: block;
+    top: -1vh;
+   /* left: 10vw;*/
+    position: relative;
+}
+ .iconPart--box :hover h3::before{
+    width: 100px;
+  border-top: #ffc327 solid 2px;
+  /*  background-color: #ffc327;*/
+ /* height: 2px;*/
+  margin: 0 auto;
+    transition:  all 1s ease-in-out;
+    content: "";
+    display: block;
+    top: -1vh;
+   /* left: 10vw;*/
+    position: relative;
+}
+
+.iconDiv {
+    margin: 0px;
+    
+}
+
+                                  /* -----iconpart box wallet */
+
+                                   
+ .wallet{
+     grid-area: wallet;
+    padding: 0;
+    
+ } 
+  
+ .walletCon {
+    margin: 0;
+    padding-top:2.5vh;
+
+}
+
+
+.wallet h3{
+    
+    
+    color: #0d1a85;
+    font-size: 17px;
+    font-weight: 700;
+
+}
+.wallet P{
+    
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing :0px;
+    color: #0d1a85;
+
+}
+.wallet:hover> img{
+    /*margin-top: 10vh;*/
+    transition: ease-out 0.5s;
+    
+}
+                                       /*------ globe box ------*/
+.globe{
+    grid-area: glob;
+    margin: auto;
+    padding: 0;
+}
+
+
+
+.globe h3{
+    
+   
+    color: #0d1a85;
+    font-size: 17px;
+    font-weight: 700;
+
+}
+.globe p {
+   
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing :0;
+    color: #0d1a85;
+}
+                                 /*------ key box ------*/
+
+.key{
+    grid-area:key;
+    padding: 0;
+}
+
+
+
+.keyCon {
+    margin: 0; 
+}
+.key h3{
+    color: #0d1a85;
+    font-size: 17px;
+    font-weight: 700;
+}
+.key p{
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing :0;
+    color: #0d1a85;
+
+}
+@media only screen and (min-width:320px)and (max-width:428px){
+    .iconPart {
+        display: flex;
+        flex-direction: column;
+       /*  width: 95%;*/
+        
+     }
+         .iconPart--box p{
+             width:90%;
+         }
+     
+         .boxContent h3{
+             font-size: 13px;
+             line-height: 19px;
+         }
+         .boxContent p{
+             letter-spacing: 0px;
+             font-size: 13px;
+             line-height: 19px;
+         }
+         .wallet h3{
+             font-size: 13px;
+             line-height: 19px;
+             font-weight: 700;
+         
+         }
+         .wallet P{
+             font-size: 13px;
+             line-height: 19px;
+             letter-spacing :0px;
+         }
+         .globe h3{
+             font-size: 13px;
+             font-weight: 700;
+             line-height: 19px;
+         
+         }
+         .globe p {
+             font-size: 13px;
+             line-height: 19px;
+             letter-spacing :0;
+         }
+         .key h3{
+             line-height: 19px;
+             font-size: 13px;
+             font-weight: 700;
+         }
+         .key p{
+             
+             font-size: 13px;
+             line-height: 19px;
+             letter-spacing :0;
+         
+         }
+}
+
+@media only screen and (min-width:428px) and  (max-width:768px){
+   
+.iconPart {
+   display: flex;
+   flex-direction: column;
+  /*  width: 95%;*/
+   
+}
+    .iconPart--box p{
+        width:90%;
+    }
+
+    .boxContent h3{
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .boxContent p{
+        letter-spacing: 0px;
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .wallet h3{
+        font-size: 15px;
+        line-height: 19px;
+        font-weight: 700;
+    
+    }
+    .wallet P{
+        font-size: 15px;
+        line-height: 20px;
+        letter-spacing :0px;
+    }
+    .globe h3{
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 20px;
+    
+    }
+    .globe p {
+        font-size: 15px;
+        line-height: 20px;
+
+        letter-spacing :0;
+    }
+    .key h3{
+        line-height: 19px;
+        font-size: 13px;
+        font-weight: 700;
+    }
+    .key p{
+        
+        font-size: 15px;
+        line-height: 20px;
+        letter-spacing :0;
+    
+    }
+}
+@media only  screen and (min-width:768px)and (max-width:1024px){
+    .iconPart{
+        margin-top: 5vh;
+    }
+}
+@media only  screen and (min-width:2000px){
+    .iconPart{
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+    }
+.iconPart--box{
+    width: 500px;
+}
+.iconPart--box p{
+    width: 300px;
+}
+}
+    
+ 

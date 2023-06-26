@@ -5,5 +5,20 @@
 @import "../components/buttons.css";
 @import "../components/a-link.css";
 @import "../home/header.css";
+@import "../home/beindex.css";
+@import "../home/post-selected.css";
+@import "../home/benefits.css";
+@import "../home/home.css";
+@import "../home/statics.css";
+@import "../home/app.css";
+@import "../blog/blog.css";
+@import "../blog/blog-post.css";
+@import "../blog/filter-blog-post.css";
+@import "../blog/header-blog.css";
+@import "../blog/icons.css";
+@import "../components/footer.css";
+@import "../features/diagram.css";
+@import "../components/sticky-buttons.css";
+
 
 

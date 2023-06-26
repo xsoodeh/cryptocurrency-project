@@ -1,0 +1,12 @@
+#post-selected {
+    background-image: url("../../img/crypto-home-tech-bg.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    padding-top:115px;
+    /*justify-content: center;*/
+}
+@media screen and (max-width: 750px) {
+    #post-selected {
+        padding-top:20vh;
+    }
+    }
